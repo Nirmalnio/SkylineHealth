@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const AboutUs = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="relative bg-cover bg-center h-96" style={{backgroundImage: "url('https://source.unsplash.com/random/1600x900/?healthcare,team')"}}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
@@ -23,7 +23,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img src="https://source.unsplash.com/random/800x600/?elderly-care" alt="Elderly care" className="rounded-lg shadow-lg" />
+            <img src="https://homecare-aid.com/wp-content/uploads/2024/04/Why-Elderly-Care-Can-Be-So-Important.jpg" alt="Elderly care" className="rounded-lg shadow-lg" />
           </div>
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Values</h2>
@@ -64,7 +64,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
