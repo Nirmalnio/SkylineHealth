@@ -15,7 +15,7 @@ const Header = () => {
         </nav>
         <div className="flex items-center space-x-4">
           <a href="/" className="text-gray-600 hover:text-gray-800">1-877-588-8609</a>
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-full">Free Care Consult</button>
+          <button className="c text-white px-4 py-2 rounded-full">Free Care Consult</button>
         </div>
       </div>
     </header>
