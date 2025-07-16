@@ -25,7 +25,7 @@ const Hero = () => {
       className="relative bg-cover bg-center h-screen"
       style={{
         backgroundImage:
-          "url('https://www.montefiorenyack.org/sites/default/files/background-image/Homecare-4_0.jpg')",
+          "url('https://www.goodhire.com/static/f7bed1d034eb070a5a8d562c3a12dd7c/Article-caregiver-background-checks.png')",
       }}
     >
       {/* Overlay (optional for readability) */}
