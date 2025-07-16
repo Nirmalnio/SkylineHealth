@@ -4,6 +4,7 @@ import Services from '../components/Services';
 import CallToAction from '../components/CallToAction';
 import Header from '../layouts/Header';
 import Footer from '../components/Footer';
+import CareSteps from '../components/CareSteps';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header/>
       <Hero />
       <Services />
+      <CareSteps/>
       <CallToAction />
       <Footer/>
     </div>
