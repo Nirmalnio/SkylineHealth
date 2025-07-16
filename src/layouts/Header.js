@@ -33,18 +33,20 @@ const Header = () => {
       <div className="flex items-center space-x-2">
         {/* <img src="/logo.png" alt="Logo" className="h-10" /> */}
         <div>
+          <a href="/">
           <h1 className="text-[#52bed6] font-bold text-lg">
-            Nurse Next Door<sup>®</sup>
+            Skyline HealthCare<sup>®</sup>
           </h1>
+          </a>
           <p className="text-sm text-gray-500 -mt-1">home care services</p>
         </div>
       </div>
 
       {/* Center: Navigation Links */}
       <ul className="hidden md:flex items-center space-x-6 text-sm font-medium text-black">
-        <li className="cursor-pointer"><a href="/" className="text-gray-600 hover:text-gray-800">Home Care</a></li>
+        <li className="cursor-pointer"><a href="/home-care" className="text-gray-600 hover:text-gray-800">Home Care</a></li>
         <li className="cursor-pointer"><a href="/" className="text-gray-600 hover:text-gray-800">Nursing Care</a></li>
-        <li className="cursor-pointer"><a href="/" className="text-gray-600 hover:text-gray-800">About Us</a></li>
+        <li className="cursor-pointer"><a href="/about-us" className="text-gray-600 hover:text-gray-800">About Us</a></li>
         <li className="cursor-pointer"><a href="/" className="text-gray-600 hover:text-gray-800">Franchising</a></li>
       </ul>
 
