@@ -5,19 +5,19 @@ const steps = [
   {
     step: 1,
     title: "Instant Connection",
-    desc: "Your call is answered by a real person within 30 seconds, any time—day or night. Call us anytime to book a complimentary Caring Consult™. We listen to your needs—whether that’s elder care, personal care or recovery support—to learn how we can make your lives better.",
+    desc: "Your call will be answered by a real person within 30 seconds, day or night. Contact us at any time to arrange a complimentary Caring Consultation™. We listen carefully to your needs—whether you require elder care, personal assistance, or support during recovery—to understand how we can make your life better.",
     image: "/step-1.png",
   },
   {
     step: 2,
     title: "Getting to Know You",
-    desc: "A Care Designer meets with you, virtually or in person, to assess your needs and preferences before creating a Care Plan tailor-made for you. We match you with the perfect caregiver with the right skills, a kind heart and a personality you’ll love.",
+    desc: "A Care Designer will meet with you—either virtually or in person—to assess your individual needs and preferences before creating a bespoke Care Plan just for you. We’ll then match you with the ideal caregiver, chosen for their skills, their compassion, and a personality we believe you’ll truly appreciate.",
     image: "/step-2.png",
   },
   {
     step: 3,
     title: "First Visit",
-    desc: "We aim to send the same Caregiver every visit so you can grow your relationship with your perfect match Caregiver from day one. Our team stays in touch, monitoring care and making tweaks as needed throughout your care journey.",
+    desc: "We strive to send the same caregiver for every visit, so you can build a genuine relationship with your perfect match from day one. Our team will remain in regular contact—monitoring your care and making adjustments as needed throughout your care journey.",
     image: "/step-3.png",
   },
 ];

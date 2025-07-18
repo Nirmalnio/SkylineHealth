@@ -51,7 +51,6 @@ const services = [
 ];
 
 const Services = () => {
-
   return (
     <section className="bg-[#f9f1ea] py-16 px-4 md:px-8 rounded-t-[2rem]">
       <div className="max-w-7xl mx-auto text-center">
@@ -69,7 +68,7 @@ const Services = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          What is <span className="italic font-normal">Home Care?</span>
+          What is <span className="italic font-normal">Live-In Care?</span>
         </motion.h2>
         <motion.p
           className="mt-4 max-w-2xl mx-auto text-gray-700"
@@ -77,10 +76,10 @@ const Services = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Home care focuses on non-medical support to help you and your loved
-          ones with daily living. Our carefully screened and highly qualified
-          caregivers will cook your favorite meals, walk your dog, provide light
-          housekeeping and help you rediscover activities you love.
+          Live-in care means having a dedicated carer living with you, providing
+          daily support and companionship at home. From preparing meals and
+          helping with chores to assisting you with hobbies and routines, your
+          carer is there to make each day comfortable and enjoyable.
         </motion.p>
 
         {/* Cards */}

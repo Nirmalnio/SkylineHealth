@@ -44,7 +44,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Happier Aging
+            Personalised Live-In Care Services
           </motion.h1>
           <motion.p
             className="text-xl mb-8"
@@ -52,7 +52,10 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Nurse Next Door provides compassionate, reliable and flexible senior home care services.
+            We go beyond traditional home care by carefully matching you with
+            the ideal live-in carer. You’ll receive personalised, 24/7 support
+            tailored to your needs, along with round-the-clock assistance and
+            peace of mind for you and your loved ones.
           </motion.p>
           <motion.button
             className="bg-[#52bed6] text-white px-8 py-4 rounded-full text-lg hover:bg-[#45a6bb] transition"
@@ -71,4 +74,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
