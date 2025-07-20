@@ -65,6 +65,11 @@ const fadeUp = {
 const Footer = () => {
   return (
     <footer className="bg-[#52bed6] text-white pt-20">
+      <div className="flex items-center w-full flex-col justify-center mb-10 gap-y-5">
+        <h2 className="text-[42px] text-center font-bold">Re-Discover Independence<br/> in Your <span className="italic">Own Home</span>.</h2>
+        <p className="text-lg font-[600]">Book a complimentary caring consult</p>
+        <button className="bg-cyan-50 text-[#52bed6] text-xl font-bold px-5 py-2 rounded-full cursor">Contact Us</button>
+      </div>
       <motion.div
         className="bg-white rounded-t-3xl px-8 py-12 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 h-full text-black"
         initial="hidden"

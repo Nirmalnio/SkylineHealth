@@ -27,14 +27,14 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-6 text-sm font-medium text-black">
           <ul className="hidden md:flex space-x-6 text-sm font-medium text-black relative">
-            <li className="cursor-pointer">
+            {/* <li className="cursor-pointer">
               <a
                 href="/home-care"
                 className="text-gray-600 hover:text-gray-800"
               >
                 Home
               </a>
-            </li>
+            </li> */}
 
             {/* Services Dropdown */}
             <li
@@ -42,9 +42,11 @@ const Header = () => {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
+              <a href='/home-care'>
               <span className="text-gray-600 hover:text-gray-800 cursor-pointer">
                 Services
               </span>
+              </a>
 
               {/* Dropdown menu */}
               {isServicesOpen && (
@@ -196,7 +198,7 @@ const Header = () => {
 
           {/* Dropdowns */}
           <div className="space-y-6 text-lg">
-            <a href="/about-us" className="block font-semibold">Home</a>
+            {/* <a href="/about-us" className="block font-semibold">Home</a> */}
             <div>
               <button
                 className="flex items-center justify-between w-full font-semibold"
