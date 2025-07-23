@@ -37,26 +37,26 @@ const Header = () => {
       name: "Dementia Care",
       description:
         "Compassionate support for those living with memory loss and confusion.",
-      icon: <User className="w-5 h-5 text-[#52bed6]" />,
+      icon: <User className="w-5 h-5 text-accent" />,
       link: "/services/dementia-care",
     },
     {
       name: "Alzheimer's Care",
       description:
         "Specialist care to maintain routine, safety, and comfort at home.",
-      icon: <Brain className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Brain className="w-5 h-5 text-accent" />,
     },
     {
       name: "Parkinson’s Care",
       description:
         "Helping clients manage mobility, medication, and daily tasks.",
-      icon: <Heart className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Heart className="w-5 h-5 text-accent" />,
     },
     {
       name: "Continence Care",
       description:
         "Discreet and dignified assistance with bladder and bowel care.",
-      icon: <Brain className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Brain className="w-5 h-5 text-accent" />,
     },
   ];
 
@@ -65,25 +65,25 @@ const Header = () => {
       name: "Complex Care",
       description:
         "Expert support for individuals with multiple or high-dependency conditions.",
-      icon: <Shield className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Shield className="w-5 h-5 text-accent" />,
     },
     {
       name: "Respite Care",
       description:
         "Short-term live-in care to give family carers a well-earned break.",
-      icon: <Home className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Home className="w-5 h-5 text-accent" />,
     },
     {
       name: "End of Life Care",
       description:
         "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
-      icon: <Pill className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Pill className="w-5 h-5 text-accent" />,
     },
     {
       name: "Challenging Behaviours Care",
       description:
         "Skilled care for individuals with behavioural or emotional difficulties.",
-      icon: <Pill className="w-5 h-5 text-[#52bed6]" />,
+      icon: <Pill className="w-5 h-5 text-accent" />,
     },
   ];
 
@@ -93,7 +93,7 @@ const Header = () => {
         {/* Left: Logo + Text */}
         <a href="/" className="flex items-center space-x-2">
           <div className="leading-4">
-            <h1 className="text-[#52bed6] font-bold text-lg">
+            <h1 className="text-accent font-bold text-lg">
               Skyline HealthCare<sup>®</sup>
             </h1>
           </div>
@@ -213,7 +213,7 @@ const Header = () => {
                     </div>
                     <p>
                       We are open 24/7, speak to our care team now{" "}
-                      <span className="text-[#52bed6]">+44 7805 694560</span>
+                      <span className="text-accent">+44 7805 694560</span>
                     </p>
                   </motion.div>
                 )}
@@ -243,11 +243,11 @@ const Header = () => {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex space-x-4">
-          <button className="flex items-center px-4 py-2 rounded-full border border-[#52bed6] text-[#52bed6] font-medium hover:bg-pink-50 transition">
+          <button className="flex items-center px-4 py-2 rounded-full border border-accent text-accent font-medium hover:bg-pink-50 transition">
             <MapPin className="w-4 h-4 mr-2" />
             Find a Location
           </button>
-          <button className="flex items-center px-4 py-2 rounded-full bg-[#52bed6] text-white font-medium hover:bg-[#52bed6] transition">
+          <button className="flex items-center px-4 py-2 rounded-full bg-accent text-white font-medium hover:bg-accent transition">
             {/* <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div> */}
             Call +44 7805 694560
           </button>
@@ -275,7 +275,7 @@ const Header = () => {
             <div className="flex justify-between items-center mb-6">
               <a href="/" className="flex items-center space-x-2">
                 <div className="leading-4">
-                  <h1 className="text-[#52bed6] font-bold text-lg">
+                  <h1 className="text-accent font-bold text-lg">
                     Skyline HealthCare<sup>®</sup>
                   </h1>
                   <p className="text-sm text-gray-500">home care services</p>
@@ -356,12 +356,12 @@ const Header = () => {
               </a>
 
               <div className="mt-8 space-y-4">
-                <button className="w-full border border-[#52bed6] rounded-full py-3 text-[#52bed6] font-medium flex items-center justify-center">
+                <button className="w-full border border-accent rounded-full py-3 text-accent font-medium flex items-center justify-center">
                   <MapPin className="w-4 h-4 mr-2" />
                   Find a Location
                 </button>
 
-                <button className="w-full bg-[#52bed6] text-white font-semibold py-3 rounded-full flex items-center justify-center">
+                <button className="w-full bg-accent text-white font-semibold py-3 rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                   Call 1-877-588-8609
                 </button>

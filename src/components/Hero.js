@@ -40,7 +40,7 @@
 //             peace of mind for you and your loved ones.
 //           </motion.p>
 //           <motion.button
-//             className="bg-[#52bed6] text-white px-8 py-4 rounded-full text-lg hover:bg-[#45a6bb] transition"
+//             className="bg-accent text-white px-8 py-4 rounded-full text-lg hover:bg-accent-dark transition"
 //             whileHover={{ scale: 1.05 }}
 //             whileTap={{ scale: 0.95 }}
 //             initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ import hero from "../assets/Images/hero2.png";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-pink-50 to-white px-6 py-10 flex flex-col lg:flex-row gap-10 items-center">
+    <div className="bg-gradient-to-b from-primary-light to-white px-6 py-10 flex flex-col lg:flex-row gap-10 items-center">
       {/* Left Content */}
       <motion.div
         className="flex flex-col gap-6 w-full lg:w-[45%]"
@@ -92,14 +92,14 @@ const Hero = () => {
 
         {/* <p className="font-semibold">400+ locations in 4 countries</p> */}
 
-        <div className="flex items-center gap-3 p-4 rounded-full bg-cyan-100 w-fit shadow-md">
+        <div className="flex items-center gap-3 p-4 rounded-full bg-accent-light w-fit shadow-md">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
             alt="Google Logo"
             className="w-8 h-8"
           />
           <div className="flex flex-col items-start">
-            <div className="flex gap-1 text-pink-600 text-xl">
+            <div className="flex gap-1 text-primary-dark text-xl">
               {Array(5)
                 .fill("★")
                 .map((star, i) => (
@@ -108,7 +108,7 @@ const Hero = () => {
             </div>
             <a
               href="#"
-              className="text-pink-600 text-sm font-semibold underline hover:text-pink-700"
+              className="text-primary-dark text-sm font-semibold underline hover:text-primary-darker"
             >
               Google Reviews
             </a>
@@ -116,10 +116,10 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-4 flex-wrap">
-          <button className="bg-[#52bed6] text-white py-2 px-6 rounded-full font-semibold">
+          <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
             Contact Us
           </button>
-          {/* <button className="bg-[#52bed6] text-white py-2 px-6 rounded-full font-semibold">
+          {/* <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
             Careers
           </button> */}
         </div>
@@ -145,7 +145,7 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           {/* Header */}
-          <div className="flex items-center gap-2 text-pink-600 font-medium mb-2">
+          <div className="flex items-center gap-2 text-primary-dark font-medium mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4"
@@ -175,13 +175,13 @@ const Hero = () => {
               placeholder="Postcode/Town/Street"
               className="flex-grow px-4 py-2 text-sm text-gray-700 outline-none"
             />
-            <button className="bg-pink-500 hover:bg-pink-600 text-white px-6 flex items-center justify-center text-sm font-semibold rounded-r-full">
+            <button className="bg-primary hover:bg-primary-dark text-white px-6 flex items-center justify-center text-sm font-semibold rounded-r-full">
               Find <span className="ml-2">➔</span>
             </button>
           </div>
 
           {/* Location Button */}
-          <button className="w-full flex items-center justify-center gap-2 text-pink-600 font-medium border border-pink-500 rounded-full py-2 hover:bg-pink-50 transition">
+          <button className="w-full flex items-center justify-center gap-2 text-primary-dark font-medium border border-primary rounded-full py-2 hover:bg-primary-light transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4"

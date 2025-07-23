@@ -52,11 +52,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-[#f9f1ea] py-16 px-4 md:px-8 rounded-t-[2rem]">
+    <section className="bg-background-light py-16 px-4 md:px-8 rounded-t-[2rem]">
       <div className="max-w-7xl mx-auto text-center">
         {/* Tabs */}
         <div className="flex justify-center mb-8 space-x-4">
-          <p className="px-6 py-2 rounded-full font-medium bg-[#52bed6] text-white shadow">
+          <p className="px-6 py-2 rounded-full font-medium bg-accent text-white shadow">
             Our Services
           </p>
         </div>
@@ -71,7 +71,7 @@ const Services = () => {
           What is <span className="italic font-normal">Live-In Care?</span>
         </motion.h2>
         <motion.p
-          className="mt-4 max-w-2xl mx-auto text-gray-700"
+          className="mt-4 max-w-2xl mx-auto text-text-secondary"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -100,8 +100,8 @@ const Services = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-700 mb-4">{item.desc}</p>
-                <button className="text-[#52bed6] font-medium flex items-center hover:underline">
+                <p className="text-sm text-text-secondary mb-4">{item.desc}</p>
+                <button className="text-accent font-medium flex items-center hover:underline">
                   Read More
                 </button>
               </div>
@@ -116,7 +116,7 @@ const Services = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6 }}
         >
-          <button className="bg-[#52bed6] hover:bg-[#2f6c7a] text-white px-6 py-3 rounded-full font-semibold flex items-center mx-auto transition-all">
+          <button className="bg-accent hover:bg-accent-darker text-white px-6 py-3 rounded-full font-semibold flex items-center mx-auto transition-all">
             View all Services
           </button>
         </motion.div>

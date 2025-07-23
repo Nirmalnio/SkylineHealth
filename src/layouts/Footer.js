@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#52bed6] text-white pt-20">
+    <footer className="bg-accent text-white pt-20">
       {/* Top CTA Section */}
       <div className="flex items-center w-full flex-col justify-center mb-10 gap-y-5">
         <h2 className="text-[42px] text-center font-bold">
@@ -14,7 +14,7 @@ const Footer = () => {
         <p className="text-lg font-semibold">
           Book a complimentary caring consult
         </p>
-        <button className="bg-cyan-50 text-[#52bed6] text-lg font-bold px-8 py-3 rounded-full hover:bg-white transition-colors">
+        <button className="bg-cyan-50 text-accent text-lg font-bold px-8 py-3 rounded-full hover:bg-white transition-colors">
           Contact Us
         </button>
       </div>
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Column 1 - Company Info */}
           <div className="lg:col-span-4">
-            <div className="text-[#52bed6] text-3xl font-bold mb-6">
+            <div className="text-accent text-3xl font-bold mb-6">
               Skyline HealthCare
               <br />
               Solutions
@@ -38,13 +38,13 @@ const Footer = () => {
             </p>
 
             <div className="mt-6">
-              <p className="mb-3 font-bold text-lg text-[#52bed6]">Location</p>
+              <p className="mb-3 font-bold text-lg text-accent">Location</p>
               <div className="mb-4">
                 <span className="font-semibold text-gray-700">
                   107 Heron Way, Torquay, Devon, TQ2 7SU
                 </span>
               </div>
-              <button className="bg-[#52bed6] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#45a5bb] transition-colors">
+              <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition-colors">
                 <a href="https://maps.app.goo.gl/rwEFLfLfWKHi8Zu99?g_st=ic">
                   Find a Location <span className="ml-2">→</span>
                 </a>
@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Column 2 - Services */}
           <div className="lg:col-span-4">
-            <h3 className="text-[#52bed6] font-bold text-lg mb-6">Services</h3>
+            <h3 className="text-accent font-bold text-lg mb-6">Services</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
               <div className="space-y-3">
                 {[
@@ -68,7 +68,7 @@ const Footer = () => {
                       href={`/services/${service
                         .toLowerCase()
                         .replace(/\s+/g, "-")}`}
-                      className="text-gray-700 hover:text-[#52bed6] transition-colors text-sm"
+                      className="text-gray-700 hover:text-accent transition-colors text-sm"
                     >
                       {service} Live-in Care
                     </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                         href={`/services/${service
                           .toLowerCase()
                           .replace(/\s+/g, "-")}`}
-                        className="text-gray-700 hover:text-[#52bed6] transition-colors text-sm"
+                        className="text-gray-700 hover:text-accent transition-colors text-sm"
                       >
                         {service} Live-in Care
                       </a>
@@ -110,7 +110,7 @@ const Footer = () => {
           {/* Column 3 - Socials */}
           <div className="lg:col-span-4 flex flex-col items-center lg:items-end">
             <div className="text-center lg:text-left">
-              <h3 className="text-[#52bed6] font-bold text-lg mb-6">Socials</h3>
+              <h3 className="text-accent font-bold text-lg mb-6">Socials</h3>
               <div className="flex gap-4 justify-center lg:justify-end">
                 {[
                   { Icon: FaFacebook, href: "#" },
@@ -121,10 +121,10 @@ const Footer = () => {
                   <a
                     key={idx}
                     href={href}
-                    className="border-2 border-[#52bed6] rounded-full p-3 hover:bg-[#52bed6] hover:text-white transition-all duration-300 transform hover:scale-110"
+                    className="border-2 border-accent rounded-full p-3 hover:bg-accent hover:text-white transition-all duration-300 transform hover:scale-110"
                     aria-label={`Social link ${idx + 1}`}
                   >
-                    <Icon className="text-[#52bed6] hover:text-white w-5 h-5" />
+                    <Icon className="text-accent hover:text-white w-5 h-5" />
                   </a>
                 ))}
               </div>
