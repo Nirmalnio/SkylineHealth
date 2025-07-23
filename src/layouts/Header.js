@@ -360,7 +360,7 @@ const Header = () => {
       </AnimatePresence>
 
       {/* Bottom banner - matching the "We are open 24/7" from the image */}
-      <div className="hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-3 z-40">
+      {/* <div className="hidden md:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-3 z-40">
         <div className="flex items-center justify-center space-x-4 text-sm">
           <span className="text-gray-700">
             We are open 24/7, speak to our care team now
@@ -372,7 +372,7 @@ const Header = () => {
             1-877-588-8609
           </a>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };
