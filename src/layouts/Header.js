@@ -16,6 +16,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 
+import logo from "../assets/Images/image.png"
+
 const dropdownVariants = {
   hidden: { opacity: 0, y: -10 },
   visible: { opacity: 1, y: 0 },
@@ -92,10 +94,12 @@ const Header = () => {
       <div className="flex items-center justify-between">
         {/* Left: Logo + Text */}
         <a href="/" className="flex items-center space-x-2">
+          <img src={logo} alt="shyline_logo" className="h-12 rounded-xl"/>
           <div className="leading-4">
-            <h1 className="text-accent font-bold text-lg">
-              Skyline HealthCare<sup>®</sup>
+            <h1 className="text-['#041836'] font-bold text-lg">
+              Skyline
             </h1>
+            <p className="text-sm text-text-quaternary">Healthcare Solutions Ltd</p>
           </div>
         </a>
 
@@ -274,11 +278,12 @@ const Header = () => {
           >
             <div className="flex justify-between items-center mb-6">
               <a href="/" className="flex items-center space-x-2">
+                <img src={logo} alt="shyline_logo" className="h-12"/>
                 <div className="leading-4">
                   <h1 className="text-accent font-bold text-lg">
-                    Skyline HealthCare<sup>®</sup>
+                    Skyline
                   </h1>
-                  <p className="text-sm text-gray-500">home care services</p>
+                  <p className="text-sm text-text-quaternary">Healthcare Solutions Ltd</p>
                 </div>
               </a>
               <button onClick={() => setIsMobileMenuOpen(false)}>
