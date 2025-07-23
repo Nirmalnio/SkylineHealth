@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import HomeCare from "./pages/HomeCare";
 import Header from './layouts/Header';
 import Footer from './components/Footer';
+import Funding from "./pages/Funding";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/home-care" element={<HomeCare />} />
+        <Route path="/funding" element={<Funding />} />
       </Routes>
       <Footer/>
     </Router>

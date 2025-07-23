@@ -3,11 +3,31 @@ import GoogleReviews from "../components/GoogleReviews";
 
 export default function About() {
   const values = [
-    { icon: "💛", title: "Compassion", desc: "We care deeply and treat every client with warmth and respect" },
-    { icon: "👂", title: "Listening", desc: "We take the time to understand each person's needs, wishes, and routines" },
-    { icon: "🧠", title: "Expertise", desc: "Our carers are trained, experienced, and always learning" },
-    { icon: "🤝", title: "Trust", desc: "We build strong bonds with families through transparency and consistency" },
-    { icon: "🏠", title: "Independence", desc: "We support clients in living their lives on their terms, at home" }
+    {
+      icon: "💛",
+      title: "Compassion",
+      desc: "We care deeply and treat every client with warmth and respect",
+    },
+    {
+      icon: "👂",
+      title: "Listening",
+      desc: "We take the time to understand each person's needs, wishes, and routines",
+    },
+    {
+      icon: "🧠",
+      title: "Expertise",
+      desc: "Our carers are trained, experienced, and always learning",
+    },
+    {
+      icon: "🤝",
+      title: "Trust",
+      desc: "We build strong bonds with families through transparency and consistency",
+    },
+    {
+      icon: "🏠",
+      title: "Independence",
+      desc: "We support clients in living their lives on their terms, at home",
+    },
   ];
 
   const whyChooseUs = [
@@ -15,7 +35,7 @@ export default function About() {
     "Consistent carers who often become like extended family",
     "Fully regulated by the Care Quality Commission (CQC)",
     "Serving only Devon, ensuring local focus and responsiveness",
-    "Genuinely bespoke care, built around the individual"
+    "Genuinely bespoke care, built around the individual",
   ];
 
   return (
@@ -31,10 +51,14 @@ export default function About() {
             <br />
             <span className="text-[#0066cc] italic font-serif">Healthcare</span>
             <br />
-            <span className="text-2xl md:text-3xl font-normal text-gray-700">Solutions Ltd</span>
+            <span className="text-2xl md:text-3xl font-normal text-gray-700">
+              Solutions Ltd
+            </span>
           </h1>
           <p className="text-gray-700 mt-6 text-base md:text-lg max-w-md leading-relaxed">
-            A small, family-run, CQC-registered live-in care provider. We help individuals remain in the comfort of their own home — surrounded by familiar routines, personal belongings, and the people they love.
+            A small, family-run, CQC-registered live-in care provider. We help
+            individuals remain in the comfort of their own home — surrounded by
+            familiar routines, personal belongings, and the people they love.
           </p>
           <button className="mt-8 px-8 py-4 bg-[#0066cc] hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Get in Touch Today →
@@ -64,7 +88,8 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">
               We Believe Care Should
               <br />
-              Feel Like <span className="text-[#0066cc] italic font-serif">Family</span>
+              Feel Like{" "}
+              <span className="text-[#0066cc] italic font-serif">Family</span>
             </h2>
           </div>
 
@@ -75,7 +100,9 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="text-gray-800 leading-relaxed">
-                To empower people to live independently in their own homes by delivering exceptional, personalised care that promotes dignity, choice, and quality of life.
+                To empower people to live independently in their own homes by
+                delivering exceptional, personalised care that promotes dignity,
+                choice, and quality of life.
               </p>
             </div>
 
@@ -85,7 +112,9 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-800 leading-relaxed">
-                To be Devon's most trusted live-in care provider, known for our heartfelt approach, family values, and commitment to truly person-centred care.
+                To be Devon's most trusted live-in care provider, known for our
+                heartfelt approach, family values, and commitment to truly
+                person-centred care.
               </p>
             </div>
           </div>
@@ -100,10 +129,13 @@ export default function About() {
               What Drives Us
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              Our <span className="text-[#0066cc] italic font-serif">Values</span>
+              Our{" "}
+              <span className="text-[#0066cc] italic font-serif">Values</span>
             </h2>
             <p className="text-gray-800 text-lg max-w-3xl mx-auto">
-              Our live-in carers offer more than just practical help — they bring companionship, trust, and peace of mind, forming lasting relationships with those they support.
+              Our live-in carers offer more than just practical help — they
+              bring companionship, trust, and peace of mind, forming lasting
+              relationships with those they support.
             </p>
           </div>
 
@@ -114,8 +146,12 @@ export default function About() {
                 className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
               >
                 <div className="text-4xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">{value.desc}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {value.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -145,10 +181,13 @@ export default function About() {
               </p>
               <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
                 Why Families Choose{" "}
-                <span className="text-[#0066cc] italic font-serif">Skyline</span>
+                <span className="text-[#0066cc] italic font-serif">
+                  Skyline
+                </span>
               </h2>
               <p className="text-gray-800 mb-8 leading-relaxed">
-                We're proud to keep our service small enough to stay personal — where every client matters and every relationship counts.
+                We're proud to keep our service small enough to stay personal —
+                where every client matters and every relationship counts.
               </p>
 
               <div className="space-y-4">
@@ -174,10 +213,14 @@ export default function About() {
               Our Service
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              Bespoke <span className="text-[#0066cc] italic font-serif">24/7</span> Care
+              Bespoke{" "}
+              <span className="text-[#0066cc] italic font-serif">24/7</span>{" "}
+              Care
             </h2>
             <p className="text-gray-800 text-lg max-w-3xl mx-auto">
-              We specialise in bespoke 24/7 care, helping individuals remain in the comfort of their own home with consistent, compassionate support.
+              We specialise in bespoke 24/7 care, helping individuals remain in
+              the comfort of their own home with consistent, compassionate
+              support.
             </p>
           </div>
 
@@ -189,7 +232,8 @@ export default function About() {
                 Stay at Home
               </h3>
               <p className="text-gray-700 text-center leading-relaxed">
-                Remain in familiar surroundings with personal belongings, routines, and cherished memories close by.
+                Remain in familiar surroundings with personal belongings,
+                routines, and cherished memories close by.
               </p>
             </div>
 
@@ -200,7 +244,8 @@ export default function About() {
                 Consistent Carers
               </h3>
               <p className="text-gray-700 text-center leading-relaxed">
-                Build meaningful relationships with dedicated carers who become like extended family members.
+                Build meaningful relationships with dedicated carers who become
+                like extended family members.
               </p>
             </div>
 
@@ -211,7 +256,8 @@ export default function About() {
                 CQC Registered
               </h3>
               <p className="text-gray-700 text-center leading-relaxed">
-                Fully regulated and compliant, giving you complete peace of mind about quality and safety.
+                Fully regulated and compliant, giving you complete peace of mind
+                about quality and safety.
               </p>
             </div>
           </div>
@@ -225,7 +271,8 @@ export default function About() {
             Ready to Talk About <span className="italic font-serif">Care?</span>
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            We'd love to hear from you. Get in touch today to arrange a free consultation.
+            We'd love to hear from you. Get in touch today to arrange a free
+            consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-white text-[#0066cc] rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
@@ -236,7 +283,8 @@ export default function About() {
             </button>
           </div>
           <p className="mt-8 text-blue-200 text-sm">
-            Serving families across South Devon with compassionate, professional care
+            Serving families across South Devon with compassionate, professional
+            care
           </p>
         </div>
       </section>

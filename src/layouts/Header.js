@@ -209,7 +209,7 @@ const Header = () => {
             </li>
 
             <li className="cursor-pointer">
-              <a href="/" className="text-gray-600 hover:text-gray-800">
+              <a href="/funding" className="text-gray-600 hover:text-gray-800">
                 Funding
               </a>
             </li>
@@ -333,7 +333,7 @@ const Header = () => {
                 </AnimatePresence>
               </div>
 
-              <a href="/resources" className="block font-semibold">
+              <a href="/funding" className="block font-semibold">
                 Funding
               </a>
               <a href="/abou-ust" className="block font-semibold">
