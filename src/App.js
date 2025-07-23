@@ -5,6 +5,7 @@ import HomeCare from "./pages/HomeCare";
 import Header from './layouts/Header';
 import Footer from './components/Footer';
 import Funding from "./pages/Funding";
+import DementiaCarePage from "./pages/Services/Dementia";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/home-care" element={<HomeCare />} />
         <Route path="/funding" element={<Funding />} />
+        <Route path="/services/dementia-care" element={<DementiaCarePage />} />
       </Routes>
       <Footer/>
     </Router>

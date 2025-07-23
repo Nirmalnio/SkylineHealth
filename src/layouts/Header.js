@@ -38,10 +38,12 @@ const Header = () => {
       description:
         "Compassionate support for those living with memory loss and confusion.",
       icon: <User className="w-5 h-5 text-[#52bed6]" />,
+      link: "/services/dementia-care",
     },
     {
       name: "Alzheimer's Care",
-      description: "Specialist care to maintain routine, safety, and comfort at home.",
+      description:
+        "Specialist care to maintain routine, safety, and comfort at home.",
       icon: <Brain className="w-5 h-5 text-[#52bed6]" />,
     },
     {
@@ -52,7 +54,8 @@ const Header = () => {
     },
     {
       name: "Continence Care",
-      description: "Discreet and dignified assistance with bladder and bowel care.",
+      description:
+        "Discreet and dignified assistance with bladder and bowel care.",
       icon: <Brain className="w-5 h-5 text-[#52bed6]" />,
     },
   ];
@@ -60,22 +63,26 @@ const Header = () => {
   const nursingCareServices = [
     {
       name: "Complex Care",
-      description: "Expert support for individuals with multiple or high-dependency conditions.",
+      description:
+        "Expert support for individuals with multiple or high-dependency conditions.",
       icon: <Shield className="w-5 h-5 text-[#52bed6]" />,
     },
     {
       name: "Respite Care",
-      description: "Short-term live-in care to give family carers a well-earned break.",
+      description:
+        "Short-term live-in care to give family carers a well-earned break.",
       icon: <Home className="w-5 h-5 text-[#52bed6]" />,
     },
     {
       name: "End of Life Care",
-      description: "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
+      description:
+        "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
       icon: <Pill className="w-5 h-5 text-[#52bed6]" />,
     },
     {
       name: "Challenging Behaviours Care",
-      description: "Skilled care for individuals with behavioural or emotional difficulties.",
+      description:
+        "Skilled care for individuals with behavioural or emotional difficulties.",
       icon: <Pill className="w-5 h-5 text-[#52bed6]" />,
     },
   ];
@@ -114,95 +121,100 @@ const Header = () => {
                     exit="exit"
                     variants={dropdownVariants}
                     className="absolute -left-80 top-10 mt-2 bg-white shadow-2xl rounded-lg border p-8 flex flex-col items-center space-x-12 z-50 w-[1300px]"
-                    style={{gap: '30px'}}
+                    style={{ gap: "30px" }}
                   >
-                    <div className="flex w-[100%]" style={{ gap: '20px' }}>
-                    {/* Home Care Services Column */}
-                    <div className="flex flex-col space-y-6 w-[25%]">
-                      <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
-                        Live In Care Services
-                      </h3>
-                      <div className="space-y-4">
-                        {homeCareServices.map((service, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
-                          >
-                            <div className="flex-shrink-0 mt-1">
-                              {service.icon}
+                    <div className="flex w-[100%]" style={{ gap: "20px" }}>
+                      {/* Home Care Services Column */}
+                      <div className="flex flex-col space-y-6 w-[25%]">
+                        <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
+                          Live In Care Services
+                        </h3>
+                        <div className="space-y-4">
+                          {homeCareServices.map((service, index) => (
+                            <div
+                              key={index}
+                              className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                            >
+                                <div className="flex-shrink-0 mt-1">
+                                  {service.icon}
+                                </div>
+                              <a href={service.link}>
+                                <div>
+                                  <h4 className="font-medium text-gray-800 text-sm">
+                                    {service.name}
+                                  </h4>
+                                  <p className="text-xs text-gray-600 mt-1">
+                                    {service.description}
+                                  </p>
+                                </div>
+                              </a>
                             </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800 text-sm">
-                                {service.name}
-                              </h4>
-                              <p className="text-xs text-gray-600 mt-1">
-                                {service.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
+                          ))}
+                        </div>
+                        {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
                         <MoreHorizontal className="w-4 h-4 mr-2" />
                         Show all Home Care Services
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </button> */}
-                    </div>
-
-                    {/* Nursing Care Services Column */}
-                    <div className="flex flex-col space-y-6 w-[25%]">
-                      <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
-                        Live In Care Services
-                      </h3>
-                      <div className="space-y-4">
-                        {nursingCareServices.map((service, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
-                          >
-                            <div className="flex-shrink-0 mt-1">
-                              {service.icon}
-                            </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800 text-sm">
-                                {service.name}
-                              </h4>
-                              <p className="text-xs text-gray-600 mt-1">
-                                {service.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
                       </div>
-                      {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
+
+                      {/* Nursing Care Services Column */}
+                      <div className="flex flex-col space-y-6 w-[25%]">
+                        <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
+                          Live In Care Services
+                        </h3>
+                        <div className="space-y-4">
+                          {nursingCareServices.map((service, index) => (
+                            <div
+                              key={index}
+                              className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                            >
+                              <div className="flex-shrink-0 mt-1">
+                                {service.icon}
+                              </div>
+                              <div>
+                                <h4 className="font-medium text-gray-800 text-sm">
+                                  {service.name}
+                                </h4>
+                                <p className="text-xs text-gray-600 mt-1">
+                                  {service.description}
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
                         <MoreHorizontal className="w-4 h-4 mr-2" />
                         Show all Nursing Care Services
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </button> */}
-                    </div>
+                      </div>
 
-                    {/* Right Side Image + Callout */}
-                    <div className="relative w-[50%] rounded-lg overflow-hidden shadow-md h-80">
-                      <img
-                        src="https://www.nurseregistry.com/wp-content/uploads/2023/11/how-to-choose-a-nurse-staffing-agency.jpg"
-                        alt="Staffing Support"
-                        className="object-cover w-full h-full"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                      <div className="absolute bottom-0 left-0 right-0 text-white p-6">
-                        <div className="bg-[#52bed6] rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                          <ArrowRight className="w-6 h-6 text-white" />
+                      {/* Right Side Image + Callout */}
+                      <div className="relative w-[50%] rounded-lg overflow-hidden shadow-md h-80">
+                        <img
+                          src="https://www.nurseregistry.com/wp-content/uploads/2023/11/how-to-choose-a-nurse-staffing-agency.jpg"
+                          alt="Staffing Support"
+                          className="object-cover w-full h-full"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 text-white p-6">
+                          <div className="bg-[#52bed6] rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <ArrowRight className="w-6 h-6 text-white" />
+                          </div>
+                          <h4 className="text-xl font-semibold mb-2">
+                            Staffing Support
+                          </h4>
+                          <p className="text-sm opacity-90 mb-4">
+                            We can help with staffing shortages
+                          </p>
                         </div>
-                        <h4 className="text-xl font-semibold mb-2">
-                          Staffing Support
-                        </h4>
-                        <p className="text-sm opacity-90 mb-4">
-                          We can help with staffing shortages
-                        </p>
                       </div>
                     </div>
-                    </div>
-                    <p>We are open 24/7, speak to our care team now <span className="text-[#52bed6]">+44 7805 694560</span></p>
+                    <p>
+                      We are open 24/7, speak to our care team now{" "}
+                      <span className="text-[#52bed6]">+44 7805 694560</span>
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>
