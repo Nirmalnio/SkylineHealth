@@ -214,7 +214,7 @@ const Header = () => {
               </a>
             </li>
             <li className="cursor-pointer">
-              <a href="/about" className="text-gray-600 hover:text-gray-800">
+              <a href="/about-us" className="text-gray-600 hover:text-gray-800">
                 About
               </a>
             </li>
@@ -336,7 +336,7 @@ const Header = () => {
               <a href="/resources" className="block font-semibold">
                 Funding
               </a>
-              <a href="/about" className="block font-semibold">
+              <a href="/abou-ust" className="block font-semibold">
                 About
               </a>
               <a href="/franchising" className="block font-semibold">
