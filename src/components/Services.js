@@ -36,18 +36,18 @@ const services = [
     image:
       "https://cdn.prod.website-files.com/67ab6f4970b90367b528f186/67c98eb3e88855a92201172e_Personal%20care%20%2B%20Help%20your%20loved%20ones%20with%20daily%20Thumbnail.webp",
   },
-  {
-    title: "Nursing Care",
-    desc: "Our licensed nurses can provide a full range of medical care in the comfort of your home.",
-    image:
-      "https://cdn.prod.website-files.com/67ab6f4970b90367b528f186/67c98e8ae88855a92200ef58_Respite%20Thumbnail.webp",
-  },
-  {
-    title: "Specialty Care",
-    desc: "We offer specialized care for those with Alzheimer's, dementia, and other conditions.",
-    image:
-      "https://cdn.prod.website-files.com/67ab6f4970b90367b528f186/67c98e70a613526a4b5951cf_Dementia%20Thumbnail.webp",
-  },
+  // {
+  //   title: "Nursing Care",
+  //   desc: "Our licensed nurses can provide a full range of medical care in the comfort of your home.",
+  //   image:
+  //     "https://cdn.prod.website-files.com/67ab6f4970b90367b528f186/67c98e8ae88855a92200ef58_Respite%20Thumbnail.webp",
+  // },
+  // {
+  //   title: "Specialty Care",
+  //   desc: "We offer specialized care for those with Alzheimer's, dementia, and other conditions.",
+  //   image:
+  //     "https://cdn.prod.website-files.com/67ab6f4970b90367b528f186/67c98e70a613526a4b5951cf_Dementia%20Thumbnail.webp",
+  // },
 ];
 
 const Services = () => {
