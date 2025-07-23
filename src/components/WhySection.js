@@ -6,28 +6,38 @@ import "swiper/css";
 const whyData = [
   {
     icon: "💬",
-    title: "24/7 Live Calling Support",
-    desc: "Speak with a real person in 30 seconds or less every time you call, 24 hours a day, 7 days a week.",
+    title: "24/7 Live Support",
+    desc: "Need help or have a question? Call us any time — day or night — and speak to a real person in under 30 seconds.",
   },
   {
     icon: "❤️",
-    title: "Comprehensive Care at Every Age",
-    desc: "Our services range from elder care to daily living support for people of all ages. Quality care, regardless of age.",
+    title: "Care for All Ages",
+    desc: "From elderly care to everyday support for younger adults, we provide comprehensive care across all age groups.",
   },
   {
     icon: "👩‍⚕️",
-    title: "Skilled Professionals",
-    desc: "Our caregivers are trained, certified, and background-checked to ensure the best service.",
+    title: "Trusted, Experienced Professionals",
+    desc: "All our Caregivers and Nurses are qualified, insured, and have at least 2 years of hands-on experience.",
   },
   {
     icon: "🌟",
-    title: "Personalized Care Plans",
-    desc: "We tailor every care plan to the unique needs and preferences of each client.",
+    title: "Quality Home Care with a Personal Touch",
+    desc: "At Skyline Healthcare Solutions Ltd, we deliver compassionate, professional live-in care tailored to your unique needs.",
   },
   {
     icon: "🧠",
-    title: "Memory Care Support",
-    desc: "Specialized support for seniors dealing with Alzheimer's or other memory-related conditions.",
+    title: "Your Perfect Caregiver Match",
+    desc: "We carefully match you with a trusted Caregiver based on your preferences, personality, and care requirements.",
+  },
+  {
+    icon: "🧠",
+    title: "Always On Time, Always Reliable",
+    desc: "Our advanced monitoring system tracks every visit to ensure punctual, smooth, and reliable care.",
+  },
+  {
+    icon: "🧠",
+    title: "Consistent Care from Familiar Faces",
+    desc: "We aim to assign the same Caregiver every time, so they understand your routine, needs, and even your favorite meals.",
   },
 ];
 
@@ -57,7 +67,7 @@ const WhySection = () => {
         {whyData.map((item, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`bg-white shadow-lg border-t-4 border-[#52bed6] rounded-2xl p-6 h-full`}
+              className={`bg-white shadow-lg border-t-4 border-[#52bed6] rounded-2xl p-6 h-[200px] mb-[20px]`}
             >
               <div className="text-2xl mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -68,13 +78,13 @@ const WhySection = () => {
 
         {/* CTA card */}
         <SwiperSlide>
-          <div className="bg-cyan-50 text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between h-full">
+          <div className="bg-cyan-50 text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between h-[200px]">
             <div>
               <p className="text-sm text-[#52bed6] font-medium mb-2">
-                Get back to living your life
+                Let us handle the care, so you can focus on living.
               </p>
               <h3 className="text-2xl font-semibold leading-snug mb-4">
-                Book a complimentary caring consultation
+                Book your free care consultation today.
               </h3>
             </div>
             <a

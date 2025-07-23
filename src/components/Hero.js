@@ -75,7 +75,7 @@ const Hero = () => {
         <h1 className="text-[40px] sm:text-[60px] lg:text-[80px] leading-tight">
           <span className="font-bold">
             Personalized
-            <br /> In-Home
+            <br /> Live-In
           </span>{" "}
           <span className="italic font-normal">
             Care <br /> Services
@@ -139,7 +139,7 @@ const Hero = () => {
         />
 
         <motion.div
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:bottom-8 lg:left-8 lg:translate-x-0 bg-white/90 p-6 rounded-2xl shadow-lg w-[90%] max-w-md backdrop-blur-sm"
+          className="hidden lg:block absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:bottom-8 lg:left-8 lg:translate-x-0 bg-white/90 p-6 rounded-2xl shadow-lg w-[90%] max-w-md backdrop-blur-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
