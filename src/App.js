@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import HomeCare from "./pages/HomeCare";
 import Header from './layouts/Header';
-import Footer from './components/Footer';
+import Footer from './layouts/Footer';
 import Funding from "./pages/Funding";
 import DementiaCarePage from "./pages/Services/Dementia";
 
