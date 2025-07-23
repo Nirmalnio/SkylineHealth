@@ -317,8 +317,11 @@ const mobileMenuVariants = {
   visible: { x: 0 },
   exit: { x: "100%" },
 };
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
@@ -536,24 +539,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// import LogoCircle from '../components/LogoCircle';
-
-// const Header = () => {
-//   return (
-//     <header className="bg-[#002b45] text-white relative z-0">
-//       <div className="flex justify-between items-center px-6 py-4">
-//         <LogoCircle />
-//         <nav className="space-x-6 text-lg font-semibold tracking-widest uppercase">
-//           <a href="#">Home</a>
-//           <a href="#">About Us</a>
-//           <a href="#">Funding</a>
-//           <a href="#">Services</a>
-//           <a href="#">Contact Us</a>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
