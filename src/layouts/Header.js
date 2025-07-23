@@ -317,8 +317,6 @@ const mobileMenuVariants = {
   visible: { x: 0 },
   exit: { x: "100%" },
 };
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
