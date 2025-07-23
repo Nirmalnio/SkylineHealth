@@ -57,7 +57,6 @@
 
 // export default Hero;
 
-
 import React from "react";
 import { motion } from "framer-motion";
 import hero from "../assets/Images/hero2.png";
@@ -84,11 +83,9 @@ const Hero = () => {
 
         <p className="text-base sm:text-lg lg:w-[70%]">
           We go beyond home care by matching you with your perfect Caregiver,
-          providing personalized care and offering 24/7 live support to give
-          you peace of mind.
+          providing personalized care and offering 24/7 live support to give you
+          peace of mind.
         </p>
-
-        
 
         {/* <p className="font-semibold">400+ locations in 4 countries</p> */}
 
