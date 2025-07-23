@@ -124,89 +124,84 @@ const Header = () => {
                     animate="visible"
                     exit="exit"
                     variants={dropdownVariants}
-                    className="absolute -left-80 top-10 mt-2 bg-white shadow-2xl rounded-lg border p-8 flex flex-col items-center space-x-12 z-50 w-[1300px]"
-                    style={{ gap: "30px" }}
+                    className="absolute -left-32 lg:-left-80 top-10 mt-2 bg-white shadow-2xl rounded-lg border p-4 lg:p-8 flex flex-col items-center z-50 w-screen max-w-xs sm:max-w-2xl lg:max-w-7xl lg:w-[1300px]"
+                    style={{ gap: "20px lg:30px" }}
                   >
-                    <div className="flex w-[100%]" style={{ gap: "20px" }}>
-                      {/* Home Care Services Column */}
-                      <div className="flex flex-col space-y-6 w-[25%]">
-                        <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
-                          Live In Care Services
-                        </h3>
-                        <div className="space-y-4">
-                          {homeCareServices.map((service, index) => (
-                            <div
-                              key={index}
-                              className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
-                            >
+                    <div className="flex flex-col lg:flex-row w-full gap-4 lg:gap-5">
+                      {/* Services Columns - Stack on mobile/tablet, side by side on desktop */}
+                      <div className="flex flex-col lg:flex-row lg:w-1/2 gap-4 lg:gap-5">
+                        {/* Home Care Services Column */}
+                        <div className="flex flex-col space-y-3 lg:space-y-6 w-full lg:w-1/2">
+                          <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
+                            Live In Care Services
+                          </h3>
+                          <div className="space-y-2 lg:space-y-4">
+                            {homeCareServices.map((service, index) => (
+                              <div
+                                key={index}
+                                className="flex items-start space-x-2 lg:space-x-3 p-2 lg:p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                              >
                                 <div className="flex-shrink-0 mt-1">
                                   {service.icon}
                                 </div>
-                              <a href={service.link}>
-                                <div>
-                                  <h4 className="font-medium text-gray-800 text-sm">
-                                    {service.name}
-                                  </h4>
-                                  <p className="text-xs text-gray-600 mt-1">
-                                    {service.description}
-                                  </p>
+                                <a href={service.link} className="flex-1">
+                                  <div>
+                                    <h4 className="font-medium text-gray-800 text-xs lg:text-sm">
+                                      {service.name}
+                                    </h4>
+                                    <p className="text-xs text-gray-600 mt-1 hidden lg:block">
+                                      {service.description}
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Nursing Care Services Column */}
+                        <div className="flex flex-col space-y-3 lg:space-y-6 w-full lg:w-1/2">
+                          <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
+                            Specialized Care Services
+                          </h3>
+                          <div className="space-y-2 lg:space-y-4">
+                            {nursingCareServices.map((service, index) => (
+                              <div
+                                key={index}
+                                className="flex items-start space-x-2 lg:space-x-3 p-2 lg:p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                              >
+                                <div className="flex-shrink-0 mt-1">
+                                  {service.icon}
                                 </div>
-                              </a>
-                            </div>
-                          ))}
+                                <a href={service.link} className="flex-1">
+                                  <div>
+                                    <h4 className="font-medium text-gray-800 text-xs lg:text-sm">
+                                      {service.name}
+                                    </h4>
+                                    <p className="text-xs text-gray-600 mt-1 hidden lg:block">
+                                      {service.description}
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                        {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
-                        <MoreHorizontal className="w-4 h-4 mr-2" />
-                        Show all Home Care Services
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </button> */}
                       </div>
 
-                      {/* Nursing Care Services Column */}
-                      <div className="flex flex-col space-y-6 w-[25%]">
-                        <h3 className="font-semibold text-lg text-gray-800 border-b border-gray-100 pb-2">
-                          Live In Care Services
-                        </h3>
-                        <div className="space-y-4">
-                          {nursingCareServices.map((service, index) => (
-                            <div
-                              key={index}
-                              className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
-                            >
-                              <div className="flex-shrink-0 mt-1">
-                                {service.icon}
-                              </div>
-                              <div>
-                                <h4 className="font-medium text-gray-800 text-sm">
-                                  {service.name}
-                                </h4>
-                                <p className="text-xs text-gray-600 mt-1">
-                                  {service.description}
-                                </p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                        {/* <button className="flex items-center text-[#52bed6] hover:text-[#52bed6] text-sm font-medium mt-4">
-                        <MoreHorizontal className="w-4 h-4 mr-2" />
-                        Show all Nursing Care Services
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </button> */}
-                      </div>
-
-                      {/* Right Side Image + Callout */}
-                      <div className="relative w-[50%] rounded-lg overflow-hidden shadow-md h-80">
+                      {/* Right Side Image + Callout - Hidden on mobile/tablet, visible on desktop */}
+                      <div className="hidden lg:block relative lg:w-1/2 rounded-lg overflow-hidden shadow-md h-64 lg:h-80">
                         <img
                           src="https://www.nurseregistry.com/wp-content/uploads/2023/11/how-to-choose-a-nurse-staffing-agency.jpg"
                           alt="Staffing Support"
                           className="object-cover w-full h-full"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                        <div className="absolute bottom-0 left-0 right-0 text-white p-6">
-                          <div className="bg-[#52bed6] rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                            <ArrowRight className="w-6 h-6 text-white" />
+                        <div className="absolute bottom-0 left-0 right-0 text-white p-4 lg:p-6">
+                          <div className="bg-[#52bed6] rounded-full w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center mb-3 lg:mb-4">
+                            <ArrowRight className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                           </div>
-                          <h4 className="text-xl font-semibold mb-2">
+                          <h4 className="text-lg lg:text-xl font-semibold mb-2">
                             Staffing Support
                           </h4>
                           <p className="text-sm opacity-90 mb-4">

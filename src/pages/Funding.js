@@ -13,19 +13,22 @@ export default function Funding() {
       number: 1, 
       title: 'Check if you qualify for benefits',
       action: 'Check Eligibility',
-      color: 'bg-blue-500'
+      color: 'bg-blue-500',
+      link: 'https://benefitscheck.ageuk.org.uk/Home/Start/'
     },
     { 
       number: 2, 
       title: 'See if you\'re eligible for NHS Continuing Healthcare',
       action: 'Check Eligibility',
-      color: 'bg-green-500'
+      color: 'bg-green-500',
+      link: 'https://www.curamcare.com/blogs/nhs-chc-funding'
     },
     { 
       number: 3, 
       title: 'Apply for Local Authority Funding',
       action: 'Apply Now',
-      color: 'bg-purple-500'
+      color: 'bg-purple-500',
+      link: 'https://www.curamcare.com/blogs/local-authority-funding'
     }
   ];
 
@@ -115,9 +118,11 @@ export default function Funding() {
                 <div className="flex-grow">
                   <h3 className="font-semibold text-lg text-gray-900 mb-2">{step.title}</h3>
                 </div>
-                {/* <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+                <button className="bg-gray-900 w-[170px] text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+                  <a href={step.link}>
                   {step.action}
-                </button> */}
+                  </a>
+                </button>
               </div>
             ))}
           </div>
