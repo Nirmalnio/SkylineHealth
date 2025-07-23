@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import accredited from "../assets/Images/accredited.png";
 
 const Footer = () => {
   return (
@@ -27,7 +28,7 @@ const Footer = () => {
             <div className="text-[#52bed6] text-3xl font-bold mb-6">
               Skyline HealthCare
               <br />
-              Solutions
+              Solutions Ltd
             </div>
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">
               Reach out <br />
@@ -44,11 +45,11 @@ const Footer = () => {
                   107 Heron Way, Torquay, Devon, TQ2 7SU
                 </span>
               </div>
-              <button className="bg-[#52bed6] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#45a5bb] transition-colors">
+              {/* <button className="bg-[#52bed6] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#45a5bb] transition-colors">
                 <a href="https://maps.app.goo.gl/rwEFLfLfWKHi8Zu99?g_st=ic">
-                  Find a Location <span className="ml-2">→</span>
+                  Get Location <span className="ml-2">→</span>
                 </a>
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -91,10 +92,11 @@ const Footer = () => {
                   )
                 )}
               </div>
+              
             </div>
 
             {/* Map */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.1411976753093!2d-3.5586472!3d50.49432979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0f00058f47c7%3A0x54071a8e8caa7f11!2sSkyline%20Health%20Care%20Solutions%20Ltd!5e0!3m2!1sen!2sin!4v1753285372235!5m2!1sen!2sin"
                 width="100%"
@@ -104,19 +106,20 @@ const Footer = () => {
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
+            </div> */}
+            <img src={accredited} className="w-full h-[full] object-cover mt-6 rounded-lg shadow-md" alt="Accredited" />
           </div>
 
           {/* Column 3 - Socials */}
-          <div className="lg:col-span-4 flex flex-col items-center lg:items-end">
+          <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
             <div className="text-center lg:text-left">
-              <h3 className="text-[#52bed6] font-bold text-lg mb-6">Socials</h3>
+              <h3 className="text-[#52bed6] font-bold text-lg mb-6">Connect with Us</h3>
               <div className="flex gap-4 justify-center lg:justify-end">
                 {[
                   { Icon: FaFacebook, href: "#" },
                   { Icon: FaInstagram, href: "#" },
-                  { Icon: FaYoutube, href: "#" },
-                  { Icon: FaLinkedin, href: "#" },
+                  // { Icon: FaYoutube, href: "#" },
+                  // { Icon: FaLinkedin, href: "#" },
                 ].map(({ Icon, href }, idx) => (
                   <a
                     key={idx}
@@ -128,6 +131,17 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
+            </div>
+            <div className="mt-8 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.1411976753093!2d-3.5586472!3d50.49432979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0f00058f47c7%3A0x54071a8e8caa7f11!2sSkyline%20Health%20Care%20Solutions%20Ltd!5e0!3m2!1sen!2sin!4v1753285372235!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                className="rounded-xl shadow-md border-2 border-gray-200"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
