@@ -7,6 +7,10 @@ const Footer = () => {
     <footer className="bg-[#52bed6] text-white pt-20">
       {/* Top CTA Section */}
       <div className="flex items-center w-full flex-col justify-center mb-10 gap-y-5">
+        <h2 className="text-[42px] text-center font-bold">
+          Re-Discover Independence
+          <br /> in Your <span className="italic">Own Home</span>.
+        </h2>
         <p className="text-lg font-semibold">
           Book a complimentary caring consult
         </p>
