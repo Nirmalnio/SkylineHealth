@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import accredited from "../assets/Images/accredited.png";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,12 +13,12 @@ const Footer = () => {
           Re-Discover Independence
           <br /> in Your <span className="italic">Own Home</span>.
         </h2>
-        <p className="text-lg font-semibold">
+        {/* <p className="text-lg font-semibold">
           Book a complimentary caring consult
         </p>
         <button className="bg-cyan-50 text-accent text-lg font-bold px-8 py-3 rounded-full hover:bg-white transition-colors">
           Contact Us
-        </button>
+        </button> */}
       </div>
 
       {/* Main Footer Content */}
@@ -41,15 +42,34 @@ const Footer = () => {
             <div className="mt-6">
               <p className="mb-3 font-bold text-lg text-accent">Location</p>
               <div className="mb-4">
+                <MapPin className="text-[#52bed6] inline-block mr-2" />
                 <span className="font-semibold text-gray-700">
                   107 Heron Way, Torquay, Devon, TQ2 7SU
                 </span>
               </div>
-              <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition-colors">
+              {/* <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition-colors">
                 <a href="https://maps.app.goo.gl/rwEFLfLfWKHi8Zu99?g_st=ic">
                   Get Location <span className="ml-2">→</span>
                 </a>
               </button> */}
+              <div className="flex gap-3">
+                <Mail className="text-[#52bed6]" />{" "}
+                <a
+                  href="mailto:skylinehealthcaresolutions@outlook.com"
+                  className="font-semibold text-gray-700"
+                >
+                  skylinehealthcaresolutions@outlook.com
+                </a>
+              </div>
+              <div className="flex gap-3 mt-4">
+                <Phone className="text-[#52bed6]" />
+                <a
+                  href="tel:+447805694560"
+                  className="font-semibold text-gray-700"
+                >
+                  +44 7805 694560
+                </a>
+              </div>
             </div>
           </div>
 
@@ -92,7 +112,6 @@ const Footer = () => {
                   )
                 )}
               </div>
-              
             </div>
 
             {/* Map */}
@@ -107,7 +126,11 @@ const Footer = () => {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div> */}
-            <img src={accredited} className="w-full h-[full] object-cover mt-6 rounded-lg shadow-md" alt="Accredited" />
+            <img
+              src={accredited}
+              className="w-full h-[full] object-cover mt-6 rounded-lg"
+              alt="Accredited"
+            />
           </div>
 
           {/* Column 3 - Socials */}
