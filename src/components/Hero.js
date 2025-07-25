@@ -134,68 +134,6 @@ const Hero = () => {
           alt="hero"
           className="rounded-xl w-full h-[350px] sm:h-[500px] lg:h-[650px] object-cover"
         />
-
-        <motion.div
-          className="hidden lg:block absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:bottom-8 lg:left-8 lg:translate-x-0 bg-white/90 p-6 rounded-2xl shadow-lg w-[90%] max-w-md backdrop-blur-sm"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          {/* Header */}
-          <div className="flex items-center gap-2 text-primary-dark font-medium mb-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            We’re open 24/7
-          </div>
-
-          {/* Heading */}
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
-            Where do you <i className="font-normal">need care?</i>
-          </h2>
-
-          {/* Input */}
-          <div className="flex bg-white rounded-full overflow-hidden border border-gray-200 mb-3">
-            <input
-              type="text"
-              placeholder="Postcode/Town/Street"
-              className="flex-grow px-4 py-2 text-sm text-gray-700 outline-none"
-            />
-            <button className="bg-primary hover:bg-primary-dark text-white px-6 flex items-center justify-center text-sm font-semibold rounded-r-full">
-              Find <span className="ml-2">➔</span>
-            </button>
-          </div>
-
-          {/* Location Button */}
-          <button className="w-full flex items-center justify-center gap-2 text-primary-dark font-medium border border-primary rounded-full py-2 hover:bg-primary-light transition">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 12m-9 0a9 9 0 1118 0 9 9 0 01-18 0zm0 0l9 0m0 0l0-9m0 0l0 18"
-              />
-            </svg>
-            Use Current Location
-          </button>
-        </motion.div>
       </motion.div>
     </div>
   );

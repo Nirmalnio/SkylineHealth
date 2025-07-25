@@ -47,18 +47,21 @@ const Header = () => {
       description:
         "Specialist care to maintain routine, safety, and comfort at home.",
       icon: <Brain className="w-5 h-5 text-accent" />,
+      link: "/services/alzheimers-care",
     },
     {
       name: "Parkinson’s Care",
       description:
         "Helping clients manage mobility, medication, and daily tasks.",
       icon: <Heart className="w-5 h-5 text-accent" />,
+      link: "/services/parkinsons-care",
     },
     {
       name: "Continence Care",
       description:
         "Discreet and dignified assistance with bladder and bowel care.",
       icon: <Brain className="w-5 h-5 text-accent" />,
+      link: "/services/continence-care",
     },
   ];
 
@@ -68,24 +71,28 @@ const Header = () => {
       description:
         "Expert support for individuals with multiple or high-dependency conditions.",
       icon: <Shield className="w-5 h-5 text-accent" />,
+      link: "/services/complex-care",
     },
     {
       name: "Respite Care",
       description:
         "Short-term live-in care to give family carers a well-earned break.",
       icon: <Home className="w-5 h-5 text-accent" />,
+      link: "/services/respite-care",
     },
     {
       name: "End of Life Care",
       description:
         "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
       icon: <Pill className="w-5 h-5 text-accent" />,
+      link: "/services/end-of-life-care",
     },
     {
       name: "Challenging Behaviours Care",
       description:
         "Skilled care for individuals with behavioural or emotional difficulties.",
       icon: <Pill className="w-5 h-5 text-accent" />,
+      link: "/services/challenging-behaviours-care",
     },
   ];
 
@@ -308,6 +315,10 @@ const Header = () => {
                           Live In Care Services
                         </h4>
                         {homeCareServices.map((service, index) => (
+                          <a
+                            key={index}
+                            href={service.link}
+                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800">
                           <div
                             key={index}
                             className="flex items-center space-x-3 text-sm text-gray-600"
@@ -315,8 +326,13 @@ const Header = () => {
                             {service.icon}
                             <span>{service.name}</span>
                           </div>
+                          </a>
                         ))}
                         {nursingCareServices.map((service, index) => (
+                          <a
+                            key={index}
+                            href={service.link}
+                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800">
                           <div
                             key={index}
                             className="flex items-center space-x-3 text-sm text-gray-600"
@@ -324,6 +340,7 @@ const Header = () => {
                             {service.icon}
                             <span>{service.name}</span>
                           </div>
+                          </a>
                         ))}
                       </div>
                       {/* <div className="space-y-4 mt-6">
