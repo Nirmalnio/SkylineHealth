@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 
 const steps = [
   {
@@ -7,7 +7,7 @@ const steps = [
     title: "Instant Connection",
     desc: "Your call will be answered by a real person day or night. Contact us at any time to arrange a complimentary Caring Consultation™. We listen carefully to your needs—whether you require elder care, personal assistance, or support during recovery—to understand how we can make your life better.",
     image: "/step-1.png",
-    color: "#99235c", // primary-dark blue
+    color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
   {
@@ -15,7 +15,7 @@ const steps = [
     title: "Getting to Know You",
     desc: "A Care Designer will meet with you—either virtually or in person—to assess your individual needs and preferences before creating a bespoke Care Plan just for you. We'll then match you with the ideal perfect carer, chosen for their skills, their compassion, and a personality we believe you'll truly appreciate.",
     image: "/step-2.png",
-    color: "#99235c", // primary-dark blue
+    color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
   {
@@ -23,13 +23,53 @@ const steps = [
     title: "First Visit",
     desc: "We strive to send the same carer for every visit, so you can build a genuine relationship with your perfect match from day one. Our team will remain in regular contact—monitoring your care and making adjustments as needed throughout your care journey.",
     image: "/step-3.png",
-    color: "#99235c", // primary-dark blue
+    color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
 ];
 
 const CareSteps = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const stepRefs = useRef([]);
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { margin: "-20% 0px -20% 0px" });
+
+  // Auto-scroll functionality
+  // useEffect(() => {
+  //   if (!isInView) return;
+
+  //   const interval = setInterval(() => {
+  //     setActiveStep((prev) => (prev + 1) % steps.length);
+  //   }, 3000); // Change step every 3 seconds
+
+  //   return () => clearInterval(interval);
+  // }, [isInView]);
+
+  // Scroll-based activation
+  useEffect(() => {
+    const observers = stepRefs.current.map((ref, index) => {
+      if (!ref) return null;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveStep(index);
+          }
+        },
+        {
+          threshold: 0.6,
+          rootMargin: "-20% 0px -20% 0px"
+        }
+      );
+
+      observer.observe(ref);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach(observer => observer?.disconnect());
+    };
+  }, []);
 
   const stepVariants = {
     inactive: {
@@ -141,8 +181,13 @@ const CareSteps = () => {
     },
   };
 
+
+
   return (
-    <section className="bg-gradient-to-br from-cyan-light to-blue-50 py-16 px-4 md:px-12 rounded-t-[3rem] overflow-hidden">
+    <section 
+      ref={sectionRef}
+      className="bg-gradient-to-br from-cyan-light to-blue-50 py-16 px-4 md:px-12 rounded-t-[3rem] overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -175,6 +220,8 @@ const CareSteps = () => {
           </motion.h2>
         </motion.div>
 
+
+
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left: Step List */}
           <div className="relative">
@@ -196,7 +243,7 @@ const CareSteps = () => {
               />
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#1e40af" />
+                  <stop offset="0%" stopColor="#99235c" />
                   <stop offset="50%" stopColor="#ec4899" />
                   <stop offset="100%" stopColor="#f472b6" />
                 </linearGradient>
@@ -207,6 +254,7 @@ const CareSteps = () => {
               {steps.map((step, index) => (
                 <motion.div
                   key={index}
+                  ref={el => stepRefs.current[index] = el}
                   className="relative cursor-pointer group"
                   onMouseEnter={() => setActiveStep(index)}
                   variants={stepVariants}
@@ -255,7 +303,7 @@ const CareSteps = () => {
                     <motion.p
                       className="italic font-medium text-lg mb-1"
                       style={{
-                        color: activeStep === index ? step.color : "#9CA3AF",
+                        color: activeStep === index ? "white" : "#9CA3AF",
                       }}
                       animate={{
                         scale: activeStep === index ? 1.05 : 1,
@@ -273,8 +321,9 @@ const CareSteps = () => {
                       {step.title}
                     </motion.h3>
                     <motion.p
-                      className="text-gray-700 text-sm text-white leading-relaxed"
+                      className="text-sm leading-relaxed"
                       animate={{
+                        color: activeStep === index ? "#fff" : "#6B7280",
                         opacity: activeStep === index ? 1 : 0.8,
                       }}
                     >
@@ -295,7 +344,7 @@ const CareSteps = () => {
             <div className="relative w-full max-w-md">
               {/* Background decoration */}
               <motion.div
-                className="absolute -inset-4 bg-gradient-to-r from-blue-800/20 to-pink-400/20 rounded-3xl blur-xl"
+                className="absolute -inset-4 bg-gradient-to-r from-[#99235C]/20 to-pink-400/20 rounded-3xl blur-xl"
                 animate={{
                   scale: [1, 1.05, 1],
                   rotate: [0, 1, 0],
