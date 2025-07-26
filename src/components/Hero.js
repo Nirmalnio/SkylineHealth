@@ -82,43 +82,44 @@ const Hero = () => {
         </h1>
 
         <p className="text-base sm:text-lg lg:w-[70%]">
-          We go beyond home care by matching you with your perfect Caregiver,
+          We go beyond home care by matching you with your perfect Carer,
           providing personalized care and offering 24/7 live support to give you
           peace of mind.
         </p>
 
         {/* <p className="font-semibold">400+ locations in 4 countries</p> */}
-
-        <div className="flex items-center gap-3 p-4 rounded-full bg-accent-light w-fit shadow-md">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
-            alt="Google Logo"
-            className="w-8 h-8"
-          />
-          <div className="flex flex-col items-start">
-            <div className="flex gap-1 text-primary-dark text-xl">
-              {Array(5)
-                .fill("★")
-                .map((star, i) => (
-                  <span key={i}>{star}</span>
-                ))}
+        <div className="flex items-center gap-3 p-4">
+          <div className="flex items-center justify-center gap-3 p-4 rounded-full bg-cyan-light w-[200px] h-[75px] shadow-md">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
+              alt="Google Logo"
+              className="w-8 h-8"
+            />
+            <div className="flex flex-col items-start">
+              <div className="flex gap-1 text-primary-dark text-xl">
+                {Array(5)
+                  .fill("★")
+                  .map((star, i) => (
+                    <span key={i}>{star}</span>
+                  ))}
+              </div>
+              <a
+                href="#"
+                className="text-primary-dark text-sm font-semibold underline hover:text-primary-darker"
+              >
+                Google Reviews
+              </a>
             </div>
-            <a
-              href="#"
-              className="text-primary-dark text-sm font-semibold underline hover:text-primary-darker"
-            >
-              Google Reviews
-            </a>
           </div>
-        </div>
 
-        <div className="flex gap-4 flex-wrap">
-          <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
-            Contact Us
-          </button>
-          {/* <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
+          <div className="flex gap-4 flex-wrap w-[200px] h-[75px]">
+            <button className="bg-accent w-full text-white py-2 px-6 rounded-full font-semibold">
+              Contact Us
+            </button>
+            {/* <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
             Careers
           </button> */}
+          </div>
         </div>
       </motion.div>
 

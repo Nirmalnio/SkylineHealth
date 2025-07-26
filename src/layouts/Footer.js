@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import accredited from "../assets/Images/accredited.png";
 import { Mail, MapPin, Phone } from "lucide-react";
+import logo from "../assets/Images/logo.png";
 
 const Footer = () => {
   return (
@@ -40,20 +41,20 @@ const Footer = () => {
             </p>
 
             <div className="mt-6">
-              <p className="mb-3 font-bold text-lg text-accent">Location</p>
-              <div className="mb-4">
+              <p className="mb-3 font-bold text-lg text-accent">Contact Us</p>
+              {/* <div className="mb-4">
                 <MapPin className="text-[#52bed6] inline-block mr-2" />
                 <span className="font-semibold text-gray-700">
                   107 Heron Way, Torquay, Devon, TQ2 7SU
                 </span>
-              </div>
+              </div> */}
               {/* <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition-colors">
                 <a href="https://maps.app.goo.gl/rwEFLfLfWKHi8Zu99?g_st=ic">
                   Get Location <span className="ml-2">→</span>
                 </a>
               </button> */}
               <div className="flex gap-3">
-                <Mail className="text-[#52bed6]" />{" "}
+                <Mail className="text-primary-dark" />{" "}
                 <a
                   href="mailto:skylinehealthcaresolutions@outlook.com"
                   className="font-semibold text-gray-700"
@@ -62,7 +63,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex gap-3 mt-4">
-                <Phone className="text-[#52bed6]" />
+                <Phone className="text-primary-dark" />
                 <a
                   href="tel:+447805694560"
                   className="font-semibold text-gray-700"
@@ -156,7 +157,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-8 w-full">
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.1411976753093!2d-3.5586472!3d50.49432979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0f00058f47c7%3A0x54071a8e8caa7f11!2sSkyline%20Health%20Care%20Solutions%20Ltd!5e0!3m2!1sen!2sin!4v1753285372235!5m2!1sen!2sin"
                 width="100%"
                 height="250"
@@ -164,7 +165,11 @@ const Footer = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              ></iframe> */}
+              <img
+                src={logo}
+                alt="Footer Image"
+                className="w-[full] h-[200px] object-cover"/>
             </div>
           </div>
         </div>

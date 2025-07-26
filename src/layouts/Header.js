@@ -139,9 +139,9 @@ const Header = () => {
                       <div className="flex flex-col lg:flex-row lg:w-1/2 gap-4 lg:gap-5">
                         {/* Home Care Services Column */}
                         <div className="flex flex-col space-y-3 lg:space-y-6 w-full lg:w-1/2">
-                          <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
+                          {/* <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
                             Live In Care Services
-                          </h3>
+                          </h3> */}
                           <div className="space-y-2 lg:space-y-4">
                             {homeCareServices.map((service, index) => (
                               <div
@@ -168,9 +168,9 @@ const Header = () => {
 
                         {/* Nursing Care Services Column */}
                         <div className="flex flex-col space-y-3 lg:space-y-6 w-full lg:w-1/2">
-                          <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
+                          {/* <h3 className="font-semibold text-base lg:text-lg text-gray-800 border-b border-gray-100 pb-2">
                             Specialized Care Services
-                          </h3>
+                          </h3> */}
                           <div className="space-y-2 lg:space-y-4">
                             {nursingCareServices.map((service, index) => (
                               <div

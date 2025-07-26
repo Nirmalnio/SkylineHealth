@@ -28,7 +28,7 @@ const GoogleReviews = () => {
         {/* Heading + Badge */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div>
-            <p className="text-pink-600 font-medium text-xl mb-2">Google Reviews</p>
+            <p className="text-primary-dark font-medium text-xl mb-2">Google Reviews</p>
             <h2 className="text-4xl font-black text-black leading-snug">
               Loved by Clients,<br />
               <em className="italic font-serif text-4xl">Trusted by Families</em>
@@ -37,8 +37,8 @@ const GoogleReviews = () => {
 
           <div className="bg-white rounded-full shadow-xl px-6 py-4 mt-6 md:mt-0 flex items-center gap-4">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png" alt="Google logo" className="w-8 h-8" />
-            <div className="text-pink-600 font-bold text-xl">★★★★★</div>
-            <a href="#reviews" className="text-pink-600 underline font-medium text-sm">Google Reviews</a>
+            <div className="text-primary-dark font-bold text-xl">★★★★★</div>
+            <a href="#reviews" className="text-primary-dark underline font-medium text-sm">Google Reviews</a>
           </div>
         </div>
 

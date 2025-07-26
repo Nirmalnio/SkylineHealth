@@ -1,30 +1,46 @@
 import React from "react";
+import { 
+  FaHeart, 
+  // FaEar, 
+  FaBrain, 
+  FaHandshake, 
+  FaHome,
+  FaBullseye,
+  FaEye,
+  FaPhone,
+  FaEnvelope,
+  FaStar,
+  FaUsers,
+  FaShieldAlt,
+  FaCheckCircle
+} from "react-icons/fa";
+import { FaEarListen } from "react-icons/fa6";
 import GoogleReviews from "../components/GoogleReviews";
 
 export default function About() {
   const values = [
     {
-      icon: "💛",
+      icon: FaHeart,
       title: "Compassion",
       desc: "We care deeply and treat every client with warmth and respect",
     },
     {
-      icon: "👂",
+      icon: FaEarListen,
       title: "Listening",
       desc: "We take the time to understand each person's needs, wishes, and routines",
     },
     {
-      icon: "🧠",
+      icon: FaBrain,
       title: "Expertise",
       desc: "Our carers are trained, experienced, and always learning",
     },
     {
-      icon: "🤝",
+      icon: FaHandshake,
       title: "Trust",
       desc: "We build strong bonds with families through transparency and consistency",
     },
     {
-      icon: "🏠",
+      icon: FaHome,
       title: "Independence",
       desc: "We support clients in living their lives on their terms, at home",
     },
@@ -34,7 +50,7 @@ export default function About() {
     "Small, family-run company focused on personal attention",
     "Consistent carers who often become like extended family",
     "Fully regulated by the Care Quality Commission (CQC)",
-    "Serving only Devon, ensuring local focus and responsiveness",
+    "Serving only torbay & devon, ensuring local focus and responsiveness",
     "Genuinely bespoke care, built around the individual",
   ];
 
@@ -44,7 +60,7 @@ export default function About() {
       <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-gradient-to-br from-blue-light to-cyan-light relative overflow-hidden">
         <div className="w-full md:w-1/2 text-center md:text-left z-10">
           <p className="text-brand-blue font-medium text-lg mb-4">
-            Bespoke 'Live In' Care in South Devon
+            Bespoke 'Live In' Care in South torbay & devon
           </p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-text-dark leading-tight mb-6">
             Skyline
@@ -96,7 +112,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl">
               <h3 className="text-2xl font-bold text-text-dark mb-4 flex items-center">
-                <span className="text-3xl mr-3">🎯</span>
+                <FaBullseye className="text-3xl mr-3 text-[#99235C]" />
                 Our Mission
               </h3>
               <p className="text-gray-800 leading-relaxed">
@@ -108,11 +124,11 @@ export default function About() {
 
             <div className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl">
               <h3 className="text-2xl font-bold text-text-dark mb-4 flex items-center">
-                <span className="text-3xl mr-3">👁️</span>
+                <FaEye className="text-3xl mr-3 text-[#99235C]" />
                 Our Vision
               </h3>
               <p className="text-gray-800 leading-relaxed">
-                To be Devon's most trusted live-in care provider, known for our
+                To be torbay & devon's most trusted live-in care provider, known for our
                 heartfelt approach, family values, and commitment to truly
                 person-centred care.
               </p>
@@ -140,20 +156,23 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((value, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
-              >
-                <div className="text-4xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-bold text-text-dark mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  {value.desc}
-                </p>
-              </div>
-            ))}
+            {values.map((value, idx) => {
+              const IconComponent = value.icon;
+              return (
+                <div
+                  key={idx}
+                  className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
+                >
+                  <IconComponent className="text-4xl mb-4 text-[#99235C]" />
+                  <h3 className="text-xl font-bold text-text-dark mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    {value.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -193,8 +212,8 @@ export default function About() {
               <div className="space-y-4">
                 {whyChooseUs.map((reason, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center mt-0.5">
-                      <span className="text-white text-sm">✓</span>
+                    <div className="flex-shrink-0 w-6 h-6 bg-[#99235C] rounded-full flex items-center justify-center mt-0.5">
+                      <FaCheckCircle className="text-white text-sm" />
                     </div>
                     <p className="text-gray-700 leading-relaxed">{reason}</p>
                   </div>
@@ -227,7 +246,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="text-5xl mb-4 text-center">🏠</div>
+              <FaHome className="text-5xl mb-4 text-[#99235C] mx-auto" />
               <h3 className="text-xl font-bold text-text-dark mb-4 text-center">
                 Stay at Home
               </h3>
@@ -239,7 +258,7 @@ export default function About() {
 
             {/* Card 2 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="text-5xl mb-4 text-center">👥</div>
+              <FaUsers className="text-5xl mb-4 text-[#99235C] mx-auto" />
               <h3 className="text-xl font-bold text-text-dark mb-4 text-center">
                 Consistent Carers
               </h3>
@@ -251,7 +270,7 @@ export default function About() {
 
             {/* Card 3 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
-              <div className="text-5xl mb-4 text-center">🌟</div>
+              <FaShieldAlt className="text-5xl mb-4 text-[#99235C] mx-auto" />
               <h3 className="text-xl font-bold text-text-dark mb-4 text-center">
                 CQC Registered
               </h3>
@@ -265,25 +284,27 @@ export default function About() {
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="bg-brand-blue py-20 px-6 md:px-16 text-white">
+      <section className="bg-[#99235C] py-20 px-6 md:px-16 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Ready to Talk About <span className="italic font-serif">Care?</span>
           </h2>
-          <p className="text-blue-lighter mb-8">
+          <p className="text-pink-200 mb-8">
             We'd love to hear from you. Get in touch today to arrange a free
             consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-brand-blue rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              📞 Call Us Today
+            <button className="px-8 py-4 bg-white text-[#99235C] rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2">
+              <FaPhone className="text-lg" />
+              Call Us Today
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-brand-blue transition-all">
-              💌 Request Consultation
+            <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-[#99235C] transition-all flex items-center justify-center gap-2">
+              <FaEnvelope className="text-lg" />
+              Request Consultation
             </button>
           </div>
-          <p className="mt-8 text-blue-200 text-sm">
-            Serving families across South Devon with compassionate, professional
+          <p className="mt-8 text-pink-200 text-sm">
+            Serving families across South torbay & devon with compassionate, professional
             care
           </p>
         </div>
