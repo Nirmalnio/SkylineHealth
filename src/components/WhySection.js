@@ -1,16 +1,19 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import { 
-  FaHeart, 
-  FaUserNurse, 
-  FaStar, 
-  FaBrain, 
-  FaClock, 
-  FaUsers 
+import { Autoplay, Navigation } from "swiper/modules";
+import {
+  FaHeart,
+  FaUserNurse,
+  FaStar,
+  FaBrain,
+  FaClock,
+  FaUsers,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import "swiper/css";
+import "swiper/css/navigation";
 
 const whyData = [
   {
@@ -58,8 +61,20 @@ const WhySection = () => {
     setActiveIndex(swiper.realIndex);
   };
 
+  const goNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   return (
-    <section className="py-16 px-4 bg-white overflow-visible">
+    <section className="py-16 px-4 bg-white overflow-visible relative">
       <h2 className="text-6xl text-center mb-10">
         <em className="italic text-gray-700">Why</em>{" "}
         <span className="text-black font-bold">Skyline HealthCare?</span>
@@ -67,12 +82,13 @@ const WhySection = () => {
 
       <Swiper
         ref={swiperRef}
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation]}
         spaceBetween={16}
         slidesPerView={1.1}
         centeredSlides={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         onSlideChange={handleSlideChange}
+        loop={true}
         breakpoints={{
           768: {
             slidesPerView: 2.2,
@@ -96,7 +112,9 @@ const WhySection = () => {
                 style={{
                   transformStyle: "preserve-3d",
                   filter:
-                    index === activeIndex ? "brightness(1.1)" : "brightness(0.8)",
+                    index === activeIndex
+                      ? "brightness(1.1)"
+                      : "brightness(0.8)",
                 }}
               >
                 <div className="text-2xl mb-4 text-[#99235C]">
@@ -142,6 +160,43 @@ const WhySection = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      {/* Navigation Buttons */}
+      <div className="flex justify-center items-center gap-4 mb-6 hidden md:flex">
+        <button
+          onClick={goPrev}
+          className="bg-[#99235C] hover:bg-[#7a1c49] text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#99235C]/50"
+          aria-label="Previous slide"
+        >
+          <FaChevronLeft className="w-5 h-5" />
+        </button>
+
+        <div className="flex gap-2">
+          {[...whyData, {}].map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                if (swiperRef.current && swiperRef.current.swiper) {
+                  swiperRef.current.swiper.slideTo(index);
+                }
+              }}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === activeIndex
+                  ? "bg-[#99235C] scale-125"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={goNext}
+          className="bg-[#99235C] hover:bg-[#7a1c49] text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#99235C]/50"
+          aria-label="Next slide"
+        >
+          <FaChevronRight className="w-5 h-5" />
+        </button>
+      </div>
 
       {/* Custom CSS for additional 3D effects */}
       <style jsx>{`

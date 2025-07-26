@@ -82,9 +82,9 @@ const Hero = () => {
         </h1>
 
         <p className="text-base sm:text-lg lg:w-[70%]">
-          We go beyond home care by matching you with your perfect Carer,
-          providing personalized care and offering 24/7 live support to give you
-          peace of mind.
+          We go beyond traditional home care by matching you with your ideal
+          Carer, providing personalised live-in care and offering 24/7 support,
+          giving you complete peace of mind.
         </p>
 
         {/* <p className="font-semibold">400+ locations in 4 countries</p> */}

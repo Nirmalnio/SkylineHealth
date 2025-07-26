@@ -1,9 +1,8 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import accredited from "../assets/Images/accredited.png";
-import { Mail, MapPin, Phone } from "lucide-react";
-import logo from "../assets/Images/logo.png";
+import { Mail, Phone } from "lucide-react";
+import logo from "../assets/Images/image.png";
 
 const Footer = () => {
   return (
@@ -22,158 +21,129 @@ const Footer = () => {
         </button> */}
       </div>
 
-      {/* Main Footer Content */}
       <div className="bg-white rounded-t-3xl px-8 py-12 max-w-screen-xl mx-auto text-black">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Column 1 - Company Info */}
-          <div className="lg:col-span-4">
-            <div className="text-accent text-3xl font-bold mb-6">
-              Skyline HealthCare
-              <br />
-              Solutions Ltd
-            </div>
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-              Reach out <br />
-              to our <em className="italic font-normal">Care Team.</em>
-            </h2>
-            <p className="mb-6 text-gray-600">
-              We're available to support you every day of the year.
-            </p>
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-12">
+        {/* Column 1 - Company Info */}
+        <div className="flex-1 max-w-sm">
+          <div className="text-primary-dark text-3xl font-bold mb-6">
+            Skyline HealthCare
+            <br />
+            Solutions Ltd
+          </div>
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+            Reach out <br />
+            to our <em className="italic font-normal">Care Team.</em>
+          </h2>
+          <p className="mb-6 text-gray-600">
+            We're available to support you every day of the year.
+          </p>
 
-            <div className="mt-6">
-              <p className="mb-3 font-bold text-lg text-accent">Contact Us</p>
-              {/* <div className="mb-4">
-                <MapPin className="text-[#52bed6] inline-block mr-2" />
-                <span className="font-semibold text-gray-700">
-                  107 Heron Way, Torquay, Devon, TQ2 7SU
-                </span>
-              </div> */}
-              {/* <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition-colors">
-                <a href="https://maps.app.goo.gl/rwEFLfLfWKHi8Zu99?g_st=ic">
-                  Get Location <span className="ml-2">→</span>
-                </a>
-              </button> */}
-              <div className="flex gap-3">
-                <Mail className="text-primary-dark" />{" "}
-                <a
-                  href="mailto:skylinehealthcaresolutions@outlook.com"
-                  className="font-semibold text-gray-700"
-                >
-                  skylinehealthcaresolutions@outlook.com
-                </a>
-              </div>
-              <div className="flex gap-3 mt-4">
-                <Phone className="text-primary-dark" />
-                <a
-                  href="tel:+447805694560"
-                  className="font-semibold text-gray-700"
-                >
-                  +44 7805 694560
-                </a>
-              </div>
+          <div className="mt-6">
+            <p className="mb-3 font-bold text-lg text-primary-dark">Contact Us</p>
+            <div className="flex gap-3 mb-4">
+              <Mail className="text-primary-dark mt-1" />
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+                className="font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                skylinehealthcaresolutions@outlook.com
+              </a>
+            </div>
+            <div className="flex gap-3">
+              <Phone className="text-primary-dark mt-1" />
+              <a
+                href="tel:+447805694560"
+                className="font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                +44 7805 694560
+              </a>
             </div>
           </div>
+        </div>
 
-          {/* Column 2 - Services */}
-          <div className="lg:col-span-4">
-            <h3 className="text-accent font-bold text-lg mb-6">Services</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
-              <div className="space-y-3">
-                {[
-                  "Alzheimers",
-                  "Challenging Behaviour",
-                  "Complex",
-                  "Continence",
-                ].map((service) => (
+        {/* Column 2 - Services */}
+        <div className="flex-1 max-w-sm">
+          <h3 className="text-primary-dark font-bold text-lg mb-6 text-center">Services</h3>
+          <div className="flex flex-col sm:flex-row gap-x-8 gap-y-3">
+            <div className="space-y-3 flex-1">
+              {[
+                "Alzheimers",
+                "Challenging Behaviour",
+                "Complex",
+                "Continence",
+              ].map((service) => (
+                <div key={service}>
+                  <a
+                    href={`/services/${service
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    className="text-gray-700 hover:text-blue-600 transition-colors text-sm block"
+                  >
+                    {service} Live-in Care
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div className="space-y-3 flex-1">
+              {["Dementia", "End Of Life", "Parkinsons", "Respite"].map(
+                (service) => (
                   <div key={service}>
                     <a
                       href={`/services/${service
                         .toLowerCase()
                         .replace(/\s+/g, "-")}`}
-                      className="text-gray-700 hover:text-accent transition-colors text-sm"
+                      className="text-gray-700 hover:text-blue-600 transition-colors text-sm block"
                     >
                       {service} Live-in Care
                     </a>
                   </div>
-                ))}
-              </div>
-              <div className="space-y-3">
-                {["Dementia", "End Of Life", "Parkinsons", "Respite"].map(
-                  (service) => (
-                    <div key={service}>
-                      <a
-                        href={`/services/${service
-                          .toLowerCase()
-                          .replace(/\s+/g, "-")}`}
-                        className="text-gray-700 hover:text-accent transition-colors text-sm"
-                      >
-                        {service} Live-in Care
-                      </a>
-                    </div>
-                  )
-                )}
-              </div>
+                )
+              )}
             </div>
-
-            {/* Map */}
-            {/* <div className="mt-8">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.1411976753093!2d-3.5586472!3d50.49432979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0f00058f47c7%3A0x54071a8e8caa7f11!2sSkyline%20Health%20Care%20Solutions%20Ltd!5e0!3m2!1sen!2sin!4v1753285372235!5m2!1sen!2sin"
-                width="100%"
-                height="150"
-                className="rounded-xl shadow-md border-2 border-gray-200"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div> */}
-            <img
-              src={accredited}
-              className="w-full h-[full] object-cover mt-6 rounded-lg"
-              alt="Accredited"
-            />
           </div>
 
-          {/* Column 3 - Socials */}
-          <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
-            <div className="text-center lg:text-left">
-              <h3 className="text-accent font-bold text-lg mb-6">Socials</h3>
-              <div className="flex gap-4 justify-center lg:justify-end">
-                {[
-                  { Icon: FaFacebook, href: "#" },
-                  { Icon: FaInstagram, href: "#" },
-                  // { Icon: FaYoutube, href: "#" },
-                  // { Icon: FaLinkedin, href: "#" },
-                ].map(({ Icon, href }, idx) => (
-                  <a
-                    key={idx}
-                    href={href}
-                    className="border-2 border-accent rounded-full p-3 hover:bg-accent hover:text-white transition-all duration-300 transform hover:scale-110"
-                    aria-label={`Social link ${idx + 1}`}
-                  >
-                    <Icon className="text-accent hover:text-white w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div className="mt-8 w-full">
-              {/* <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.1411976753093!2d-3.5586472!3d50.49432979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0f00058f47c7%3A0x54071a8e8caa7f11!2sSkyline%20Health%20Care%20Solutions%20Ltd!5e0!3m2!1sen!2sin!4v1753285372235!5m2!1sen!2sin"
-                width="100%"
-                height="250"
-                className="rounded-xl shadow-md border-2 border-gray-200"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe> */}
+          {/* Accredited Image Placeholder */}
+          <div className="mt-6">
+            <div className="w-full h-32 rounded-lg flex items-center justify-center">
               <img
-                src={logo}
-                alt="Footer Image"
-                className="w-[full] h-[200px] object-cover"/>
+                src={accredited}
+                alt="Accredited Badge"
+                className="h-full w-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Column 3 - Socials */}
+        <div className="flex-1 max-w-sm flex flex-col items-center lg:items-start">
+          <div className="text-center w-full">
+            <h3 className="text-primary-dark font-bold text-lg mb-6">Socials</h3>
+            <div className="flex gap-4 justify-center lg:justify-center mb-8">
+              {[
+                { Icon: FaFacebook, href: "#", label: "Facebook" },
+                { Icon: FaInstagram, href: "#", label: "Instagram" },
+              ].map(({ Icon, href, label }, idx) => (
+                <a
+                  key={idx}
+                  href={href}
+                  className="border-2 border-primary-dark rounded-full p-3 hover:bg-primary-dark hover:text-white transition-all duration-300 transform hover:scale-110"
+                  aria-label={label}
+                >
+                  <Icon className="w-5 h-5 text-primary-dark" />
+                </a>
+              ))}
+            </div>
+          </div>
+          
+          {/* Logo Image Placeholder */}
+          <div className="w-full">
+            <div className="w-full h-[250px] bg-gray-200 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="Skyline HealthCare Logo" className="h-full w-full rounded-3xl" />
             </div>
           </div>
         </div>
       </div>
+    </div>
 
       {/* Bottom Copyright */}
       <div className="text-sm flex flex-col sm:flex-row justify-between items-center px-8 py-6 border-t border-white/20 max-w-screen-xl mx-auto">
