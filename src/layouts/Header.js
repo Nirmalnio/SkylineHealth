@@ -36,18 +36,25 @@ const Header = () => {
 
   const homeCareServices = [
     {
-      name: "Dementia Care",
+      name: "Dementia & Alzheimer Care",
       description:
         "Compassionate support for those living with memory loss and confusion.",
       icon: <User className="w-5 h-5 text-accent" />,
       link: "/services/dementia-care",
     },
-    {
-      name: "Alzheimer's Care",
+    // {
+    //   name: "Alzheimer's Care",
+    //   description:
+    //     "Specialist care to maintain routine, safety, and comfort at home.",
+    //   icon: <Brain className="w-5 h-5 text-accent" />,
+    //   link: "/services/alzheimers-care",
+    // },
+        {
+      name: "Challenging Behaviours Care",
       description:
-        "Specialist care to maintain routine, safety, and comfort at home.",
-      icon: <Brain className="w-5 h-5 text-accent" />,
-      link: "/services/alzheimers-care",
+        "Skilled care for individuals with behavioural or emotional difficulties.",
+      icon: <Pill className="w-5 h-5 text-accent" />,
+      link: "/services/challenging-behaviours-care",
     },
     {
       name: "Parkinson’s Care",
@@ -86,13 +93,6 @@ const Header = () => {
         "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
       icon: <Pill className="w-5 h-5 text-accent" />,
       link: "/services/end-of-life-care",
-    },
-    {
-      name: "Challenging Behaviours Care",
-      description:
-        "Skilled care for individuals with behavioural or emotional difficulties.",
-      icon: <Pill className="w-5 h-5 text-accent" />,
-      link: "/services/challenging-behaviours-care",
     },
   ];
 
