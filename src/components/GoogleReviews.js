@@ -36,9 +36,9 @@ const GoogleReviews = () => {
           </div>
 
           <div className="bg-white rounded-full shadow-xl px-6 py-4 mt-6 md:mt-0 flex items-center gap-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png" alt="Google logo" className="w-8 h-8" />
-            <div className="text-primary-dark font-bold text-xl">★★★★★</div>
-            <a href="#reviews" className="text-primary-dark underline font-medium text-sm">Google Reviews</a>
+            <img src="https://cdn-ffpdp.nitrocdn.com/LDRWzZhUeQOnljIFGJJJVlSQeVkKgmfR/assets/images/optimized/rev-96959b3/www.luketom.com/wp-content/uploads/2022/10/google-web.gif" alt="Google logo" className="w-[250px] h-[100px]" />
+            {/* <div className="text-primary-dark font-bold text-xl">★★★★★</div>
+            <a href="#reviews" className="text-primary-dark underline font-medium text-sm">Google Reviews</a> */}
           </div>
         </div>
 
