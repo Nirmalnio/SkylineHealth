@@ -5,7 +5,7 @@ const steps = [
   {
     step: 1,
     title: "Instant Connection",
-    desc: "Your call will be answered by a real person day or night. Contact us at any time to arrange a complimentary Caring Consultation™. We listen carefully to your needs—whether you require elder care, personal assistance, or support during recovery—to understand how we can make your life better.",
+    desc: "Your call will be answered by a real person day or night. Contact us at any time to arrange a complimentary Caring Consultation. We listen carefully to your needs whether you require elder care, personal assistance, or support during recovery to understand how we can make your life better.",
     image: "/step-1.png",
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
@@ -13,7 +13,7 @@ const steps = [
   {
     step: 2,
     title: "Getting to Know You",
-    desc: "A Care Designer will meet with you—either virtually or in person—to assess your individual needs and preferences before creating a bespoke Care Plan just for you. We'll then match you with the ideal perfect carer, chosen for their skills, their compassion, and a personality we believe you'll truly appreciate.",
+    desc: "A Care Designer will meet with you either virtually or in person to assess your individual needs and preferences before creating a bespoke Care Plan just for you. We'll then match you with the ideal perfect carer, chosen for their skills, their compassion, and a personality we believe you'll truly appreciate.",
     image: "/step-2.png",
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
@@ -21,7 +21,7 @@ const steps = [
   {
     step: 3,
     title: "First Visit",
-    desc: "We strive to send the same carer for every visit, so you can build a genuine relationship with your perfect match from day one. Our team will remain in regular contact—monitoring your care and making adjustments as needed throughout your care journey.",
+    desc: "We strive to send the same carer for every visit, so you can build a genuine relationship with your perfect match from day one. Our team will remain in regular contact monitoring your care and making adjustments as needed throughout your care journey.",
     image: "/step-3.png",
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",

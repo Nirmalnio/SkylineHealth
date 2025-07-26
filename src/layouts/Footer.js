@@ -136,9 +136,9 @@ const Footer = () => {
           </div>
           
           {/* Logo Image Placeholder */}
-          <div className="w-full">
-            <div className="w-full h-[250px] bg-gray-200 rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Skyline HealthCare Logo" className="h-full w-full rounded-3xl" />
+          <div className="w-full items-center flex justify-center">
+            <div className="w-[250px] h-[250px] flex items-center justify-center">
+              <img src={logo} alt="Skyline HealthCare Logo" className="h-full w-full rounded-full border-[8px] border-primary-dark" />
             </div>
           </div>
         </div>

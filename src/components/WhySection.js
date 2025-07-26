@@ -19,7 +19,7 @@ const whyData = [
   {
     icon: BiSupport,
     title: "24/7 Live Support",
-    desc: "Need help or have a question? Call us any time — day or night — and speak to a real person in under 30 seconds.",
+    desc: "Need help or have a question? Call us any time, day or night, and speak to a real person. We’re here to support you whenever you need us.",
   },
   {
     icon: FaHeart,
@@ -29,11 +29,11 @@ const whyData = [
   {
     icon: FaUserNurse,
     title: "Trusted, Experienced Professionals",
-    desc: "All our Carers and Nurses are qualified, insured, and have at least 2 years of hands-on experience.",
+    desc: "All our Carers are qualified, insured, and have at least 2 years of hands-on experience.",
   },
   {
     icon: FaStar,
-    title: "Quality Home Care with a Personal Touch",
+    title: "Quality Care with a Personal Touch",
     desc: "At Skyline Healthcare Solutions Ltd, we deliver compassionate, professional live-in care tailored to your unique needs.",
   },
   {
@@ -44,7 +44,7 @@ const whyData = [
   {
     icon: FaClock,
     title: "Always Reliable",
-    desc: "Our advanced monitoring system tracks every visit to ensure punctual, smooth, and reliable care.",
+    desc: "Our monitoring process keeps track of every visit to ensure punctual, smooth, and reliable care.",
   },
   {
     icon: FaUsers,
