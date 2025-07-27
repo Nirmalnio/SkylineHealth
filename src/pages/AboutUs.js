@@ -1,9 +1,9 @@
 import React from "react";
-import { 
-  FaHeart, 
-  // FaEar, 
-  FaBrain, 
-  FaHandshake, 
+import {
+  FaHeart,
+  // FaEar,
+  FaBrain,
+  FaHandshake,
   FaHome,
   FaBullseye,
   FaEye,
@@ -12,9 +12,10 @@ import {
   FaStar,
   FaUsers,
   FaShieldAlt,
-  FaCheckCircle
+  FaCheckCircle,
 } from "react-icons/fa";
 import { FaEarListen } from "react-icons/fa6";
+import { AiOutlineSafety } from "react-icons/ai";
 import GoogleReviews from "../components/GoogleReviews";
 
 export default function About() {
@@ -44,14 +45,19 @@ export default function About() {
       title: "Independence",
       desc: "We support clients in living their lives on their terms, at home",
     },
+    {
+      icon: AiOutlineSafety,
+      title: "Safety",
+      desc: "We prioritize the safety and well-being of clients by following best practices, risk assessments, and proactive care planning.",
+    },
   ];
 
   const whyChooseUs = [
     "Small, family-run company focused on personal attention",
     "Consistent carers who often become like extended family",
     "Fully regulated by the Care Quality Commission (CQC)",
-    "Serving only torbay & devon, ensuring local focus and responsiveness",
-    "Genuinely bespoke care, built around the individual",
+    "Serving only Torbay and Devon, ensuring local focus and responsiveness",
+    "Genuinely bespoke care built around the individual based on their needs and preferences",
   ];
 
   return (
@@ -60,12 +66,14 @@ export default function About() {
       <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-gradient-to-br from-blue-light to-cyan-light relative overflow-hidden">
         <div className="w-full md:w-1/2 text-center md:text-left z-10">
           <p className="text-brand-blue font-medium text-lg mb-4">
-            Bespoke 'Live In' Care in South torbay & devon
+            Bespoke 'Live-in' Care in South Torbay & Devon
           </p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-text-dark leading-tight mb-6">
             Skyline
             <br />
-            <span className="text-brand-blue italic font-serif">Healthcare</span>
+            <span className="text-brand-blue italic font-serif">
+              Healthcare
+            </span>
             <br />
             <span className="text-2xl md:text-3xl font-normal text-text-secondary">
               Solutions Ltd
@@ -73,7 +81,7 @@ export default function About() {
           </h1>
           <p className="text-text-secondary mt-6 text-base md:text-lg max-w-md leading-relaxed">
             A small, family-run, CQC-registered live-in care provider. We help
-            individuals remain in the comfort of their own home — surrounded by
+            individuals remain in the comfort of their own homes—surrounded by
             familiar routines, personal belongings, and the people they love.
           </p>
           <button className="mt-8 px-8 py-4 bg-brand-blue hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
@@ -128,9 +136,9 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-800 leading-relaxed">
-                To be torbay & devon's most trusted live-in care provider, known for our
-                heartfelt approach, family values, and commitment to truly
-                person-centred care.
+                To be Torbay and Devon’s most trusted live-in care provider,
+                known for our heartfelt approach, family values, and commitment
+                to truly person-centred care.
               </p>
             </div>
           </div>
@@ -294,18 +302,25 @@ export default function About() {
             consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-[#99235C] rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2">
-              <FaPhone className="text-lg" />
-              Call Us Today
+            <button className="px-8 py-4 bg-white text-[#99235C] rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
+                <FaPhone className="text-lg" />
+                Call Us Today
+              </a>
             </button>
             <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-[#99235C] transition-all flex items-center justify-center gap-2">
-              <FaEnvelope className="text-lg" />
-              Request Consultation
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaEnvelope className="text-lg" />
+                Enquire Now
+              </a>
             </button>
           </div>
-          <p className="mt-8 text-pink-200 text-sm">
-            Serving families across South torbay & devon with compassionate, professional
-            care
+        <p className="mt-8 text-pink-200 text-sm">
+            Serving families across South Torbay & Devon with compassionate,
+            professional care
           </p>
         </div>
       </section>

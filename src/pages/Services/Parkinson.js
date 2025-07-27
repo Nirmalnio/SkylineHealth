@@ -18,6 +18,7 @@ import {
   User,
   RotateCcw,
 } from "lucide-react";
+import { GrUserExpert } from "react-icons/gr";
 
 export default function ParkinsonCarePage() {
   const parkinsonSymptoms = [
@@ -64,7 +65,7 @@ export default function ParkinsonCarePage() {
 
   const trustPoints = [
     "24/7 live-in care in the comfort of your own home",
-    "A consistent, dedicated caregiver for familiarity and trust",
+    "A consistent, dedicated carer for familiarity and trust",
     "Clear communication with families every step of the way",
     "Local expertise serving families across Devon & Torbay",
     "Specialist training in Parkinson's disease care",
@@ -142,7 +143,7 @@ export default function ParkinsonCarePage() {
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
               <Users className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Consistent Care</h3>
-              <p className="text-gray-700">One dedicated caregiver who becomes familiar with needs, preferences, and daily routines.</p>
+              <p className="text-gray-700">One dedicated carer who becomes familiar with needs, preferences, and daily routines.</p>
             </div>
           </div>
         </div>
@@ -185,11 +186,11 @@ export default function ParkinsonCarePage() {
                 <h3 className="text-2xl font-bold mb-4">Progressive Support</h3>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
                   Parkinson's affects everyone differently and progresses at different rates. 
-                  Our caregivers are specially trained to adapt their support as symptoms change, 
+                  Our carers are specially trained to adapt their support as symptoms change, 
                   ensuring consistent, compassionate care throughout the journey.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                  <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                  <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm font-medium">Expert care team with specialized Parkinson's training</p>
                 </div>
               </div>
@@ -206,7 +207,7 @@ export default function ParkinsonCarePage() {
               How We Support <span className="text-[#99235C]">Our Clients</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our trained caregivers provide comprehensive support tailored 
+              Our trained carers provide comprehensive support tailored 
               to the unique needs of those living with Parkinson's disease
             </p>
           </div>
@@ -233,9 +234,9 @@ export default function ParkinsonCarePage() {
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-[#FFDFDF] to-pink-100 p-8 rounded-2xl max-w-4xl mx-auto">
               <Heart className="w-12 h-12 text-[#99235C] mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">One Dedicated Caregiver</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">One Dedicated Carer</h3>
               <p className="text-lg text-gray-700">
-                For consistency and trust, we provide one dedicated caregiver who becomes familiar 
+                For consistency and trust, we provide one dedicated carer who becomes familiar 
                 with your loved one's needs, preferences, and daily routines — creating a sense of 
                 security and reducing anxiety that can come with unfamiliar faces.
               </p>
@@ -253,7 +254,7 @@ export default function ParkinsonCarePage() {
               <span className="text-[#FFDFDF]">Trust</span>
             </h2>
             <p className="text-xl opacity-90 max-w-4xl mx-auto">
-              All our live-in caregivers are trained in Parkinson's care, understanding 
+              All our live-in carers are trained in Parkinson's care, understanding 
               how to respond to changing symptoms with patience, compassion, and expertise. We prioritise:
             </p>
           </div>
@@ -329,11 +330,17 @@ export default function ParkinsonCarePage() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#99235C] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#7a1c49] transition-all transform hover:scale-105 shadow-lg">
-              <Phone className="w-5 h-5 inline mr-2" />
-              Contact Us Today
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
+                <Phone className="w-5 h-5 inline mr-2" />
+                Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-[#99235C] text-[#99235C] px-10 py-4 rounded-full font-semibold hover:bg-[#99235C] hover:text-white transition-all">
-              Request Free Consultation
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
+                Request Free Consultation
+              </a>
             </button>
           </div>
 

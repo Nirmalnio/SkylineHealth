@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Clock, Shield, Home, Users, CheckCircle, Phone, MapPin, Star, User, UserCheck, Flower2, Stethoscope, MessageCircle, Utensils, Moon, HandHeart } from 'lucide-react';
+import { GrUserExpert } from 'react-icons/gr';
 
 export default function EndOfLifeCarePage() {
   const endOfLifeSupport = [
@@ -43,7 +44,7 @@ export default function EndOfLifeCarePage() {
   ];
 
   const whyChooseUs = [
-    "Experienced end-of-life caregivers trained in palliative support",
+    "Experienced end-of-life carers trained in palliative support",
     "24/7 live-in care tailored to your loved one's needs",
     "One-to-one attention in the comfort of home",
     "Compassionate, local care delivered across Devon"
@@ -70,10 +71,10 @@ export default function EndOfLifeCarePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-[#FFDFDF] text-[#99235C] px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-200 transition-all transform hover:scale-105 shadow-lg">
-                  Get Compassionate Support
+                  Get Free Consultation
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#99235C] transition-all">
-                  Learn More
+                  Learn More About Our Care
                 </button>
               </div>
             </div>
@@ -164,7 +165,7 @@ export default function EndOfLifeCarePage() {
                   surrounded by the comfort of home and the people they love most.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                  <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                  <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm font-medium">
                     We work alongside district nurses, GPs, and hospices to ensure seamless care 
                     that meets both medical and emotional needs.
@@ -212,7 +213,7 @@ export default function EndOfLifeCarePage() {
               <Flower2 className="w-12 h-12 text-[#99235C] mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">A Calm, Peaceful Environment</h3>
               <p className="text-lg text-gray-700">
-                We understand the profound importance of this time. Our caregivers provide not just medical support, 
+                We understand the profound importance of this time. Our carers provide not just medical support, 
                 but create an atmosphere of tranquility, love, and respect for passing with complete dignity.
               </p>
             </div>
@@ -303,11 +304,17 @@ export default function EndOfLifeCarePage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#99235C] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#7a1c49] transition-all transform hover:scale-105 shadow-lg">
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
               <Phone className="w-5 h-5 inline mr-2" />
               Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-[#99235C] text-[#99235C] px-10 py-4 rounded-full font-semibold hover:bg-[#99235C] hover:text-white transition-all">
-              Request Information
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
+                Request Information
+              </a>
             </button>
           </div>
 

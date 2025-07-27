@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Clock, Shield, Home, Users, CheckCircle, Phone, MapPin, Star, User, UserCheck, Brain, Activity, MessageCircle, Eye, Puzzle, HandHeart, Target } from 'lucide-react';
+import { GrUserExpert } from 'react-icons/gr';
 
 export default function ChallengingBehaviourCarePage() {
   const challengingBehaviours = [
@@ -70,10 +71,10 @@ export default function ChallengingBehaviourCarePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-[#FFDFDF] text-[#99235C] px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-200 transition-all transform hover:scale-105 shadow-lg">
-                  Get Expert Support
+                  Get Free Consultation
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition-all">
-                  Learn More
+                  Learn More About Our Care
                 </button>
               </div>
             </div>
@@ -99,7 +100,7 @@ export default function ChallengingBehaviourCarePage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               At <strong className="text-primary-dark">Skyline Healthcare Solutions Ltd</strong>, we understand that challenging behaviours can be difficult for both
-              individuals and families to manage. Our trained live-in caregivers provide calm, consistent support to help
+              individuals and families to manage. Our trained live-in carers provide calm, consistent support to help
               clients feel safe, understood, and respected — right at home in Devon.
             </p>
           </div>
@@ -118,7 +119,7 @@ export default function ChallengingBehaviourCarePage() {
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
               <Brain className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Specialist Training</h3>
-              <p className="text-gray-700">Caregivers trained specifically in managing complex behaviours with expertise.</p>
+              <p className="text-gray-700">Carers trained specifically in managing complex behaviours with expertise.</p>
             </div>
           </div>
         </div>
@@ -160,7 +161,7 @@ export default function ChallengingBehaviourCarePage() {
                   behind the behaviour.
                 </p>
                 <div className="mt-6 bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm opacity-90">
                     We believe every behaviour is a form of communication, and our role is to understand 
                     what your loved one is trying to tell us.
@@ -256,12 +257,18 @@ export default function ChallengingBehaviourCarePage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
+            <button className="bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all transform hover:scale-105 shadow-lg">
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
               <Phone className="w-5 h-5 inline mr-2" />
               Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-primary-dark text-primary-dark px-10 py-4 rounded-full font-semibold hover:bg-primary-dark hover:text-white transition-all">
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
               Request Information
+              </a>
             </button>
           </div>
 

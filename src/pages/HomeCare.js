@@ -49,7 +49,7 @@ const HomeCare = () => {
               you, including medical support when necessary.
             </p>
             <button className="bg-[#52bed6] hover:bg-[#2f6c7a] text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition">
-              Find a Caregiver near you
+              Find a Carer near you
             </button>
           </motion.div>
 

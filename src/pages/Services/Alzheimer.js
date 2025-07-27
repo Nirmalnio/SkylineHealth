@@ -53,12 +53,12 @@ export default function AlzheimerCarePage() {
     {
       icon: Shield,
       title: "Family Respite",
-      description: "Respite for family caregivers who need a break",
+      description: "Respite for family carer who need a break",
     },
   ];
 
   const trustPoints = [
-    "A consistent caregiver for familiarity and trust",
+    "A consistent carer for familiarity and trust",
     "A safe and comfortable home setting",
     "Clear communication with families every step of the way",
   ];

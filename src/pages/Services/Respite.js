@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Clock, Shield, Home, Users, CheckCircle, Phone, MapPin, Star, User, UserCheck, Calendar, Coffee, Sunrise, RefreshCw, Utensils, Activity } from 'lucide-react';
+import { GrUserExpert } from 'react-icons/gr';
 
 export default function RespiteCarePage() {
   const whenToConsider = [
@@ -43,7 +44,7 @@ export default function RespiteCarePage() {
   ];
 
   const whyChooseUs = [
-    "Experienced live-in caregivers, even for complex needs",
+    "Experienced live-in carers, even for complex needs",
     "Flexible care plans — from a few days to several weeks",
     "Fully local service across all areas of Devon",
     "Peace of mind for you and comfort for your loved one"
@@ -73,7 +74,7 @@ export default function RespiteCarePage() {
                   Get Free Consultation
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#99235C] transition-all">
-                  Learn More
+                  Learn More About Our Care
                 </button>
               </div>
             </div>
@@ -100,8 +101,8 @@ export default function RespiteCarePage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               At{" "}
-              <strong className="text-[#99235C]">Skyline Healthcare Solutions Ltd</strong>, we offer short-term live-in care to give family caregivers 
-              time to rest, recharge, or attend to personal needs. Whether it's a few days or a few weeks, 
+              <strong className="text-[#99235C]">Skyline Healthcare Solutions Ltd</strong>, we offer short-term live-in care to give family carers
+              time to rest, recharge, or attend to personal needs. Whether it's a few days or a few weeks,
               we'll step in with the same level of warmth, respect, and professionalism.
             </p>
           </div>
@@ -115,7 +116,7 @@ export default function RespiteCarePage() {
             <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border-l-4 border-purple-600">
               <Shield className="w-12 h-12 text-purple-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Peace of Mind</h3>
-              <p className="text-gray-700">Professional, experienced caregivers provide the same high standard of care you would.</p>
+              <p className="text-gray-700">Professional, experienced carers provide the same high standard of care you would.</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
               <Home className="w-12 h-12 text-blue-600 mb-4" />
@@ -164,7 +165,7 @@ export default function RespiteCarePage() {
                   holiday, our respite care adapts to your schedule and requirements.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                  <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                  <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm font-medium">From short-term emergency support to planned respite breaks, we're here when you need us most.</p>
                 </div>
               </div>
@@ -303,11 +304,17 @@ export default function RespiteCarePage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#99235C] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#7a1c49] transition-all transform hover:scale-105 shadow-lg">
-              <Phone className="w-5 h-5 inline mr-2" />
-              Contact Us Today
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
+                <Phone className="w-5 h-5 inline mr-2" />
+                Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-[#99235C] text-[#99235C] px-10 py-4 rounded-full font-semibold hover:bg-[#99235C] hover:text-white transition-all">
-              Request Information
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
+                Request Information
+              </a>
             </button>
           </div>
 

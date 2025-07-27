@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Clock, Shield, Home, Users, CheckCircle, Phone, MapPin, Star, User, UserCheck, Droplets, Activity, Brain, Eye } from 'lucide-react';
+import { GrUserExpert } from 'react-icons/gr';
 
 export default function ContinenceCarePage() {
   const conditions = [
@@ -45,7 +46,7 @@ export default function ContinenceCarePage() {
 
   const trustPoints = [
     "24/7 live-in care in the comfort of your own home",
-    "A consistent, dedicated caregiver for familiarity and trust",
+    "A consistent, dedicated carer for familiarity and trust",
     "Clear communication with families every step of the way",
     "Local expertise serving families across Devon & Torbay",
     "Specialist training in continence and personal care",
@@ -123,7 +124,7 @@ export default function ContinenceCarePage() {
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
               <Users className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Support</h3>
-              <p className="text-gray-700">Round-the-clock assistance whenever you need it, with one dedicated caregiver for consistency.</p>
+              <p className="text-gray-700">Round-the-clock assistance whenever you need it, with one dedicated carer for consistency.</p>
             </div>
           </div>
         </div>
@@ -139,7 +140,7 @@ export default function ContinenceCarePage() {
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Continence care supports people who experience various bladder and bowel conditions. 
-                Our trained caregivers provide compassionate, professional support for these sensitive needs 
+                Our trained carers provide compassionate, professional support for these sensitive needs 
                 with complete understanding and respect.
               </p>
               
@@ -165,11 +166,11 @@ export default function ContinenceCarePage() {
                 <UserCheck className="w-16 h-16 mb-6 text-white/80" />
                 <h3 className="text-2xl font-bold mb-4">Professional Care Team</h3>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
-                  Our caregivers are specially trained in continence care, providing the expertise 
+                  Our carers are specially trained in continence care, providing the expertise
                   and sensitivity needed to support you with dignity and professionalism throughout your care journey.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                  <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                  <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm font-medium">Expert care team with specialized continence training</p>
                 </div>
               </div>
@@ -215,9 +216,9 @@ export default function ContinenceCarePage() {
               <Heart className="w-12 h-12 text-[#99235C] mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Emotional Support & Privacy Assurance</h3>
               <p className="text-lg text-gray-700">
-                We understand the emotional challenges that come with continence issues. Our caregivers 
-                provide not just physical support, but emotional reassurance and complete privacy protection 
-                with one dedicated caregiver who becomes familiar with your needs and preferences.
+                We understand the emotional challenges that come with continence issues. Our carers
+                provide not just physical support, but emotional reassurance and complete privacy protection
+                with one dedicated carer who becomes familiar with your needs and preferences.
               </p>
             </div>
           </div>
@@ -233,7 +234,7 @@ export default function ContinenceCarePage() {
               <span className="text-[#FFDFDF]">Trust</span>
             </h2>
             <p className="text-xl opacity-90 max-w-4xl mx-auto">
-              All our live-in caregivers are trained in continence care, understanding 
+              All our live-in carers are trained in continence care, understanding 
               how to provide sensitive support with patience, compassion, and expertise. We prioritise:
             </p>
           </div>
@@ -309,11 +310,17 @@ export default function ContinenceCarePage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#99235C] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#7a1c49] transition-all transform hover:scale-105 shadow-lg">
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
               <Phone className="w-5 h-5 inline mr-2" />
               Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-[#99235C] text-[#99235C] px-10 py-4 rounded-full font-semibold hover:bg-[#99235C] hover:text-white transition-all">
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
               Request Free Consultation
+              </a>
             </button>
           </div>
 

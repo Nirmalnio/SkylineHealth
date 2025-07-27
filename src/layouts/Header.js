@@ -15,8 +15,9 @@ import {
   MapPin,
   ChevronDown,
 } from "lucide-react";
+import { MdOutlineMail } from "react-icons/md";
 
-import logo from "../assets/Images/image.png"
+import logo from "../assets/Images/image.png";
 
 const dropdownVariants = {
   hidden: { opacity: 0, y: -10 },
@@ -49,7 +50,7 @@ const Header = () => {
     //   icon: <Brain className="w-5 h-5 text-accent" />,
     //   link: "/services/alzheimers-care",
     // },
-        {
+    {
       name: "Challenging Behaviours Care",
       description:
         "Skilled care for individuals with behavioural or emotional difficulties.",
@@ -101,12 +102,12 @@ const Header = () => {
       <div className="flex items-center justify-between">
         {/* Left: Logo + Text */}
         <a href="/" className="flex items-center space-x-2">
-          <img src={logo} alt="shyline_logo" className="h-12 rounded-xl"/>
+          <img src={logo} alt="shyline_logo" className="h-12 rounded-xl" />
           <div className="leading-4">
-            <h1 className="text-['#041836'] font-bold text-lg">
-              Skyline
-            </h1>
-            <p className="text-sm text-text-quaternary">Healthcare Solutions Ltd</p>
+            <h1 className="text-['#041836'] font-bold text-lg">Skyline</h1>
+            <p className="text-sm text-text-quaternary">
+              Healthcare Solutions Ltd
+            </p>
           </div>
         </a>
 
@@ -141,7 +142,7 @@ const Header = () => {
                     animate="visible"
                     exit="exit"
                     variants={dropdownVariants}
-                    className="absolute -left-32 lg:left-[-400px] top-10 mt-2 bg-white shadow-2xl rounded-lg border p-4 lg:p-8 flex flex-col items-center z-50 w-screen max-w-xs sm:max-w-2xl lg:max-w-7xl lg:w-[1300px]"
+                    className="absolute -left-32 lg:left-[-600px] top-10 mt-2 bg-white shadow-2xl rounded-lg border p-4 lg:p-8 flex flex-col items-center z-50 w-screen max-w-xs sm:max-w-2xl lg:max-w-7xl lg:w-[1300px]"
                     style={{ gap: "20px lg:30px" }}
                   >
                     <div className="flex flex-col lg:flex-row w-full gap-4 lg:gap-5">
@@ -242,7 +243,10 @@ const Header = () => {
               </a>
             </li>
             <li className="cursor-pointer">
-              <a href="/contact-us" className="text-gray-600 hover:text-gray-800">
+              <a
+                href="/contact-us"
+                className="text-gray-600 hover:text-gray-800"
+              >
                 Contact Us
               </a>
             </li>
@@ -259,13 +263,18 @@ const Header = () => {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex space-x-4">
-          <button className="flex items-center px-4 py-2 rounded-full border border-accent text-accent font-medium hover:bg-pink-50 transition">
-            <MapPin className="w-4 h-4 mr-2" />
-            Find a Location
+          <button className="px-4 py-2 rounded-full border border-accent text-accent font-medium hover:bg-pink-50 transition">
+            <a
+              href="mailto:skylinehealthcaresolutions@outlook.com"
+              className="flex items-center justify-center"
+            >
+              <MdOutlineMail className="w-4 h-4 mr-2" />
+              Enquire Now
+            </a>
           </button>
           <button className="flex items-center px-4 py-2 rounded-full bg-accent text-white font-medium hover:bg-accent transition">
             {/* <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div> */}
-            Call +44 7805 694560
+            <a href="tel:+447805694560">Call +44 7805 694560</a>
           </button>
         </div>
 
@@ -290,12 +299,12 @@ const Header = () => {
           >
             <div className="flex justify-between items-center mb-6">
               <a href="/" className="flex items-center space-x-2">
-                <img src={logo} alt="shyline_logo" className="h-12"/>
+                <img src={logo} alt="shyline_logo" className="h-12" />
                 <div className="leading-4">
-                  <h1 className="text-accent font-bold text-lg">
-                    Skyline
-                  </h1>
-                  <p className="text-sm text-text-quaternary">Healthcare Solutions Ltd</p>
+                  <h1 className="text-accent font-bold text-lg">Skyline</h1>
+                  <p className="text-sm text-text-quaternary">
+                    Healthcare Solutions Ltd
+                  </p>
                 </div>
               </a>
               <button onClick={() => setIsMobileMenuOpen(false)}>
@@ -328,28 +337,30 @@ const Header = () => {
                           <a
                             key={index}
                             href={service.link}
-                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800">
-                          <div
-                            key={index}
-                            className="flex items-center space-x-3 text-sm text-gray-600"
+                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800"
                           >
-                            {service.icon}
-                            <span>{service.name}</span>
-                          </div>
+                            <div
+                              key={index}
+                              className="flex items-center space-x-3 text-sm text-gray-600"
+                            >
+                              {service.icon}
+                              <span>{service.name}</span>
+                            </div>
                           </a>
                         ))}
                         {nursingCareServices.map((service, index) => (
                           <a
                             key={index}
                             href={service.link}
-                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800">
-                          <div
-                            key={index}
-                            className="flex items-center space-x-3 text-sm text-gray-600"
+                            className="flex items-center space-x-3 text-sm text-gray-600 hover:text-gray-800"
                           >
-                            {service.icon}
-                            <span>{service.name}</span>
-                          </div>
+                            <div
+                              key={index}
+                              className="flex items-center space-x-3 text-sm text-gray-600"
+                            >
+                              {service.icon}
+                              <span>{service.name}</span>
+                            </div>
                           </a>
                         ))}
                       </div>

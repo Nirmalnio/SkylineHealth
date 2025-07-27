@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Clock, Shield, Home, Users, CheckCircle, Phone, MapPin, Star, User, UserCheck, Brain, Activity, Stethoscope, Utensils, MessageCircle, Eye } from 'lucide-react';
+import { GrUserExpert } from 'react-icons/gr';
 
 export default function ComplexCarePage() {
   const conditions = [
@@ -47,7 +48,7 @@ export default function ComplexCarePage() {
 
   const trustPoints = [
     "24/7 live-in care in the comfort of your own home",
-    "A consistent, dedicated caregiver for familiarity and trust",
+    "A consistent, dedicated carer for familiarity and trust",
     "Clear communication with families every step of the way",
     "Local expertise serving families across Devon & Torbay",
     "Specialist training in complex care conditions and needs",
@@ -106,7 +107,7 @@ export default function ComplexCarePage() {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               At{" "}
               <strong className="text-[#99235C]">Skyline Healthcare Solutions Ltd</strong>, we offer 24/7 live-in care for clients with complex health or behavioural needs. 
-              Our experienced caregivers deliver tailored support that promotes safety, comfort, and independence — 
+              Our experienced carers deliver tailored support that promotes safety, comfort, and independence — 
               all in the familiar setting of your own home.
             </p>
           </div>
@@ -124,7 +125,7 @@ export default function ComplexCarePage() {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
               <Users className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Caregivers</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Carers</h3>
               <p className="text-gray-700">Highly trained professionals with expertise in complex care conditions and specialized medical needs.</p>
             </div>
           </div>
@@ -167,11 +168,11 @@ export default function ComplexCarePage() {
                 <Stethoscope className="w-16 h-16 mb-6 text-white/80" />
                 <h3 className="text-2xl font-bold mb-4">Medical Expertise</h3>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
-                  Our caregivers receive specialized training for complex conditions, working closely with 
+                  Our carers receive specialized training for complex conditions, working closely with 
                   healthcare providers to ensure the highest standard of medical and personal care throughout the journey.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                  <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
+                  <GrUserExpert className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm font-medium">Expert care team with specialized complex care training</p>
                 </div>
               </div>
@@ -219,7 +220,7 @@ export default function ComplexCarePage() {
               <p className="text-lg text-gray-700">
                 We understand that complex care needs require not just medical expertise, but also empathy, 
                 patience, and a deep commitment to maintaining quality of life and personal dignity. 
-                Our dedicated caregiver becomes familiar with your unique needs and preferences.
+                Our dedicated carer becomes familiar with your unique needs and preferences.
               </p>
             </div>
           </div>
@@ -235,7 +236,7 @@ export default function ComplexCarePage() {
               <span className="text-[#FFDFDF]">Trust</span>
             </h2>
             <p className="text-xl opacity-90 max-w-4xl mx-auto">
-              All our live-in caregivers are trained in complex care, understanding 
+              All our live-in carers are trained in complex care, understanding
               how to provide specialized support with patience, compassion, and expertise. We prioritise:
             </p>
           </div>
@@ -311,11 +312,17 @@ export default function ComplexCarePage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#99235C] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#7a1c49] transition-all transform hover:scale-105 shadow-lg">
-              <Phone className="w-5 h-5 inline mr-2" />
-              Contact Us Today
+              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
+                <Phone className="w-5 h-5 inline mr-2" />
+                Contact Us Today
+              </a>
             </button>
             <button className="border-2 border-[#99235C] text-[#99235C] px-10 py-4 rounded-full font-semibold hover:bg-[#99235C] hover:text-white transition-all">
+              <a
+                href="mailto:skylinehealthcaresolutions@outlook.com"
+              >
               Request Free Consultation
+              </a>
             </button>
           </div>
 
