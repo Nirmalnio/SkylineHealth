@@ -114,6 +114,16 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-6 text-sm font-medium text-black">
           <ul className="hidden md:flex space-x-6 text-sm font-medium text-black relative">
             {/* Services Dropdown */}
+            <li className="cursor-pointer">
+              <a href="/" className="text-gray-600 hover:text-gray-800">
+                Home
+              </a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="/about-us" className="text-gray-600 hover:text-gray-800">
+                About
+              </a>
+            </li>
             <li
               className="relative"
               onClick={() => setIsServicesOpen((prev) => !prev)}
@@ -131,7 +141,7 @@ const Header = () => {
                     animate="visible"
                     exit="exit"
                     variants={dropdownVariants}
-                    className="absolute -left-32 lg:-left-80 top-10 mt-2 bg-white shadow-2xl rounded-lg border p-4 lg:p-8 flex flex-col items-center z-50 w-screen max-w-xs sm:max-w-2xl lg:max-w-7xl lg:w-[1300px]"
+                    className="absolute -left-32 lg:left-[-400px] top-10 mt-2 bg-white shadow-2xl rounded-lg border p-4 lg:p-8 flex flex-col items-center z-50 w-screen max-w-xs sm:max-w-2xl lg:max-w-7xl lg:w-[1300px]"
                     style={{ gap: "20px lg:30px" }}
                   >
                     <div className="flex flex-col lg:flex-row w-full gap-4 lg:gap-5">
@@ -232,18 +242,18 @@ const Header = () => {
               </a>
             </li>
             <li className="cursor-pointer">
-              <a href="/about-us" className="text-gray-600 hover:text-gray-800">
-                About
+              <a href="/contact-us" className="text-gray-600 hover:text-gray-800">
+                Contact Us
               </a>
             </li>
-            <li className="cursor-pointer">
+            {/* <li className="cursor-pointer">
               <a
                 href="/franchising"
                 className="text-gray-600 hover:text-gray-800"
               >
                 Contact Us
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
