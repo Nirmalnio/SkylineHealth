@@ -77,7 +77,7 @@ const Footer = () => {
                     href={`/services/${service
                       .toLowerCase()
                       .replace(/\s+/g, "-")}`}
-                    className="text-gray-700 hover:text-blue-600 transition-colors text-sm block"
+                    className="text-gray-700 hover:text-primary-dark transition-colors text-sm block"
                   >
                     {service} Live-in Care
                   </a>

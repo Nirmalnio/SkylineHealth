@@ -53,7 +53,7 @@ export default function ChallengingBehaviourCarePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-r from-[#99235C] via-purple-700 to-blue-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-6 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -63,13 +63,13 @@ export default function ChallengingBehaviourCarePage() {
                 Specialist Behavioural Care
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Challenging Behaviour <span className="text-yellow-300">Live-In Care</span>
+                Challenging Behaviour <span className="text-cyan-light">Live-In Care</span>
               </h1>
               <p className="text-xl mb-8 leading-relaxed opacity-90">
                 Specialist one-to-one care for individuals with complex behaviours — in the safety and comfort of their own home across Devon.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg">
+                <button className="bg-[#FFDFDF] text-[#99235C] px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-200 transition-all transform hover:scale-105 shadow-lg">
                   Get Expert Support
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition-all">
@@ -95,28 +95,28 @@ export default function ChallengingBehaviourCarePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Compassionate Care for <span className="text-blue-600">Complex Needs</span>
+              Compassionate Care for <span className="text-primary-dark">Complex Needs</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              At Skyline Healthcare Solutions Ltd, we understand that challenging behaviours can be difficult for both 
-              individuals and families to manage. Our trained live-in caregivers provide calm, consistent support to help 
+              At <strong className="text-primary-dark">Skyline Healthcare Solutions Ltd</strong>, we understand that challenging behaviours can be difficult for both
+              individuals and families to manage. Our trained live-in caregivers provide calm, consistent support to help
               clients feel safe, understood, and respected — right at home in Devon.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
-              <Home className="w-12 h-12 text-blue-600 mb-4" />
+            <div className="bg-gradient-to-br from-[#FFDFDF] to-pink-100 p-8 rounded-2xl border-l-4 border-primary-dark">
+              <Home className="w-12 h-12 text-primary-dark mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Safe Home Environment</h3>
               <p className="text-gray-700">Receive specialized care in the familiar, secure environment of their own home.</p>
             </div>
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-2xl">
-              <Shield className="w-12 h-12 text-teal-600 mb-4" />
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border-l-4 border-purple-600">
+              <Shield className="w-12 h-12 text-purple-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Understanding & Respect</h3>
               <p className="text-gray-700">Compassionate care that seeks to understand and respond to individual needs.</p>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
-              <Brain className="w-12 h-12 text-green-600 mb-4" />
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-600">
+              <Brain className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Specialist Training</h3>
               <p className="text-gray-700">Caregivers trained specifically in managing complex behaviours with expertise.</p>
             </div>
@@ -130,7 +130,7 @@ export default function ChallengingBehaviourCarePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                What Is <span className="text-blue-600">Challenging Behaviour?</span>
+                What Is <span className="text-primary-dark">Challenging Behaviour?</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Challenging behaviour can manifest in various ways and often stems from underlying conditions 
@@ -140,9 +140,9 @@ export default function ChallengingBehaviourCarePage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Challenging behaviour can include:</h3>
               <div className="space-y-4">
                 {challengingBehaviours.map((behaviour, index) => (
-                  <div key={index} className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-sm">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <behaviour.icon className="w-6 h-6 text-blue-600" />
+                  <div key={index} className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-sm border-l-4 border-[#99235C]">
+                    <div className="bg-[#FFDFDF] p-3 rounded-full">
+                      <behaviour.icon className="w-6 h-6 text-[#99235C]" />
                     </div>
                     <span className="text-gray-800 font-medium">{behaviour.text}</span>
                   </div>
@@ -151,7 +151,7 @@ export default function ChallengingBehaviourCarePage() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-8 rounded-3xl text-white shadow-2xl">
+              <div className="bg-gradient-to-br from-[#99235C] to-purple-600 p-8 rounded-3xl text-white shadow-2xl">
                 <Brain className="w-16 h-16 mb-6 text-white/80" />
                 <h3 className="text-2xl font-bold mb-4">Understanding the Root Causes</h3>
                 <p className="text-lg opacity-90 leading-relaxed">
@@ -160,6 +160,7 @@ export default function ChallengingBehaviourCarePage() {
                   behind the behaviour.
                 </p>
                 <div className="mt-6 bg-white/20 backdrop-blur-sm p-4 rounded-xl">
+                <Star className="w-8 h-8 text-[#FFDFDF] mb-2" />
                   <p className="text-sm opacity-90">
                     We believe every behaviour is a form of communication, and our role is to understand 
                     what your loved one is trying to tell us.
@@ -176,7 +177,7 @@ export default function ChallengingBehaviourCarePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Our Approach to <span className="text-blue-600">Challenging Behaviour</span>
+              Our Approach to <span className="text-primary-dark">Challenging Behaviour</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Evidence-based strategies combined with compassionate care to ensure safety while preserving dignity
@@ -186,8 +187,8 @@ export default function ChallengingBehaviourCarePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {careApproach.map((approach, index) => (
               <div key={index} className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <div className="bg-blue-100 p-4 rounded-full w-fit mb-6">
-                  <approach.icon className="w-8 h-8 text-blue-600" />
+                <div className="bg-[#FFDFDF] p-4 rounded-full w-fit mb-6">
+                  <approach.icon className="w-8 h-8 text-primary-dark" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{approach.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{approach.description}</p>
@@ -196,8 +197,8 @@ export default function ChallengingBehaviourCarePage() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-8 rounded-2xl">
-              <Eye className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <div className="bg-gradient-to-r from-[#FFDFDF] to-pink-100 p-8 rounded-2xl max-w-4xl mx-auto">
+              <Eye className="w-12 h-12 text-primary-dark mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ensuring Safety While Preserving Dignity</h3>
               <p className="text-lg text-gray-700">
                 Our approach prioritizes both physical and emotional safety while maintaining the individual's 
@@ -209,21 +210,21 @@ export default function ChallengingBehaviourCarePage() {
       </div>
 
       {/* Why Choose Skyline Section */}
-      <div className="py-20 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+      <div className="py-20 bg-gradient-to-r from-[#99235C] to-purple-700 text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
-              Why Choose <span className="text-yellow-300">Skyline in Devon?</span>
+              Why Choose <span className="text-[#FFDFDF]">Skyline in Devon?</span>
             </h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Our live-in carers are specially trained to support individuals with high needs and complex behaviours.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-12">
             {whyChooseUs.map((reason, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
-                <CheckCircle className="w-12 h-12 text-yellow-300 mb-4" />
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all">
+                <CheckCircle className="w-12 h-12 text-[#FFDFDF] mb-4" />
                 <p className="text-lg font-medium">{reason}</p>
               </div>
             ))}
@@ -231,7 +232,7 @@ export default function ChallengingBehaviourCarePage() {
 
           <div className="text-center">
             <div className="bg-white/20 backdrop-blur-sm p-8 rounded-2xl max-w-2xl mx-auto">
-              <MapPin className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+              <MapPin className="w-12 h-12 text-[#FFDFDF] mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">Expert Behavioural Support Across Devon</h3>
               <p className="text-lg opacity-90">
                 Specialized training combined with local knowledge, providing expert challenging behaviour 
@@ -246,7 +247,7 @@ export default function ChallengingBehaviourCarePage() {
       <div className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Let's Support <span className="text-blue-600">Your Family</span>
+            Let's Support <span className="text-primary-dark">Your Family</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Whether your loved one has a learning disability, autism, or another condition associated with challenging behaviour, 
@@ -255,17 +256,17 @@ export default function ChallengingBehaviourCarePage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
+            <button className="bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
               <Phone className="w-5 h-5 inline mr-2" />
               Contact Us Today
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-10 py-4 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all">
+            <button className="border-2 border-primary-dark text-primary-dark px-10 py-4 rounded-full font-semibold hover:bg-primary-dark hover:text-white transition-all">
               Request Information
             </button>
           </div>
 
           <div className="mt-12 bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
-            <Puzzle className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <Puzzle className="w-12 h-12 text-primary-dark mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Understanding, Patience, and Expertise</h3>
             <p className="text-gray-700 text-lg">
               Our mission is to provide specialized care that recognizes the unique needs of each individual, 
