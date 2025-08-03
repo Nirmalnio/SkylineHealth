@@ -13,6 +13,7 @@ import ComplexCarePage from "./pages/Services/Complex";
 import RespiteCarePage from "./pages/Services/Respite";
 import EndOfLifeCarePage from "./pages/Services/EndOfLife";
 import ChallengingBehaviourCarePage from "./pages/Services/ChallengingBehaviour";
+import ContactUsPage from "./pages/Contact";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/services/respite-care" element={<RespiteCarePage />} />
         <Route path="/services/end-of-life-care" element={<EndOfLifeCarePage />} />
         <Route path="/services/challenging-behaviours-care" element={<ChallengingBehaviourCarePage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
       <Footer/>
     </Router>

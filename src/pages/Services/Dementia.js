@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import {
   Heart,
@@ -18,6 +18,17 @@ import {
 import { GrUserExpert } from "react-icons/gr";
 
 export default function DementiaAlzheimerCarePage() {
+  // Ref for the specialist care section
+  const specialistCareRef = useRef(null);
+
+  // Function to scroll to specialist care section
+  const scrollToSpecialistCare = () => {
+    specialistCareRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   const commonSymptoms = [
     { icon: Brain, text: "Short-term memory loss and forgetfulness" },
     { icon: Repeat, text: "Repeating questions or misplacing items" },
@@ -156,16 +167,20 @@ export default function DementiaAlzheimerCarePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
               >
+                <a href="/contact-us">
                 <motion.button 
                   className="bg-[#FFDFDF] text-[#99235C] px-8 py-4 rounded-full font-bold text-lg shadow-lg"
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0,0,0,0.2)" }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
+                  
                   Get Free Consultation
                 </motion.button>
+                  </a>
                 <motion.button 
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold"
+                  onClick={scrollToSpecialistCare}
                   whileHover={{ backgroundColor: "white", color: "#99235C", scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
@@ -678,6 +693,7 @@ export default function DementiaAlzheimerCarePage() {
 
       {/* Specialist Care Section */}
       <motion.div 
+        ref={specialistCareRef}
         className="py-20 bg-gradient-to-r from-[#99235C] to-purple-700 text-white"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

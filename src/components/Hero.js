@@ -104,7 +104,7 @@ const Hero = () => {
                   ))}
               </div>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/fyTc1jNdjVBxqYDbA"
                 className="text-primary-dark text-sm font-semibold underline hover:text-primary-darker"
               >
                 Google Reviews
@@ -113,9 +113,12 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-4 flex-wrap w-[200px] h-[75px]">
-            <button className="bg-accent w-full text-white py-2 px-6 rounded-full font-semibold">
+            <a
+              href="/contact-us"
+              className="bg-accent flex items-center justify-center w-full h-full text-white py-2 px-6 rounded-full font-semibold"
+            >
               Contact Us
-            </button>
+            </a>
             {/* <button className="bg-accent text-white py-2 px-6 rounded-full font-semibold">
             Careers
           </button> */}

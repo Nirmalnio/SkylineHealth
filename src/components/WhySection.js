@@ -22,11 +22,6 @@ const whyData = [
     desc: "Need help or have a question? Call us any time, day or night, and speak to a real person. We’re here to support you whenever you need us.",
   },
   {
-    icon: FaHeart,
-    title: "Care for All Ages",
-    desc: "From elderly care to everyday support for younger adults, we provide comprehensive care across all age groups.",
-  },
-  {
     icon: FaUserNurse,
     title: "Trusted, Experienced Professionals",
     desc: "All our Carers are qualified, insured, and have at least 2 years of hands-on experience.",

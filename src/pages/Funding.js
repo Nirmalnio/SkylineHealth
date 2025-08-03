@@ -560,7 +560,7 @@ export default function Funding() {
             </p>
             <p className="text-gray-700">
               The council will assess your needs and finances through a{" "}
-              <strong>free needs assessment</strong>.
+              <strong><a href="https://www.nhs.uk/social-care-and-support/help-from-social-services-and-charities/getting-a-needs-assessment/" target="_blank" rel="noopener noreferrer">free needs assessment</a></strong>.
             </p>
           </div>
         </div>

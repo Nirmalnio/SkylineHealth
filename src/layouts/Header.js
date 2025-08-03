@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Heart,
-  User,
-  Home,
-  Shield,
-  Brain,
-  MoreHorizontal,
-  Activity,
-  Pill,
   ArrowRight,
   Menu,
   X,
@@ -16,7 +8,17 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { MdOutlineMail } from "react-icons/md";
-
+import { 
+  FaBrain, 
+  FaDove,
+  FaHandsHelping,
+  FaWalking,
+  FaUserShield
+} from 'react-icons/fa';
+import { 
+  MdPsychology, 
+  MdMedicalServices,
+} from 'react-icons/md';
 import logo from "../assets/Images/image.png";
 
 const dropdownVariants = {
@@ -35,67 +37,60 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-  const homeCareServices = [
-    {
-      name: "Dementia & Alzheimer Care",
-      description:
-        "Compassionate support for those living with memory loss and confusion.",
-      icon: <User className="w-5 h-5 text-accent" />,
-      link: "/services/dementia-care",
-    },
-    // {
-    //   name: "Alzheimer's Care",
-    //   description:
-    //     "Specialist care to maintain routine, safety, and comfort at home.",
-    //   icon: <Brain className="w-5 h-5 text-accent" />,
-    //   link: "/services/alzheimers-care",
-    // },
-    {
-      name: "Challenging Behaviours Care",
-      description:
-        "Skilled care for individuals with behavioural or emotional difficulties.",
-      icon: <Pill className="w-5 h-5 text-accent" />,
-      link: "/services/challenging-behaviours-care",
-    },
-    {
-      name: "Parkinson’s Care",
-      description:
-        "Helping clients manage mobility, medication, and daily tasks.",
-      icon: <Heart className="w-5 h-5 text-accent" />,
-      link: "/services/parkinsons-care",
-    },
-    {
-      name: "Continence Care",
-      description:
-        "Discreet and dignified assistance with bladder and bowel care.",
-      icon: <Brain className="w-5 h-5 text-accent" />,
-      link: "/services/continence-care",
-    },
-  ];
+const homeCareServices = [
+  {
+    name: "Dementia & Alzheimer Care",
+    description:
+      "Compassionate support for those living with memory loss and confusion.",
+    icon: <FaBrain className="w-5 h-5 text-accent" />,
+    link: "/services/dementia-care",
+  },
+  {
+    name: "Challenging Behaviours Care",
+    description:
+      "Skilled care for individuals with behavioural or emotional difficulties.",
+    icon: <MdPsychology className="w-5 h-5 text-accent" />,
+    link: "/services/challenging-behaviours-care",
+  },
+  {
+    name: "Parkinson's Care",
+    description:
+      "Helping clients manage mobility, medication, and daily tasks.",
+    icon: <FaWalking className="w-5 h-5 text-accent" />,
+    link: "/services/parkinsons-care",
+  },
+  {
+    name: "Continence Care",
+    description:
+      "Discreet and dignified assistance with bladder and bowel care.",
+    icon: <FaUserShield className="w-5 h-5 text-accent" />,
+    link: "/services/continence-care",
+  },
+];
 
-  const nursingCareServices = [
-    {
-      name: "Complex Care",
-      description:
-        "Expert support for individuals with multiple or high-dependency conditions.",
-      icon: <Shield className="w-5 h-5 text-accent" />,
-      link: "/services/complex-care",
-    },
-    {
-      name: "Respite Care",
-      description:
-        "Short-term live-in care to give family carers a well-earned break.",
-      icon: <Home className="w-5 h-5 text-accent" />,
-      link: "/services/respite-care",
-    },
-    {
-      name: "End of Life Care",
-      description:
-        "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
-      icon: <Pill className="w-5 h-5 text-accent" />,
-      link: "/services/end-of-life-care",
-    },
-  ];
+const nursingCareServices = [
+  {
+    name: "Complex Care",
+    description:
+      "Expert support for individuals with multiple or high-dependency conditions.",
+    icon: <MdMedicalServices className="w-5 h-5 text-accent" />,
+    link: "/services/complex-care",
+  },
+  {
+    name: "Respite Care",
+    description:
+      "Short-term live-in care to give family carers a well-earned break.",
+    icon: <FaHandsHelping className="w-5 h-5 text-accent" />,
+    link: "/services/respite-care",
+  },
+  {
+    name: "End of Life Care",
+    description:
+      "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
+    icon: <FaDove className="w-5 h-5 text-accent" />,
+    link: "/services/end-of-life-care",
+  },
+];
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50 px-6 py-4">
