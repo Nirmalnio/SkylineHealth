@@ -42,7 +42,7 @@ export default function ContactUsPage() {
     {
       icon: Phone,
       title: "Call Us",
-      primary: "1-800-CARE-123",
+      primary: "+44 7805 694560",
       secondary: "Available 24/7 for emergencies",
       action: "Call Now",
       bgColor: "bg-gradient-to-br from-pink-50 to-pink-100"
@@ -50,18 +50,10 @@ export default function ContactUsPage() {
     {
       icon: Mail,
       title: "Email Us",
-      primary: "info@liveincare.com",
+      primary: "skylinehealthcaresolutions@outlook.com",
       secondary: "Response within 2 hours",
       action: "Send Email",
       bgColor: "bg-gradient-to-br from-purple-50 to-purple-100"
-    },
-    {
-      icon: MessageCircle,
-      title: "Live Chat",
-      primary: "Chat with our specialists",
-      secondary: "Instant responses available",
-      action: "Start Chat",
-      bgColor: "bg-gradient-to-br from-pink-50 to-pink-100"
     }
   ];
 
@@ -103,183 +95,35 @@ export default function ContactUsPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
-        {/* Quick Contact Methods */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20 -mt-10">
-          {contactMethods.map((method, index) => (
-            <div
-              key={index}
-              className={`${method.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50 backdrop-blur-sm group cursor-pointer`}
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="p-4 bg-white rounded-full mb-6 group-hover:bg-[#99235C] transition-colors duration-300">
-                  <method.icon className="w-8 h-8 text-[#99235C] group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{method.title}</h3>
-                <p className="text-lg font-semibold text-[#99235C] mb-2">{method.primary}</p>
-                <p className="text-gray-600 mb-6">{method.secondary}</p>
-                <button className="bg-[#99235C] text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
-                  {method.action}
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
-          <div className="bg-white rounded-3xl shadow-2xl p-10 border border-pink-100">
+          {/* Contact Methods - Now in main content area */}
+          <div className="space-y-8">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Request Information</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
               <p className="text-gray-600 text-lg">
-                Fill out the form below and our care specialists will contact you within 24 hours.
+                Contact us directly through any of the methods below. Our care specialists are ready to help.
               </p>
             </div>
 
-            {isSubmitted && (
-              <div className="mb-8 p-6 bg-green-50 border border-green-200 rounded-xl flex items-center space-x-3 animate-fade-in">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-                <p className="text-green-800 font-semibold">Thank you! We'll be in touch soon.</p>
-              </div>
-            )}
-
-            <div className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-semibold text-gray-700">Full Name *</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    onFocus={() => setFocusedField('name')}
-                    onBlur={() => setFocusedField('')}
-                    className={`w-full px-4 py-4 border-2 rounded-xl transition-all duration-300 ${
-                      focusedField === 'name' 
-                        ? 'border-[#99235C] ring-4 ring-[#FFDFDF] transform scale-105' 
-                        : 'border-gray-300 hover:border-[#99235C]'
-                    }`}
-                    placeholder="Your full name"
-                    required
-                  />
+            <div className="grid gap-8">
+              {contactMethods.map((method, index) => (
+                <div
+                  key={index}
+                  className={`${method.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50 backdrop-blur-sm group cursor-pointer`}
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="p-4 bg-white rounded-full mb-6 group-hover:bg-[#99235C] transition-colors duration-300">
+                      <method.icon className="w-8 h-8 text-[#99235C] group-hover:text-white transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">{method.title}</h3>
+                    <p className="text-lg font-semibold text-[#99235C] mb-2">{method.primary}</p>
+                    <p className="text-gray-600 mb-6">{method.secondary}</p>
+                    <button className="bg-[#99235C] text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                      {method.action}
+                    </button>
+                  </div>
                 </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-semibold text-gray-700">Email Address *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    onFocus={() => setFocusedField('email')}
-                    onBlur={() => setFocusedField('')}
-                    className={`w-full px-4 py-4 border-2 rounded-xl transition-all duration-300 ${
-                      focusedField === 'email' 
-                        ? 'border-[#99235C] ring-4 ring-[#FFDFDF] transform scale-105' 
-                        : 'border-gray-300 hover:border-[#99235C]'
-                    }`}
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-semibold text-gray-700">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    onFocus={() => setFocusedField('phone')}
-                    onBlur={() => setFocusedField('')}
-                    className={`w-full px-4 py-4 border-2 rounded-xl transition-all duration-300 ${
-                      focusedField === 'phone' 
-                        ? 'border-[#99235C] ring-4 ring-[#FFDFDF] transform scale-105' 
-                        : 'border-gray-300 hover:border-[#99235C]'
-                    }`}
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-semibold text-gray-700">Service Needed</label>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleInputChange}
-                    onFocus={() => setFocusedField('service')}
-                    onBlur={() => setFocusedField('')}
-                    className={`w-full px-4 py-4 border-2 rounded-xl transition-all duration-300 ${
-                      focusedField === 'service' 
-                        ? 'border-[#99235C] ring-4 ring-[#FFDFDF] transform scale-105' 
-                        : 'border-gray-300 hover:border-[#99235C]'
-                    }`}
-                  >
-                    <option value="">Select a service</option>
-                    {services.map((service, index) => (
-                      <option key={index} value={service}>{service}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">How urgent is your need?</label>
-                <div className="grid grid-cols-3 gap-4">
-                  {['normal', 'soon', 'urgent'].map((level) => (
-                    <label key={level} className="cursor-pointer">
-                      <input
-                        type="radio"
-                        name="urgency"
-                        value={level}
-                        checked={formData.urgency === level}
-                        onChange={handleInputChange}
-                        className="sr-only"
-                      />
-                      <div className={`p-4 border-2 rounded-xl text-center transition-all duration-300 ${
-                        formData.urgency === level
-                          ? 'border-[#99235C] bg-[#FFDFDF] text-[#99235C] transform scale-105'
-                          : 'border-gray-300 hover:border-[#99235C] hover:bg-pink-50'
-                      }`}>
-                        <div className="font-semibold capitalize">{level}</div>
-                        <div className="text-sm text-gray-600 mt-1">
-                          {level === 'normal' && 'Within 2 weeks'}
-                          {level === 'soon' && 'Within 1 week'}
-                          {level === 'urgent' && 'ASAP'}
-                        </div>
-                      </div>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Tell us about your needs</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  onFocus={() => setFocusedField('message')}
-                  onBlur={() => setFocusedField('')}
-                  rows="6"
-                  className={`w-full px-4 py-4 border-2 rounded-xl transition-all duration-300 resize-none ${
-                    focusedField === 'message' 
-                      ? 'border-[#99235C] ring-4 ring-[#FFDFDF] transform scale-105' 
-                      : 'border-gray-300 hover:border-[#99235C]'
-                  }`}
-                  placeholder="Please describe the care needs, preferred schedule, any special requirements, and any questions you may have..."
-                ></textarea>
-              </div>
-
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="w-full bg-gradient-to-r from-[#99235C] to-purple-700 text-white py-5 px-8 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-[#99235C] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center space-x-3 group"
-              >
-                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                <span>Send Message</span>
-              </button>
+              ))}
             </div>
           </div>
 
@@ -299,7 +143,7 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Main Office</h4>
-                    <p className="text-gray-600">123 Care Street<br />Compassion City, CC 12345</p>
+                    <p className="text-gray-600">107 Heron Way<br />Torquay, Devon, TQ2 7SU</p>
                   </div>
                 </div>
 
@@ -375,7 +219,7 @@ export default function ContactUsPage() {
         </div>
 
         {/* Emergency Contact Banner */}
-        <div className="mt-16 bg-gradient-to-r from-red-600 to-red-700 rounded-3xl p-8 text-center shadow-2xl">
+        {/* <div className="mt-16 bg-gradient-to-r from-red-600 to-red-700 rounded-3xl p-8 text-center shadow-2xl">
           <div className="flex justify-center mb-4">
             <Phone className="w-10 h-10 text-white animate-bounce" />
           </div>
@@ -386,7 +230,7 @@ export default function ContactUsPage() {
           <button className="bg-white text-red-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-red-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Call Emergency Line: 1-800-URGENT-1
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
