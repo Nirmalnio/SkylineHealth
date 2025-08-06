@@ -91,11 +91,11 @@ export default function ContactUsPage() {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div> */}
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-2 gap-16">
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="flex flex-col gap-16">
           {/* Contact Methods - Now in main content area */}
           <div className="space-y-8">
             <div className="mb-8">
