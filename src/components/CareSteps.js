@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import step2 from "../assets/Images/step2.jpg";
+import step3 from "../assets/Images/step3.png";
 
 const steps = [
   {
     step: 1,
     title: "Instant Connection",
     desc: "Your call will be answered by a real person day or night. Contact us at any time to arrange a complimentary Caring Consultation. We listen carefully to your needs whether you require elder care, personal assistance, or support during recovery to understand how we can make your life better.",
-    image: "/step-1.png",
+    image: "https://www.athulyahomecare.com/images/BGLRE-healthcare.jpg",
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
@@ -14,7 +16,7 @@ const steps = [
     step: 2,
     title: "Getting to Know You",
     desc: "A Care Designer will meet with you either virtually or in person to assess your individual needs and preferences before creating a bespoke Care Plan just for you. We'll then match you with the ideal perfect carer, chosen for their skills, their compassion, and a personality we believe you'll truly appreciate.",
-    image: "/step-2.png",
+    image: step2,
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
@@ -22,7 +24,7 @@ const steps = [
     step: 3,
     title: "First Visit",
     desc: "We strive to send the same carer for every visit, so you can build a genuine relationship with your perfect match from day one. Our team will remain in regular contact monitoring your care and making adjustments as needed throughout your care journey.",
-    image: "/step-3.png",
+    image: step3,
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },
@@ -366,7 +368,7 @@ const CareSteps = () => {
                   className="relative z-10"
                 >
                   <img
-                    src="https://www.athulyahomecare.com/images/BGLRE-healthcare.jpg"
+                    src={steps[activeStep].image}
                     alt={`Step ${steps[activeStep].step} illustration`}
                     className="rounded-2xl w-full shadow-2xl border-4 border-white/50"
                   />

@@ -59,7 +59,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import hero from "../assets/Images/hero.png";
+import hero from "../assets/Images/hero4.jpg";
 
 const Hero = () => {
   return (
