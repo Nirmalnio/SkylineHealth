@@ -566,19 +566,19 @@ export default function Funding() {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl shadow-lg p-8 text-white text-center">
+        <div className="bg-gradient-to-br from-[#FFDFDF] to-pink-100 rounded-2xl shadow-lg p-8 text-white text-center">
           <div className="flex items-center justify-center mb-6">
-            <Phone className="w-8 h-8 mr-3" />
-            <h2 className="text-3xl font-bold">
+            <Phone className="w-8 h-8 mr-3 text-primary-dark" />
+            <h2 className="text-3xl font-bold text-gray-900">
               Let's Talk About Your Options
             </h2>
           </div>
 
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Have questions or need help understanding your options?
           </p>
 
-          <button className="bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-bold text-lg shadow-lg">
+          <button className="bg-[#FFF] text-[#99235C] px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-bold text-lg shadow-lg">
             Contact us today for a free consultation
           </button>
         </div>
