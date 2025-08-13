@@ -20,6 +20,7 @@ import {
   MdMedicalServices,
 } from 'react-icons/md';
 import logo from "../assets/Images/image.png";
+import nurses from "../assets/Images/nurses.jpeg"
 
 const dropdownVariants = {
   hidden: { opacity: 0, y: -10 },
@@ -205,7 +206,7 @@ const nursingCareServices = [
                       {/* Right Side Image + Callout - Hidden on mobile/tablet, visible on desktop */}
                       <div className="hidden lg:block relative lg:w-1/2 rounded-lg overflow-hidden shadow-md h-64 lg:h-80">
                         <img
-                          src="https://www.nurseregistry.com/wp-content/uploads/2023/11/how-to-choose-a-nurse-staffing-agency.jpg"
+                          src={nurses}
                           alt="Staffing Support"
                           className="object-cover w-full h-full"
                         />
