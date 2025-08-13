@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import step2 from "../assets/Images/step2.jpg";
+import step1 from "../assets/Images/step-1.jpeg";
+import step2 from "../assets/Images/step-2.jpeg";
 import step3 from "../assets/Images/step3.png";
 
 const steps = [
@@ -8,7 +9,7 @@ const steps = [
     step: 1,
     title: "Instant Connection",
     desc: "Your call will be answered by a real person day or night. Contact us at any time to arrange a complimentary Caring Consultation. We listen carefully to your needs whether you require elder care, personal assistance, or support during recovery to understand how we can make your life better.",
-    image: "https://www.athulyahomecare.com/images/BGLRE-healthcare.jpg",
+    image: step1,
     color: "#99235c",
     bgGradient: "from-[#99235C] to-purple-600",
   },

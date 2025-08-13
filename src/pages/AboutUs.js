@@ -16,6 +16,8 @@ import {
 import { FaEarListen } from "react-icons/fa6";
 import { AiOutlineSafety } from "react-icons/ai";
 import GoogleReviews from "../components/GoogleReviews";
+import about from "../assets/Images/about.png";
+import wheelchair from "../assets/Images/wheelchair.jpg";
 
 // Animation variants
 const fadeInUp = {
@@ -218,9 +220,9 @@ export default function About() {
               }}
             />
             <motion.img
-              src="https://cdn.prod.website-files.com/67ab6f4970b90367b528f15a/67b353fb8d343fbc691f6669_about-hero-image.webp"
+              src={about}
               alt="Elderly person at home with carer"
-              className="w-full rounded-2xl object-cover shadow-2xl"
+              className="w-full h-[500px] rounded-2xl object-cover shadow-2xl"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             />
@@ -405,9 +407,9 @@ export default function About() {
                   }}
                 />
                 <motion.img
-                  src="https://cdn.prod.website-files.com/67ab6f4970b90367b528f15a/67c9bf2674f0a8d2a1f7da97_Secondary%20image%20(getting%20care%20should%20be%20easy)%201.jpeg"
+                  src={wheelchair}
                   alt="Family care moment"
-                  className="relative w-full rounded-2xl object-cover shadow-xl"
+                  className="relative w-full h-[500px] rounded-2xl object-cover shadow-xl"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 />
