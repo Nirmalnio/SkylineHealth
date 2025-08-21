@@ -7,7 +7,7 @@ import {
   FaHome,
   FaBullseye,
   FaEye,
-  FaPhone,
+  FaPhoneAlt,
   FaEnvelope,
   FaUsers,
   FaShieldAlt,
@@ -222,9 +222,30 @@ export default function About() {
             <motion.img
               src={about}
               alt="Elderly person at home with carer"
-              className="w-full h-[500px] rounded-2xl object-cover shadow-2xl"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
+              className="w-full h-[500px] rounded-2xl object-cover shadow-2xl object-center"
+              style={{
+                objectPosition: 'center 30%',
+                maskImage: `
+                  radial-gradient(ellipse at top left, transparent 0%, black 10%),
+                  radial-gradient(ellipse at top right, transparent 0%, black 10%),
+                  radial-gradient(ellipse at bottom left, transparent 0%, black 10%),
+                  radial-gradient(ellipse at bottom right, transparent 0%, black 10%),
+                  linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
+                  linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
+                `,
+                maskComposite: 'intersect',
+                WebkitMaskImage: `
+                  radial-gradient(ellipse at top left, transparent 0%, black 10%),
+                  radial-gradient(ellipse at top right, transparent 0%, black 10%),
+                  radial-gradient(ellipse at bottom left, transparent 0%, black 10%),
+                  radial-gradient(ellipse at bottom right, transparent 0%, black 10%),
+                  linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
+                  linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
+                `,
+                WebkitMaskComposite: 'source-in'
+              }}
+              // whileHover={{ scale: 1.02 }}
+              // transition={{ duration: 0.3 }}
             />
           </div>
         </motion.div>
@@ -409,7 +430,7 @@ export default function About() {
                 <motion.img
                   src={wheelchair}
                   alt="Family care moment"
-                  className="relative w-full h-[500px] rounded-2xl object-cover shadow-xl"
+                  className="relative w-full h-[500px] rounded-2xl object-cover shadow-xl object-center"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 />
@@ -621,7 +642,7 @@ export default function About() {
                   whileHover={{ rotate: 15 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <FaPhone className="text-lg" />
+                  <FaPhoneAlt className="text-lg" />
                 </motion.div>
                 Call Us Today
               </a>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import step1 from "../assets/Images/step-1.jpeg";
 import step2 from "../assets/Images/step-2.jpeg";
-import step3 from "../assets/Images/step3.png";
+import step3 from "../assets/Images/step3.jpg";
 
 const steps = [
   {

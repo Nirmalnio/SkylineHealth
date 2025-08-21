@@ -51,7 +51,7 @@ export default function ContactUsPage() {
       icon: Mail,
       title: "Email Us",
       primary: "skylinehealthcaresolutions@outlook.com",
-      secondary: "Response within 2 hours",
+      secondary: "Fast response guaranteed",
       action: "Send Email",
       bgColor: "bg-gradient-to-br from-purple-50 to-purple-100"
     }
@@ -143,7 +143,7 @@ export default function ContactUsPage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Main Office</h4>
-                    <p className="text-gray-600 text-sm sm:text-base">107 Heron Way<br />Torquay, Devon, TQ2 7SU</p>
+                    <p className="text-gray-600 text-sm sm:text-base">Torquay, Devon, TQ2 7SU</p>
                   </div>
                 </div>
 
@@ -154,9 +154,7 @@ export default function ContactUsPage() {
                   <div className="min-w-0 flex-1">
                     <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Office Hours</h4>
                     <p className="text-gray-600 text-sm sm:text-base">
-                      Mon - Fri: 8:00 AM - 6:00 PM<br />
-                      Sat: 9:00 AM - 4:00 PM<br />
-                      Sun: Emergency calls only
+                      Available 24/7<br />
                     </p>
                   </div>
                 </div>
