@@ -207,7 +207,7 @@ const Footer = () => {
       {/* Bottom Copyright */}
       <div className="text-sm flex flex-col sm:flex-row justify-between items-center px-8 py-6 border-t border-white/20 max-w-screen-xl mx-auto">
         <span className="mb-2 sm:mb-0">
-          © 2025 Nirmal Technologies. All Rights Reserved.
+          © 2025 Skyline HealthCare. All Rights Reserved.
         </span>
         <a href="#" className="underline hover:no-underline transition-all">
           Privacy Policy
