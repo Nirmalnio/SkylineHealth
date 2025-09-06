@@ -209,7 +209,7 @@ const Footer = () => {
         <span className="mb-2 sm:mb-0">
           © 2025 Skyline HealthCare. All Rights Reserved.
         </span>
-        <a href="#" className="underline hover:no-underline transition-all">
+        <a href="/privacy-policy" className="underline hover:no-underline transition-all">
           Privacy Policy
         </a>
       </div>
