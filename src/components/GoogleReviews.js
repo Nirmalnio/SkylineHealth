@@ -115,7 +115,7 @@ const GoogleReviews = () => {
         {/* Call to Action */}
         <div className="text-center mt-6 sm:mt-8">
           <a
-            href="https://www.google.com/search?q=skyline+healthcare+solutions"
+            href="https://www.google.com/search?sca_esv=d14af1df391cf56f&rlz=1C1UEAD_enIN1017IN1017&sxsrf=AE3TifPJeQnceRRdRRbHSo6keRAHXKwoJQ:1760430555072&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EzejUEmaLy_vKWO0yCPEhCiL_6qt0zuAav1Wc_1a6Qxa2kF8AxMxAABshbYwE98SMbs6R42xbwHqprHQStpOLjudvNbNKUBxEwf8wykfHZgNPxGk8Y9SU78AsIQcep7HeGrw5t4%3D&q=Skyline+Health+Care+Solutions+Ltd+Reviews&sa=X&ved=2ahUKEwj-8YvvoqOQAxVUxDgGHW1vLDsQ0bkNegQIJxAE"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-primary hover:bg-primary/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
