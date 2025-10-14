@@ -15,36 +15,36 @@ import {
 } from "react-icons/fa";
 import { FaEarListen } from "react-icons/fa6";
 import { AiOutlineSafety } from "react-icons/ai";
-import GoogleReviews from "../components/GoogleReviews";
 import about from "../assets/Images/about.png";
 import wheelchair from "../assets/Images/wheelchair.jpg";
+import videoFile from "../assets/video.mp4";
 
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] }
-  }
+    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] },
+  },
 };
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     x: 0,
-    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] }
-  }
+    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] },
+  },
 };
 
 const fadeInRight = {
   hidden: { opacity: 0, x: 50 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     x: 0,
-    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] }
-  }
+    transition: { duration: 0.8, ease: [0.25, 0.25, 0.25, 0.75] },
+  },
 };
 
 const staggerContainer = {
@@ -53,21 +53,21 @@ const staggerContainer = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.3
-    }
-  }
+      delayChildren: 0.3,
+    },
+  },
 };
 
 const cardHover = {
   scale: 1.05,
   y: -8,
-  transition: { duration: 0.3, ease: "easeOut" }
+  transition: { duration: 0.3, ease: "easeOut" },
 };
 
 const buttonHover = {
   scale: 1.05,
   y: -2,
-  transition: { duration: 0.2, ease: "easeOut" }
+  transition: { duration: 0.2, ease: "easeOut" },
 };
 
 const floatingAnimation = {
@@ -75,8 +75,8 @@ const floatingAnimation = {
   transition: {
     duration: 6,
     repeat: Infinity,
-    ease: "easeInOut"
-  }
+    ease: "easeInOut",
+  },
 };
 
 export default function About() {
@@ -126,31 +126,31 @@ export default function About() {
       {/* HERO SECTION */}
       <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-gradient-to-br from-blue-light to-cyan-light relative overflow-hidden">
         {/* Animated background elements */}
-        <motion.div 
+        <motion.div
           className="absolute top-20 left-10 w-32 h-32 bg-brand-blue rounded-full opacity-10"
           animate={floatingAnimation}
         />
-        <motion.div 
+        <motion.div
           className="absolute bottom-20 right-20 w-24 h-24 bg-cyan-medium rounded-full opacity-15"
           animate={{
             ...floatingAnimation,
-            transition: { ...floatingAnimation.transition, delay: 3 }
+            transition: { ...floatingAnimation.transition, delay: 3 },
           }}
         />
 
-        <motion.div 
+        <motion.div
           className="w-full md:w-1/2 text-center md:text-left z-10"
           initial="hidden"
           animate="visible"
           variants={fadeInLeft}
         >
-          <motion.p 
+          <motion.p
             className="text-brand-blue font-medium text-lg mb-4"
             variants={fadeInUp}
           >
             Bespoke 'Live-in' Care in South Torbay & Devon
           </motion.p>
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-6xl font-extrabold text-text-dark leading-tight mb-6"
             variants={fadeInUp}
           >
@@ -162,7 +162,7 @@ export default function About() {
               Skyline
             </motion.span>
             <br />
-            <motion.span 
+            <motion.span
               className="text-brand-blue italic font-serif"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -171,7 +171,7 @@ export default function About() {
               Healthcare
             </motion.span>
             <br />
-            <motion.span 
+            <motion.span
               className="text-2xl md:text-3xl font-normal text-text-secondary"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -180,7 +180,7 @@ export default function About() {
               Solutions Ltd
             </motion.span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-text-secondary mt-6 text-base md:text-lg max-w-md leading-relaxed"
             variants={fadeInUp}
           >
@@ -188,7 +188,7 @@ export default function About() {
             individuals remain in the comfort of their own homes surrounded by
             familiar routines, personal belongings, and the people they love.
           </motion.p>
-          <motion.a 
+          <motion.a
             href="/contact-us"
             variants={fadeInUp}
             whileHover={buttonHover}
@@ -201,22 +201,22 @@ export default function About() {
           </motion.a>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="w-full md:w-1/2 relative z-10"
           initial="hidden"
           animate="visible"
           variants={fadeInRight}
         >
           <div className="relative w-full max-w-lg mx-auto">
-            <motion.div 
+            <motion.div
               className="absolute -left-10 -bottom-10 w-96 h-96 bg-blue-medium rounded-full opacity-20 blur-3xl -z-10"
               animate={floatingAnimation}
             />
-            <motion.div 
+            <motion.div
               className="absolute -right-5 -top-5 w-64 h-64 bg-cyan-medium rounded-full opacity-25 blur-2xl -z-10"
               animate={{
                 ...floatingAnimation,
-                transition: { ...floatingAnimation.transition, delay: 2 }
+                transition: { ...floatingAnimation.transition, delay: 2 },
               }}
             />
             <motion.img
@@ -224,7 +224,7 @@ export default function About() {
               alt="Elderly person at home with carer"
               className="w-full h-[500px] rounded-2xl object-cover shadow-2xl object-center"
               style={{
-                objectPosition: 'center 30%',
+                objectPosition: "center 30%",
                 maskImage: `
                   radial-gradient(ellipse at top left, transparent 0%, black 10%),
                   radial-gradient(ellipse at top right, transparent 0%, black 10%),
@@ -233,7 +233,7 @@ export default function About() {
                   linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
                   linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
                 `,
-                maskComposite: 'intersect',
+                maskComposite: "intersect",
                 WebkitMaskImage: `
                   radial-gradient(ellipse at top left, transparent 0%, black 10%),
                   radial-gradient(ellipse at top right, transparent 0%, black 10%),
@@ -242,10 +242,8 @@ export default function About() {
                   linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
                   linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
                 `,
-                WebkitMaskComposite: 'source-in'
+                WebkitMaskComposite: "source-in",
               }}
-              // whileHover={{ scale: 1.02 }}
-              // transition={{ duration: 0.3 }}
             />
           </div>
         </motion.div>
@@ -254,20 +252,20 @@ export default function About() {
       {/* MISSION & VISION */}
       <section className="bg-white py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.p 
+            <motion.p
               className="text-brand-blue font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               Our Mission & Vision
             </motion.p>
-            <motion.h2 
+            <motion.h2
               className="text-4xl md:text-5xl font-extrabold text-text-dark mb-8"
               variants={fadeInUp}
             >
@@ -278,14 +276,14 @@ export default function About() {
             </motion.h2>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 gap-12 mb-16"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl"
               variants={fadeInLeft}
               whileHover={cardHover}
@@ -306,7 +304,7 @@ export default function About() {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl"
               variants={fadeInRight}
               whileHover={cardHover}
@@ -333,37 +331,37 @@ export default function About() {
       {/* OUR VALUES */}
       <section className="bg-gradient-to-br from-cyan-light to-blue-light py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-12"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.p 
+            <motion.p
               className="text-brand-blue font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               What Drives Us
             </motion.p>
-            <motion.h2 
+            <motion.h2
               className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
               variants={fadeInUp}
             >
               Our{" "}
               <span className="text-brand-blue italic font-serif">Values</span>
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="text-gray-800 text-lg max-w-3xl mx-auto"
               variants={fadeInUp}
             >
-              Our live-in carers offer more than just practical help—they
-              bring companionship, trust, and peace of mind, forming lasting
+              Our live-in carers offer more than just practical help—they bring
+              companionship, trust, and peace of mind, forming lasting
               relationships with those they support.
             </motion.p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             initial="hidden"
             whileInView="visible"
@@ -381,9 +379,9 @@ export default function About() {
                   whileTap={{ scale: 0.98 }}
                 >
                   <motion.div
-                    whileHover={{ 
+                    whileHover={{
                       rotate: [0, -10, 10, -10, 0],
-                      scale: 1.1
+                      scale: 1.1,
                     }}
                     transition={{ duration: 0.5 }}
                   >
@@ -407,7 +405,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left side - Image */}
-            <motion.div 
+            <motion.div
               className="w-full lg:w-1/2"
               initial="hidden"
               whileInView="visible"
@@ -415,16 +413,16 @@ export default function About() {
               variants={fadeInLeft}
             >
               <div className="relative">
-                <motion.div 
+                <motion.div
                   className="absolute -top-4 -left-4 w-full h-full bg-brand-blue rounded-2xl opacity-10"
                   animate={{
                     scale: [1, 1.02, 1],
-                    rotate: [0, 1, 0]
+                    rotate: [0, 1, 0],
                   }}
                   transition={{
                     duration: 8,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                 />
                 <motion.img
@@ -438,20 +436,20 @@ export default function About() {
             </motion.div>
 
             {/* Right side - Content */}
-            <motion.div 
+            <motion.div
               className="w-full lg:w-1/2"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
-              <motion.p 
+              <motion.p
                 className="text-brand-blue font-medium text-lg mb-2"
                 variants={fadeInUp}
               >
                 Personal & Professional
               </motion.p>
-              <motion.h2 
+              <motion.h2
                 className="text-4xl font-extrabold text-text-dark mb-6"
                 variants={fadeInUp}
               >
@@ -460,7 +458,7 @@ export default function About() {
                   Skyline
                 </span>
               </motion.h2>
-              <motion.p 
+              <motion.p
                 className="text-gray-800 mb-8 leading-relaxed"
                 variants={fadeInUp}
               >
@@ -468,19 +466,16 @@ export default function About() {
                 where every client matters and every relationship counts.
               </motion.p>
 
-              <motion.div 
-                className="space-y-4"
-                variants={staggerContainer}
-              >
+              <motion.div className="space-y-4" variants={staggerContainer}>
                 {whyChooseUs.map((reason, idx) => (
-                  <motion.div 
-                    key={idx} 
+                  <motion.div
+                    key={idx}
                     className="flex items-start gap-3"
                     variants={fadeInUp}
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <motion.div 
+                    <motion.div
                       className="flex-shrink-0 w-6 h-6 bg-[#99235C] rounded-full flex items-center justify-center mt-0.5"
                       whileHover={{ scale: 1.2 }}
                       transition={{ duration: 0.2 }}
@@ -499,25 +494,25 @@ export default function About() {
       {/* WHAT WE OFFER */}
       <section className="bg-gradient-to-br from-blue-light to-cyan-light py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-12"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.p 
+            <motion.p
               className="text-brand-blue font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               Our Service
             </motion.p>
-            <motion.h2 
+            <motion.h2
               className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
               variants={fadeInUp}
             >
               Bespoke{" "}
-              <motion.span 
+              <motion.span
                 className="text-brand-blue italic font-serif"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
@@ -526,7 +521,7 @@ export default function About() {
               </motion.span>{" "}
               Care
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="text-gray-800 text-lg max-w-3xl mx-auto"
               variants={fadeInUp}
             >
@@ -536,7 +531,7 @@ export default function About() {
             </motion.p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
             initial="hidden"
             whileInView="visible"
@@ -547,18 +542,18 @@ export default function About() {
               {
                 icon: FaHome,
                 title: "Stay at Home",
-                desc: "Remain in familiar surroundings with personal belongings, routines, and cherished memories close by."
+                desc: "Remain in familiar surroundings with personal belongings, routines, and cherished memories close by.",
               },
               {
                 icon: FaUsers,
                 title: "Consistent Carers",
-                desc: "Build meaningful relationships with dedicated carers who become like extended family members."
+                desc: "Build meaningful relationships with dedicated carers who become like extended family members.",
               },
               {
                 icon: FaShieldAlt,
                 title: "CQC Registered",
-                desc: "Fully regulated and compliant, giving you complete peace of mind about quality and safety."
-              }
+                desc: "Fully regulated and compliant, giving you complete peace of mind about quality and safety.",
+              },
             ].map((card, idx) => {
               const IconComponent = card.icon;
               return (
@@ -570,9 +565,9 @@ export default function About() {
                   whileTap={{ scale: 0.98 }}
                 >
                   <motion.div
-                    whileHover={{ 
+                    whileHover={{
                       rotate: [0, -5, 5, 0],
-                      scale: 1.1
+                      scale: 1.1,
                     }}
                     transition={{ duration: 0.4 }}
                     className="flex justify-center"
@@ -595,49 +590,49 @@ export default function About() {
       {/* CALL TO ACTION */}
       <section className="bg-[#99235C] py-20 px-6 md:px-16 text-white relative overflow-hidden">
         {/* Animated background elements */}
-        <motion.div 
+        <motion.div
           className="absolute top-10 right-10 w-40 h-40 bg-white rounded-full opacity-5"
           animate={floatingAnimation}
         />
-        <motion.div 
+        <motion.div
           className="absolute bottom-10 left-10 w-24 h-24 bg-white rounded-full opacity-10"
           animate={{
             ...floatingAnimation,
-            transition: { ...floatingAnimation.transition, delay: 4 }
+            transition: { ...floatingAnimation.transition, delay: 4 },
           }}
         />
 
-        <motion.div 
+        <motion.div
           className="max-w-4xl mx-auto text-center relative z-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={staggerContainer}
         >
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-5xl font-extrabold mb-6"
             variants={fadeInUp}
           >
             Ready to Talk About <span className="italic font-serif">Care?</span>
           </motion.h2>
-          <motion.p 
-            className="text-pink-200 mb-8"
-            variants={fadeInUp}
-          >
+          <motion.p className="text-pink-200 mb-8" variants={fadeInUp}>
             We'd love to hear from you. Get in touch today to arrange a free
             consultation.
           </motion.p>
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center"
             variants={staggerContainer}
           >
-            <motion.button 
+            <motion.button
               className="px-8 py-4 bg-white text-[#99235C] rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
               variants={fadeInUp}
               whileHover={buttonHover}
               whileTap={{ scale: 0.95 }}
             >
-              <a href="tel:+447805694560" className="flex items-center justify-center gap-2">
+              <a
+                href="tel:+447805694560"
+                className="flex items-center justify-center gap-2"
+              >
                 <motion.div
                   whileHover={{ rotate: 15 }}
                   transition={{ duration: 0.2 }}
@@ -647,7 +642,7 @@ export default function About() {
                 Call Us Today
               </a>
             </motion.button>
-            <motion.button 
+            <motion.button
               className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-[#99235C] transition-all flex items-center justify-center gap-2"
               variants={fadeInUp}
               whileHover={buttonHover}
@@ -667,17 +662,97 @@ export default function About() {
               </a>
             </motion.button>
           </motion.div>
-          <motion.p 
-            className="mt-8 text-pink-200 text-sm"
-            variants={fadeInUp}
-          >
+          <motion.p className="mt-8 text-pink-200 text-sm" variants={fadeInUp}>
             Serving families across South Torbay & Devon with compassionate,
             professional care
           </motion.p>
         </motion.div>
       </section>
 
-      <GoogleReviews />
+      {/* VIDEO SECTION */}
+      <section className="bg-white py-20 px-6 md:px-16">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
+            <motion.p
+              className="text-brand-blue font-medium text-lg mb-2"
+              variants={fadeInUp}
+            >
+              See Our Care in Action
+            </motion.p>
+            <motion.h2
+              className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
+              variants={fadeInUp}
+            >
+              Meet{" "}
+              <span className="text-brand-blue italic font-serif">
+                Skyline Healthcare
+              </span>
+            </motion.h2>
+            <motion.p
+              className="text-gray-800 text-lg max-w-3xl mx-auto"
+              variants={fadeInUp}
+            >
+              Watch our video to learn more about our approach to personalized,
+              compassionate care.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+          >
+            <motion.div
+              className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-light to-cyan-light p-2"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              {/* <div className="relative w-full bg-gray-900 rounded-2xl" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                  src="../assets/video.mp4"
+                  title="Skyline Healthcare Solutions Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div> */}
+              <div
+                className="relative w-full bg-gray-900 rounded-2xl"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <video
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl object-cover"
+                  controls
+                  preload="metadata"
+                >
+                  <source src={videoFile} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </motion.div>
+
+            <motion.p
+              className="text-center text-gray-600 mt-6 text-sm"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInUp}
+            >
+              Learn how we provide exceptional live-in care across South Torbay
+              & Devon
+            </motion.p>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }

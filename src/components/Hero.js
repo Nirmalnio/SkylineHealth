@@ -14,7 +14,7 @@ const Hero = () => {
       >
         <h1 className="text-[40px] sm:text-[60px] lg:text-[80px] leading-tight">
           <span className="font-bold">
-            Personalized
+            Personalised
             <br /> Live-In
           </span>{" "}
           <span className="italic font-normal">

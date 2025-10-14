@@ -28,7 +28,7 @@ Thank you Skyline`,
     text: `I can’t recommend this company highly enough. Their live-in care service has been outstanding — professional, compassionate, and truly focused on dignity and comfort. The carers are well-trained, reliable, and always go the extra mile to make sure everything runs smoothly at home. Communication with the office team is quick and supportive, and they always keep us updated. Having such dedicated people around has given us real peace of mind. If you’re looking for care you can trust, this is the team to go with.`,
     author: "Yogeshwaran Subramaniyan",
   },
-  
+
   // Add more reviews as needed
 ];
 
