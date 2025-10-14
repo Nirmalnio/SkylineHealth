@@ -9,16 +9,8 @@ const liveInCareServices = [
     name: "Dementia & Alzheimer Care",
     description:
       "Compassionate support for those living with memory loss and confusion.",
-
     link: "/services/dementia-care",
   },
-  // {
-  //   name: "Alzheimer's Care",
-  //   description:
-  //     "Specialist care to maintain routine, safety, and comfort at home.",
-  //   icon: <Brain className="w-5 h-5 text-accent" />,
-  //   link: "/services/alzheimers-care",
-  // },
   {
     name: "Challenging Behaviours Care",
     description:
@@ -26,7 +18,7 @@ const liveInCareServices = [
     link: "/services/challenging-behaviours-care",
   },
   {
-    name: "Parkinson’s Care",
+    name: "Parkinson's Care",
     description:
       "Helping clients manage mobility, medication, and daily tasks.",
     link: "/services/parkinsons-care",
@@ -35,7 +27,6 @@ const liveInCareServices = [
     name: "Continence Care",
     description:
       "Discreet and dignified assistance with bladder and bowel care.",
-
     link: "/services/continence-care",
   },
 ];
@@ -45,77 +36,68 @@ const liveInCareServices2 = [
     name: "Complex Care",
     description:
       "Expert support for individuals with multiple or high-dependency conditions.",
-
     link: "/services/complex-care",
   },
   {
     name: "Respite Care",
     description:
       "Short-term live-in care to give family carers a well-earned break.",
-
     link: "/services/respite-care",
   },
   {
     name: "End of Life Care",
     description:
       "Sensitive, around-the-clock support for clients and their loved ones in their final stages.",
-
     link: "/services/end-of-life-care",
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="bg-accent text-white pt-20">
+    <footer className="bg-primary text-white pt-12 sm:pt-16 lg:pt-20">
       {/* Top CTA Section */}
-      <div className="flex items-center w-full flex-col justify-center mb-10 gap-y-5">
-        <h2 className="text-[42px] text-center font-bold">
+      <div className="flex items-center w-full flex-col justify-center mb-8 sm:mb-10 gap-y-4 sm:gap-y-5 px-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-bold leading-tight">
           Re-Discover Independence
           <br /> in Your <span className="italic">Own Home</span>.
         </h2>
-        {/* <p className="text-lg font-semibold">
-          Book a complimentary caring consult
-        </p>
-        <button className="bg-cyan-50 text-accent text-lg font-bold px-8 py-3 rounded-full hover:bg-white transition-colors">
-          Contact Us
-        </button> */}
       </div>
 
-      <div className="bg-white rounded-t-3xl px-8 py-12 max-w-screen-xl mx-auto text-black">
-        <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-12">
+      <div className="bg-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12 max-w-screen-xl mx-auto text-black">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Column 1 - Company Info */}
-          <div className="flex-1 max-w-sm">
-            <div className="text-primary-dark text-3xl font-bold mb-6">
+          <div className="flex flex-col">
+            <div className="text-primary text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
               Skyline HealthCare
               <br />
               Solutions Ltd
             </div>
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800">
               Reach out <br />
               to our <em className="italic font-normal">Care Team.</em>
             </h2>
-            <p className="mb-6 text-gray-600">
+            <p className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-600">
               We're available to support you every day of the year.
             </p>
 
-            <div className="mt-6">
-              <p className="mb-3 font-bold text-lg text-primary-dark">
+            <div className="mt-4 sm:mt-6">
+              <p className="mb-3 font-bold text-base sm:text-lg text-primary">
                 Contact Us
               </p>
               <div className="flex gap-3 mb-4">
-                <Mail className="text-primary-dark mt-1" />
+                <Mail className="text-primary mt-1 flex-shrink-0 w-5 h-5" />
                 <a
                   href="mailto:skylinehealthcaresolutions@outlook.com"
-                  className="font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+                  className="font-semibold text-sm sm:text-base text-gray-700 hover:text-primary transition-colors break-all"
                 >
                   skylinehealthcaresolutions@outlook.com
                 </a>
               </div>
               <div className="flex gap-3">
-                <Phone className="text-primary-dark mt-1" />
+                <Phone className="text-primary mt-1 flex-shrink-0 w-5 h-5" />
                 <a
                   href="tel:+447805694560"
-                  className="font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+                  className="font-semibold text-sm sm:text-base text-gray-700 hover:text-primary transition-colors"
                 >
                   +44 7805 694560
                 </a>
@@ -124,29 +106,29 @@ const Footer = () => {
           </div>
 
           {/* Column 2 - Services */}
-          <div className="flex-1 max-w-sm">
-            <h3 className="text-primary-dark font-bold text-lg mb-6 text-center">
+          <div className="flex flex-col">
+            <h3 className="text-primary font-bold text-lg sm:text-xl mb-4 sm:mb-6 text-center md:text-left">
               Services
             </h3>
-            <div className="flex flex-col sm:flex-row gap-x-8 gap-y-3">
-              <div className="space-y-3 flex-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-3">
+              <div className="space-y-3">
                 {liveInCareServices.map((service) => (
                   <div key={service.name}>
                     <a
                       href={service.link}
-                      className="text-gray-700 hover:text-primary-dark transition-colors text-sm block"
+                      className="text-gray-700 hover:text-primary transition-colors text-sm block leading-relaxed"
                     >
                       {service.name} Live-in Care
                     </a>
                   </div>
                 ))}
               </div>
-              <div className="space-y-3 flex-1">
+              <div className="space-y-3">
                 {liveInCareServices2.map((service) => (
                   <div key={service.name}>
                     <a
                       href={service.link}
-                      className="text-gray-700 hover:text-primary-dark transition-colors text-sm block"
+                      className="text-gray-700 hover:text-primary transition-colors text-sm block leading-relaxed"
                     >
                       {service.name} Live-in Care
                     </a>
@@ -155,9 +137,9 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Accredited Image Placeholder */}
-            <div className="mt-6">
-              <div className="w-full h-32 rounded-lg flex items-center justify-center">
+            {/* Accredited Image */}
+            <div className="mt-6 sm:mt-8">
+              <div className="w-full max-w-[200px] mx-auto md:mx-0 h-24 sm:h-32 rounded-lg flex items-center justify-center">
                 <img
                   src={accredited}
                   alt="Accredited Badge"
@@ -168,12 +150,12 @@ const Footer = () => {
           </div>
 
           {/* Column 3 - Socials */}
-          <div className="flex-1 max-w-sm flex flex-col items-center lg:items-start">
-            <div className="text-center w-full">
-              <h3 className="text-primary-dark font-bold text-lg mb-6">
+          <div className="flex flex-col items-center lg:items-start md:col-span-2 lg:col-span-1">
+            <div className="text-center lg:text-left w-full">
+              <h3 className="text-primary font-bold text-lg sm:text-xl mb-4 sm:mb-6">
                 Socials
               </h3>
-              <div className="flex gap-4 justify-center lg:justify-center mb-8">
+              <div className="flex gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
                 {[
                   { Icon: FaFacebook, href: "#", label: "Facebook" },
                   { Icon: FaInstagram, href: "#", label: "Instagram" },
@@ -181,22 +163,22 @@ const Footer = () => {
                   <a
                     key={idx}
                     href={href}
-                    className="border-2 border-primary-dark rounded-full p-3 hover:bg-primary-dark hover:text-white transition-all duration-300 transform hover:scale-110"
+                    className="border-2 border-primary rounded-full p-2.5 sm:p-3 hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110"
                     aria-label={label}
                   >
-                    <Icon className="w-5 h-5 text-primary-dark" />
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary hover:text-white" />
                   </a>
                 ))}
               </div>
             </div>
 
-            {/* Logo Image Placeholder */}
-            <div className="w-full items-center flex justify-center">
-              <div className="w-[250px] h-[250px] flex items-center justify-center">
+            {/* Logo Image */}
+            <div className="w-full flex justify-center lg:justify-start mt-4">
+              <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 flex items-center justify-center">
                 <img
                   src={logo}
                   alt="Skyline HealthCare Logo"
-                  className="h-full w-full rounded-full border-[8px] border-primary-dark"
+                  className="h-full w-full rounded-full border-4 sm:border-6 lg:border-8 border-primary object-cover"
                 />
               </div>
             </div>
@@ -205,11 +187,14 @@ const Footer = () => {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="text-sm flex flex-col sm:flex-row justify-between items-center px-8 py-6 border-t border-white/20 max-w-screen-xl mx-auto">
-        <span className="mb-2 sm:mb-0">
+      <div className="text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-4 sm:py-6 border-t border-white/20 max-w-screen-xl mx-auto gap-2">
+        <span className="text-center sm:text-left">
           © 2025 Skyline HealthCare. All Rights Reserved.
         </span>
-        <a href="/privacy-policy" className="underline hover:no-underline transition-all">
+        <a 
+          href="/privacy-policy" 
+          className="underline hover:no-underline transition-all"
+        >
           Privacy Policy
         </a>
       </div>

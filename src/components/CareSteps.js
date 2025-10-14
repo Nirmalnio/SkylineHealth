@@ -218,7 +218,7 @@ const CareSteps = () => {
           >
             What to Expect <br />
             <span className="italic font-normal bg-gradient-to-r from-primary-dark to-pink-400 bg-clip-text text-transparent">
-              When Getting Care
+              When Receiving Care
             </span>
           </motion.h2>
         </motion.div>

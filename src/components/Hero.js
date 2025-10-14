@@ -12,13 +12,23 @@ const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-[40px] sm:text-[60px] lg:text-[80px] leading-tight">
+        {/* <h1 className="text-[40px] sm:text-[60px] lg:text-[80px] leading-tight">
           <span className="font-bold">
             Personalised
             <br /> Live-In
           </span>{" "}
           <span className="italic font-normal">
             Care <br /> Services
+          </span>
+        </h1> */}
+
+        <h1 className="text-[40px] sm:text-[60px] lg:text-[80px] leading-tight">
+          <span className="font-bold">
+            Reaching for
+            <br /> New Heights
+          </span>{" "}
+          <span className="italic font-normal">
+            in <br /> Healthcare
           </span>
         </h1>
 
@@ -76,7 +86,7 @@ const Hero = () => {
             alt="hero"
             className="rounded-xl w-full h-[350px] sm:h-[500px] lg:h-[650px] object-cover object-center"
             style={{
-              objectPosition: 'center 35%', // Adjust this to center the faces vertically
+              objectPosition: "center 35%", // Adjust this to center the faces vertically
               maskImage: `
                 radial-gradient(ellipse at top left, transparent 0%, black 40%),
                 radial-gradient(ellipse at top right, transparent 0%, black 10%),
@@ -85,7 +95,7 @@ const Hero = () => {
                 linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
                 linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
               `,
-              maskComposite: 'intersect',
+              maskComposite: "intersect",
               WebkitMaskImage: `
                 radial-gradient(ellipse at top left, transparent 0%, black 40%),
                 radial-gradient(ellipse at top right, transparent 0%, black 10%),
@@ -94,7 +104,7 @@ const Hero = () => {
                 linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%),
                 linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)
               `,
-              WebkitMaskComposite: 'source-in'
+              WebkitMaskComposite: "source-in",
             }}
           />
         </div>

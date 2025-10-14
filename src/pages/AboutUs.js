@@ -124,14 +124,14 @@ export default function About() {
   return (
     <div className="font-sans">
       {/* HERO SECTION */}
-      <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-gradient-to-br from-blue-light to-cyan-light relative overflow-hidden">
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-gradient-to-br from-primary/10 to-primary/20 relative overflow-hidden">
         {/* Animated background elements */}
         <motion.div
-          className="absolute top-20 left-10 w-32 h-32 bg-brand-blue rounded-full opacity-10"
+          className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full opacity-10"
           animate={floatingAnimation}
         />
         <motion.div
-          className="absolute bottom-20 right-20 w-24 h-24 bg-cyan-medium rounded-full opacity-15"
+          className="absolute bottom-20 right-20 w-24 h-24 bg-primary rounded-full opacity-15"
           animate={{
             ...floatingAnimation,
             transition: { ...floatingAnimation.transition, delay: 3 },
@@ -145,13 +145,13 @@ export default function About() {
           variants={fadeInLeft}
         >
           <motion.p
-            className="text-brand-blue font-medium text-lg mb-4"
+            className="text-primary font-medium text-lg mb-4"
             variants={fadeInUp}
           >
             Bespoke 'Live-in' Care in South Torbay & Devon
           </motion.p>
           <motion.h1
-            className="text-4xl md:text-6xl font-extrabold text-text-dark leading-tight mb-6"
+            className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
             variants={fadeInUp}
           >
             <motion.span
@@ -163,7 +163,7 @@ export default function About() {
             </motion.span>
             <br />
             <motion.span
-              className="text-brand-blue italic font-serif"
+              className="text-primary italic font-serif"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -172,7 +172,7 @@ export default function About() {
             </motion.span>
             <br />
             <motion.span
-              className="text-2xl md:text-3xl font-normal text-text-secondary"
+              className="text-2xl md:text-3xl font-normal text-gray-600"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
@@ -181,7 +181,7 @@ export default function About() {
             </motion.span>
           </motion.h1>
           <motion.p
-            className="text-text-secondary mt-6 text-base md:text-lg max-w-md leading-relaxed"
+            className="text-gray-600 mt-6 text-base md:text-lg max-w-md leading-relaxed"
             variants={fadeInUp}
           >
             A small, family-run, CQC-registered live-in care provider. We help
@@ -195,7 +195,7 @@ export default function About() {
             whileTap={{ scale: 0.95 }}
             className="inline-block mt-8"
           >
-            <button className="px-8 py-4 bg-brand-blue hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
+            <button className="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
               Get in Touch Today →
             </button>
           </motion.a>
@@ -209,11 +209,11 @@ export default function About() {
         >
           <div className="relative w-full max-w-lg mx-auto">
             <motion.div
-              className="absolute -left-10 -bottom-10 w-96 h-96 bg-blue-medium rounded-full opacity-20 blur-3xl -z-10"
+              className="absolute -left-10 -bottom-10 w-96 h-96 bg-primary rounded-full opacity-20 blur-3xl -z-10"
               animate={floatingAnimation}
             />
             <motion.div
-              className="absolute -right-5 -top-5 w-64 h-64 bg-cyan-medium rounded-full opacity-25 blur-2xl -z-10"
+              className="absolute -right-5 -top-5 w-64 h-64 bg-primary rounded-full opacity-25 blur-2xl -z-10"
               animate={{
                 ...floatingAnimation,
                 transition: { ...floatingAnimation.transition, delay: 2 },
@@ -260,19 +260,19 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.p
-              className="text-brand-blue font-medium text-lg mb-2"
+              className="text-primary font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               Our Mission & Vision
             </motion.p>
             <motion.h2
-              className="text-4xl md:text-5xl font-extrabold text-text-dark mb-8"
+              className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8"
               variants={fadeInUp}
             >
               We Believe Care Should
               <br />
               Feel Like{" "}
-              <span className="text-brand-blue italic font-serif">Family</span>
+              <span className="text-primary italic font-serif">Family</span>
             </motion.h2>
           </motion.div>
 
@@ -284,37 +284,37 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.div
-              className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl"
+              className="bg-gradient-to-br from-primary/10 to-primary/20 p-8 rounded-3xl"
               variants={fadeInLeft}
               whileHover={cardHover}
             >
-              <h3 className="text-2xl font-bold text-text-dark mb-4 flex items-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <FaBullseye className="text-3xl mr-3 text-[#99235C]" />
+                  <FaBullseye className="text-3xl mr-3 text-secondary" />
                 </motion.div>
                 Our Mission
               </h3>
               <p className="text-gray-800 leading-relaxed">
-                To empower people to live independently in their own homes by
-                delivering exceptional, personalised care that promotes dignity,
-                choice, and quality of life.
+                Caring for someone in their own home is more than support - it
+                is honouring their independence, dignity and life story, while
+                walking beside them with compassion every step of the way
               </p>
             </motion.div>
 
             <motion.div
-              className="bg-gradient-to-br from-blue-light to-cyan-light p-8 rounded-3xl"
+              className="bg-gradient-to-br from-primary/10 to-primary/20 p-8 rounded-3xl"
               variants={fadeInRight}
               whileHover={cardHover}
             >
-              <h3 className="text-2xl font-bold text-text-dark mb-4 flex items-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <FaEye className="text-3xl mr-3 text-[#99235C]" />
+                  <FaEye className="text-3xl mr-3 text-secondary" />
                 </motion.div>
                 Our Vision
               </h3>
@@ -329,7 +329,7 @@ export default function About() {
       </section>
 
       {/* OUR VALUES */}
-      <section className="bg-gradient-to-br from-cyan-light to-blue-light py-20 px-6 md:px-16">
+      <section className="bg-gradient-to-br from-primary/10 to-primary/20 py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-12"
@@ -339,17 +339,17 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.p
-              className="text-brand-blue font-medium text-lg mb-2"
+              className="text-primary font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               What Drives Us
             </motion.p>
             <motion.h2
-              className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
+              className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
               variants={fadeInUp}
             >
               Our{" "}
-              <span className="text-brand-blue italic font-serif">Values</span>
+              <span className="text-primary italic font-serif">Values</span>
             </motion.h2>
             <motion.p
               className="text-gray-800 text-lg max-w-3xl mx-auto"
@@ -385,9 +385,9 @@ export default function About() {
                     }}
                     transition={{ duration: 0.5 }}
                   >
-                    <IconComponent className="text-4xl mb-4 text-[#99235C]" />
+                    <IconComponent className="text-4xl mb-4 text-secondary" />
                   </motion.div>
-                  <h3 className="text-xl font-bold text-text-dark mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {value.title}
                   </h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
@@ -414,7 +414,7 @@ export default function About() {
             >
               <div className="relative">
                 <motion.div
-                  className="absolute -top-4 -left-4 w-full h-full bg-brand-blue rounded-2xl opacity-10"
+                  className="absolute -top-4 -left-4 w-full h-full bg-primary rounded-2xl opacity-10"
                   animate={{
                     scale: [1, 1.02, 1],
                     rotate: [0, 1, 0],
@@ -444,17 +444,17 @@ export default function About() {
               variants={fadeInRight}
             >
               <motion.p
-                className="text-brand-blue font-medium text-lg mb-2"
+                className="text-primary font-medium text-lg mb-2"
                 variants={fadeInUp}
               >
                 Personal & Professional
               </motion.p>
               <motion.h2
-                className="text-4xl font-extrabold text-text-dark mb-6"
+                className="text-4xl font-extrabold text-gray-900 mb-6"
                 variants={fadeInUp}
               >
                 Why Families Choose{" "}
-                <span className="text-brand-blue italic font-serif">
+                <span className="text-primary italic font-serif">
                   Skyline
                 </span>
               </motion.h2>
@@ -476,7 +476,7 @@ export default function About() {
                     transition={{ duration: 0.2 }}
                   >
                     <motion.div
-                      className="flex-shrink-0 w-6 h-6 bg-[#99235C] rounded-full flex items-center justify-center mt-0.5"
+                      className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center mt-0.5"
                       whileHover={{ scale: 1.2 }}
                       transition={{ duration: 0.2 }}
                     >
@@ -492,7 +492,7 @@ export default function About() {
       </section>
 
       {/* WHAT WE OFFER */}
-      <section className="bg-gradient-to-br from-blue-light to-cyan-light py-20 px-6 md:px-16">
+      <section className="bg-gradient-to-br from-primary/10 to-primary/20 py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-12"
@@ -502,18 +502,18 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.p
-              className="text-brand-blue font-medium text-lg mb-2"
+              className="text-primary font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               Our Service
             </motion.p>
             <motion.h2
-              className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
+              className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
               variants={fadeInUp}
             >
               Bespoke{" "}
               <motion.span
-                className="text-brand-blue italic font-serif"
+                className="text-primary italic font-serif"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
@@ -552,7 +552,7 @@ export default function About() {
               {
                 icon: FaShieldAlt,
                 title: "CQC Registered",
-                desc: "Fully regulated and compliant, giving you complete peace of mind about quality and safety.",
+                desc: "Regulated to the highest care standards, providing you with complete confidence in our quality and safety.",
               },
             ].map((card, idx) => {
               const IconComponent = card.icon;
@@ -572,9 +572,9 @@ export default function About() {
                     transition={{ duration: 0.4 }}
                     className="flex justify-center"
                   >
-                    <IconComponent className="text-5xl mb-4 text-[#99235C]" />
+                    <IconComponent className="text-5xl mb-4 text-secondary" />
                   </motion.div>
-                  <h3 className="text-xl font-bold text-text-dark mb-4 text-center">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
                     {card.title}
                   </h3>
                   <p className="text-gray-700 text-center leading-relaxed">
@@ -610,12 +610,12 @@ export default function About() {
           variants={staggerContainer}
         >
           <motion.h2
-            className="text-4xl md:text-5xl font-extrabold mb-6"
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-white"
             variants={fadeInUp}
           >
             Ready to Talk About <span className="italic font-serif">Care?</span>
           </motion.h2>
-          <motion.p className="text-pink-200 mb-8" variants={fadeInUp}>
+          <motion.p className="text-pink-100 mb-8 text-lg" variants={fadeInUp}>
             We'd love to hear from you. Get in touch today to arrange a free
             consultation.
           </motion.p>
@@ -662,7 +662,7 @@ export default function About() {
               </a>
             </motion.button>
           </motion.div>
-          <motion.p className="mt-8 text-pink-200 text-sm" variants={fadeInUp}>
+          <motion.p className="mt-8 text-pink-100 text-sm" variants={fadeInUp}>
             Serving families across South Torbay & Devon with compassionate,
             professional care
           </motion.p>
@@ -680,17 +680,17 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.p
-              className="text-brand-blue font-medium text-lg mb-2"
+              className="text-primary font-medium text-lg mb-2"
               variants={fadeInUp}
             >
               See Our Care in Action
             </motion.p>
             <motion.h2
-              className="text-4xl md:text-5xl font-extrabold text-text-dark mb-4"
+              className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
               variants={fadeInUp}
             >
               Meet{" "}
-              <span className="text-brand-blue italic font-serif">
+              <span className="text-primary italic font-serif">
                 Skyline Healthcare
               </span>
             </motion.h2>
@@ -711,20 +711,10 @@ export default function About() {
             variants={fadeInUp}
           >
             <motion.div
-              className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-light to-cyan-light p-2"
+              className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/10 to-primary/20 p-2"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              {/* <div className="relative w-full bg-gray-900 rounded-2xl" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-2xl"
-                  src="../assets/video.mp4"
-                  title="Skyline Healthcare Solutions Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div> */}
               <div
                 className="relative w-full bg-gray-900 rounded-2xl"
                 style={{ paddingBottom: "56.25%" }}

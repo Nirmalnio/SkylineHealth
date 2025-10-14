@@ -1,4 +1,3 @@
-// components/GoogleReviews.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -25,70 +24,123 @@ Thank you Skyline`,
     author: "J C (Daughter of Client)",
   },
   {
-    text: `I can’t recommend this company highly enough. Their live-in care service has been outstanding — professional, compassionate, and truly focused on dignity and comfort. The carers are well-trained, reliable, and always go the extra mile to make sure everything runs smoothly at home. Communication with the office team is quick and supportive, and they always keep us updated. Having such dedicated people around has given us real peace of mind. If you’re looking for care you can trust, this is the team to go with.`,
-    author: "Yogeshwaran Subramaniyan",
+    text: `I can't recommend this company highly enough. Their live-in care service has been outstanding — professional, compassionate, and truly focused on dignity and comfort. The carers are well-trained, reliable, and always go the extra mile to make sure everything runs smoothly at home. Communication with the office team is quick and supportive, and they always keep us updated. Having such dedicated people around has given us real peace of mind. If you're looking for care you can trust, this is the team to go with.`,
+    author: "",
   },
-
-  // Add more reviews as needed
 ];
 
 const GoogleReviews = () => {
   return (
-    <section className="bg-[#f9f1ea] py-16 px-4 rounded-t-[3rem] m-10">
+    <section className="bg-primary/5 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 rounded-3xl sm:rounded-t-[3rem] my-4 sm:mx-6 lg:mx-10">
       <div className="max-w-7xl mx-auto">
         {/* Heading + Badge */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
-          <div>
-            <p className="text-primary-dark font-medium text-xl mb-2">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 sm:mb-10 lg:mb-12 gap-6">
+          <div className="w-full lg:w-auto">
+            <p className="text-primary font-medium text-base sm:text-lg lg:text-xl mb-2">
               Google Reviews
             </p>
-            <h2 className="text-4xl font-black text-black leading-snug">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black leading-tight sm:leading-snug">
               Loved by Clients,
               <br />
-              <em className="italic font-serif text-4xl">
+              <em className="italic font-serif text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 Trusted by Families
               </em>
             </h2>
           </div>
 
-          <div className="bg-white rounded-full shadow-xl px-6 py-4 mt-6 md:mt-0 flex items-center gap-4">
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg sm:shadow-xl px-4 sm:px-6 py-3 sm:py-4 w-full lg:w-auto flex items-center justify-center lg:justify-start">
             <img
               src="https://cdn-ffpdp.nitrocdn.com/LDRWzZhUeQOnljIFGJJJVlSQeVkKgmfR/assets/images/optimized/rev-96959b3/www.luketom.com/wp-content/uploads/2022/10/google-web.gif"
               alt="Google logo"
-              className="w-[250px] h-[100px]"
+              className="w-40 h-16 sm:w-52 sm:h-20 lg:w-60 lg:h-24 object-contain"
             />
-            {/* <div className="text-primary-dark font-bold text-xl">★★★★★</div>
-            <a href="#reviews" className="text-primary-dark underline font-medium text-sm">Google Reviews</a> */}
           </div>
         </div>
 
         {/* Swiper Carousel */}
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          spaceBetween={24}
-          slidesPerView={1.1}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          pagination={{ clickable: true }}
-        >
-          {reviews.map((review, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white rounded-3xl shadow-md p-6 h-[400px] mb-10 flex flex-col">
-                <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                <p className="text-gray-800 mb-4 text-sm">{review.text}</p>
-                {review.author && (
-                  <p className="text-gray-700 text-sm font-semibold mt-auto">
-                    {review.author}
-                  </p>
-                )}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="relative">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={16}
+            slidesPerView={1}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 2.5,
+                spaceBetween: 24,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+            }}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+            }}
+            className="pb-12 sm:pb-14"
+          >
+            {reviews.map((review, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="bg-white mb-10 rounded-2xl sm:rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 p-5 sm:p-6 h-[380px] sm:h-[400px] lg:h-[420px] flex flex-col">
+                  <div className="text-yellow-400 text-xl sm:text-2xl mb-3 sm:mb-4">
+                    ★★★★★
+                  </div>
+                  <div className="flex-1 overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <p className="text-gray-800 text-xs sm:text-sm leading-relaxed">
+                      {review.text}
+                    </p>
+                  </div>
+                  {review.author && (
+                    <div className="pt-3 sm:pt-4 border-t border-gray-200">
+                      <p className="text-gray-700 text-xs sm:text-sm font-semibold">
+                        — {review.author}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-6 sm:mt-8">
+          <a
+            href="https://www.google.com/search?q=skyline+healthcare+solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary hover:bg-primary/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
+          >
+            Read More Reviews on Google
+          </a>
+        </div>
       </div>
+
+      <style jsx>{`
+        .scrollbar-thin::-webkit-scrollbar {
+          width: 4px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+          background: #cbd5e0;
+          border-radius: 10px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+          background: #a0aec0;
+        }
+      `}</style>
     </section>
   );
 };
