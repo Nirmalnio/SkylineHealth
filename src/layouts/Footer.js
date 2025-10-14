@@ -139,7 +139,7 @@ const Footer = () => {
 
             {/* Accredited Image */}
             <div className="mt-6 sm:mt-8">
-              <div className="w-full max-w-[200px] mx-auto md:mx-0 h-24 sm:h-32 rounded-lg flex items-center justify-center">
+              <div className="w-full max-w-[400px] mx-auto md:mx-0 h-24 sm:h-32 rounded-lg flex items-center justify-center">
                 <img
                   src={accredited}
                   alt="Accredited Badge"
