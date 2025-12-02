@@ -6,12 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2E94B9', // pink-500
+        primary: '#99235C', // pink-500
         'primary-light': '#fdf2f8', // pink-50
-        'primary-dark': '#2E94B9', // pink-600
+        'primary-dark': '#99235C', // pink-600
         'primary-darker': '#99235C', // pink-700
-        secondary: '#99235C', // coral
-        accent: '#2E94B9',  // '#52bed6', light blue/cyan
+        accent: '#99235C',  // '#52bed6', light blue/cyan
         'accent-dark': '#45a5bb', // darker shade of accent
         'accent-darker': '#2f6c7a', // even darker shade of accent
         'accent-light': '#B05A7A', // cyan-100
