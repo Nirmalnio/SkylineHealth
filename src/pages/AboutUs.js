@@ -17,7 +17,7 @@ import { FaEarListen } from "react-icons/fa6";
 import { AiOutlineSafety } from "react-icons/ai";
 import about from "../assets/Images/about.png";
 import wheelchair from "../assets/Images/wheelchair.jpg";
-import videoFile from "../assets/video.mp4";
+import videoFile from "../assets/video2.mp4";
 
 // Animation variants
 const fadeInUp = {
